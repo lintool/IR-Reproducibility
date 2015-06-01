@@ -9,10 +9,11 @@ cd atire
 
 make
 
-./bin/index -N1000000 -rrtrec -sa -iscrub:an -QBM25 -q ${GOV2_FILES[@]} | tee -a indexing.txt
+./bin/index -N1000000 -sa -rrtrec -iscrub:an -ts -QBM25 -q -findex quantized.aspt ${GOV2_FILES[@]} | tee quantized.indexing.txt
+./bin/index -N1000000 -sa -rrtrec -iscrub:an -ts ${GOV2_FILES[@]} | tee indexing.txt
 
 for queries in "701-750" "751-800" "801-850"
 do
-	./bin/atire -sa -QN:t -q ../../../topics-and-qrels/topics.${queries}.txt -et -l1500      -oatire.${queries}.completion.txt -iatire -ncompletion > ${queries}.completion.search_stats.txt
-	./bin/atire -sa -QN:t -q ../../../topics-and-qrels/topics.${queries}.txt -et -l1500 -k20 -oatire.${queries}.topk.txt       -iatire -ntop-k      > ${queries}.topk.search_stats.txt
+	./bin/atire -findex quantized.aspt -M -sa -QN:t -q ../../../topics-and-qrels/topics.${queries}.txt -et -l1000 -oatire.${queries}.speed.txt -iatire -nquantized > ${queries}.speed.search_stats.txt
+	./bin/atire -Qr -sa -QN:t -q ../../../topics-and-qrels/topics.${queries}.txt -et -l1000 -oatire.${queries}.unquantized.txt -iatire -nunquantized > ${queries}.precision.search_stats.txt
 done
