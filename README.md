@@ -8,13 +8,13 @@ The goal of this project is to tackle the issue of reproducible *baselines*. Thi
 Goals
 -----
 
-The purpose of this exercise is to invite the *developers* of open-source search engines to provide reproducible baselines of their systems in a common environment on Amazon's EC2 so that the community can have a better understanding of the effectiveness and efficiency differences of various baseline implementations. All results will be archived for future reference by the community. This archive is specifically designed to address the following scenario:
+The purpose of this exercise is to invite the *developers* of open-source search engines to provide reproducible baselines of their systems in a common environment on Amazon's EC2 so that the community can have a better understanding of the effectiveness and efficiency differences of various baseline implementations. All results will be archived for future reference by the community. This archive is specifically designed to address the following scenarios:
 
-I want to evaluate my new technique X. As a baseline, I'll use open-source IR engine Y. Or alternatively, I'm building on open-source IR engine Y, so I need a baseline condition anyway.
+1. I want to evaluate my new technique X. As a baseline, I'll use open-source IR engine Y. Or alternatively, I'm building on open-source IR engine Y, so I need a baseline condition anyway.
 
-How do I know what's a "reasonable" result for system Y? What are the proper settings I should use? (Which stopwords list? What retrieval model? What parameter settings? Etc.) How do I know if I've configured system Y correctly?
+1. How do I know what's a "reasonable" result for system Y? What are the proper settings I should use? (Which stopwords list? What retrieval model? What parameter settings? Etc.) How do I know if I've configured system Y correctly?
 
-Correspondingly, as a reviewer of a paper that describes technique X, how do I know if the baseline is any good? Maybe the authors misconfigured system Y (inadvertently), thereby making their technique "look good".
+1. Correspondingly, as a reviewer of a paper that describes technique X, how do I know if the baseline is any good? Maybe the authors misconfigured system Y (inadvertently), thereby making their technique "look good".
 
 As a result of this exercise, researchers will be able to go to this resource, and for a number of open-source IR engines, they'll learn how to reproduce (through extensive documentation) what the developers of those systems themselves consider to be a reasonable baseline.
 
