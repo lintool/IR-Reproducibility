@@ -7,7 +7,7 @@ hg clone http://atire.org/hg/atire
 
 cd atire
 
-make
+make USE_PRINT_TIME_NO_CONVERSION=1
 
 #./bin/index -N1000000 -sa -rrtrec -iscrub:an -ts -QBM25 -q -findex quantized.aspt ${GOV2_FILES[@]} | tee quantized.indexing.txt
 ./bin/index -N1000000 -sa -rrtrec -iscrub:an -ts ${GOV2_FILES[@]} | tee indexing.txt
