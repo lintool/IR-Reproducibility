@@ -3,13 +3,15 @@ set -ef
 
 source ../common.sh
 
-curl http://www.dcs.gla.ac.uk/~craigm/terrier-4.0.tar.gz> terrier-4.0.tar.gz
+if [[ ! -f terrier-4.0.tar.gz ]]; then
+	curl http://www.dcs.gla.ac.uk/~craigm/terrier-4.0.tar.gz> terrier-4.0.tar.gz
+fi
 rm -rf terrier-4.0
 tar -zxvf terrier-4.0.tar.gz
 cd  terrier-4.0
 
 bin/trec_setup.sh $GOV2_LOCATION 2>&1  | tee trec_setup.log
-mv etc/collection.spec collection.spec && head collection.spec > etc/collection.spec
+#mv etc/collection.spec collection.spec && head collection.spec > etc/collection.spec
 TERRIER_HEAP_MEM=26g bin/trec_terrier.sh -i -j 2>&1 | tee trec_setup.log
 
 echo <<EOF >> etc/terrier.properties
