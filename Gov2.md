@@ -16,7 +16,7 @@ System  |  Size
 ATIRE   |  13GB
 Terrier | 9.1GB
 
-The substantial size difference between the systems can be probably be explained by the methods of compression enabled by both systems. The ATIRE indexer for example uses variable-byte compression (not the most effective in terms in size) to store the postings lists, while the Terrier system purports to optimize both the lexicon and its structure after indexing.
+The substantial size difference between the systems can be probably be explained by the methods of compression enabled by both systems. The ATIRE indexer for example uses variable-byte compression of the docids (after they have been delta encoded), and term frequencies, while the Terrier uses gamma delta-gaps for the docids and unary for the term frequencies.
 
 The commands run to get these sizes are:
 ```
@@ -62,3 +62,12 @@ Terrier | 701-750 | 0.2429
         | 801-850 | 0.2640
 
 There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.
+
+The table below shows the p-value when performing a paired two-tailed t-test between the ATIRE and Terrier systems on the per-query AP scores.
+
+Queries  | p-value
+---------|-------:
+ 701-750 |  0.8006
+ 751-800 |  0.3759
+ 801-850 |  0.2126
+Combined |  0.9590
