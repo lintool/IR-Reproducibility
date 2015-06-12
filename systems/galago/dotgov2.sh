@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ef
+set -efu
 
 source ../common.sh
 
@@ -9,11 +9,13 @@ if [[ ! -f galago-3.7.tar.gz ]]; then
   wget http://sourceforge.net/projects/lemur/files/lemur/galago-3.7/galago-3.7-bin.tar.gz/download -O galago-3.7.tar.gz
 fi
 
-rm -rf galago-3.7
-tar -xf galago-3.7.tar.gz
-mv galago-5.7-bin galago-3.7
-cd galago-3.7
+if [[ ! -f galago-3.7/bin/galago ]]; then
+  rm -rf galago-3.7
+  tar -xf galago-3.7.tar.gz
+  mv galago-5.7-bin galago-3.7
+fi
 
+cd galago-3.7
 export JAVA_OPTS='-Xmx6g -ea'
 chmod +x bin/galago
 
@@ -30,6 +32,6 @@ do
   python2 ../make_query_json.py $query_file > $query_json # generate title queries
 	run_file=galago${queries}.trecrun
 
-  bin/galago batch-search ${query_json} --requested=1000 > ${run_files}
+  bin/galago batch-search ${query_json} --requested=1000 --index=gov2.galago > ${run_file}
 	../$TREC_EVAL ${qrel_file} ${run_file} > galago${queries}.treceval
 done
