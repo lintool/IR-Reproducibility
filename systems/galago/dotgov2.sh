@@ -9,26 +9,27 @@ if [[ ! -f galago-3.7.tar.gz ]]; then
   wget http://sourceforge.net/projects/lemur/files/lemur/galago-3.7/galago-3.7-bin.tar.gz/download -O galago-3.7.tar.gz
 fi
 
+rm -rf galago-3.7
 tar -xf galago-3.7.tar.gz
 mv galago-5.7-bin galago-3.7
 cd galago-3.7
 
 export JAVA_OPTS='-Xmx6g -ea'
 chmod +x bin/galago
-GALAGO='java -jar '
 
-bin/galago build --inputPath=${GOV2_LOCATION} --indexPath=gov2.galago | tee build_index.log
+# build index if not ready:
+if [[ ! -f gov2.galago/buildManifest.json ]]; then
+  bin/galago build --inputPath=${GOV2_LOCATION} --indexPath=gov2.galago | tee build_index.log
+fi
 
-#for queries in "701-750" "751-800" "801-850"
-#do
-#	query_file=../$TOPICS_QRELS/topics.${queries}.txt
-#	qrel_file=../$TOPICS_QRELS/qrels.${queries}.txt
-#	stat_file=${queries}.search_stats.txt
-#	run_file=$PWD/terrier.${queries}.txt
-#
-#	TERRIER_HEAP_MEM=26g bin/trec_terrier.sh -r -Dtrec.topics=$query_file -Dtrec.results.file=$run_file > $stat_file 2>&1
-#
-#	../$TREC_EVAL ${qrel_file} ${run_file}
-#
-#	#grep 'Total Time to Search' ${stat_file} | sed \$d
-#done
+for queries in "701-750" "751-800" "801-850"
+do
+	query_file=../$TOPICS_QRELS/topics.${queries}.txt
+	qrel_file=../$TOPICS_QRELS/qrels.${queries}.txt
+  query_json=q${queries}.json
+  python2 ../make_query_json.py $query_file > $query_json # generate title queries
+	run_file=galago${queries}.trecrun
+
+  bin/galago batch-search ${query_json} --requested=1000 > ${run_files}
+	../$TREC_EVAL ${qrel_file} ${run_file} > galago${queries}.treceval
+done
