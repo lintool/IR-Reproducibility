@@ -12,16 +12,24 @@ fi
 if [[ ! -f galago-3.7/bin/galago ]]; then
   rm -rf galago-3.7
   tar -xf galago-3.7.tar.gz
-  mv galago-5.7-bin galago-3.7
+  mv ${HACKDIR} galago-3.7
 fi
 
 cd galago-3.7
-export JAVA_OPTS='-Xmx6g -ea'
+export JAVA_OPTS='-Xmx100g -ea'
 chmod +x bin/galago
 
-# build index if not ready:
+# build index if not already:
 if [[ ! -f gov2.galago/buildManifest.json ]]; then
-  bin/galago build --inputPath=${GOV2_LOCATION} --indexPath=gov2.galago | tee build_index.log
+  bin/galago build \
+    --mode=threaded\
+    --distrib=16 \
+    --filetype=trecweb \
+    --nonStemmedPostings=false \
+    --corpus=false \
+    --galagoJobDir=gov2.gjd \
+    --inputPath=${GOV2_LOCATION} \
+    --indexPath=gov2.galago | tee build_index.log
 fi
 
 for queries in "701-750" "751-800" "801-850"
