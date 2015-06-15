@@ -3,19 +3,19 @@ set -efu
 
 source ../common.sh
 
-HACKDIR='galago-5.7-bin' # galago 3.7 was part of Lemur 5.7
+GALAGO='galago-3.8alpha'
+URL="http://ciir.cs.umass.edu/~jfoley/${GALAGO}.tar.gz"
 
-if [[ ! -f galago-3.7.tar.gz ]]; then
-  wget http://sourceforge.net/projects/lemur/files/lemur/galago-3.7/galago-3.7-bin.tar.gz/download -O galago-3.7.tar.gz
+if [[ ! -f ${GALAGO}.tar.gz ]]; then
+  wget ${URL} -O ${GALAGO}.tar.gz
 fi
 
-if [[ ! -f galago-3.7/bin/galago ]]; then
-  rm -rf galago-3.7
-  tar -xf galago-3.7.tar.gz
-  mv ${HACKDIR} galago-3.7
+if [[ ! -f ${GALAGO}/bin/galago ]]; then
+  rm -rf ${GALAGO}
+  tar -xf ${GALAGO}.tar.gz
 fi
 
-cd galago-3.7
+cd ${GALAGO}
 export JAVA_OPTS='-Xmx100g -ea'
 chmod +x bin/galago
 
