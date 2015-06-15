@@ -6,13 +6,13 @@ For the Gov2 experiments, we are currently running the `r3.4xlarge` instance, wi
 After logging in, the instance is first prepped by installing common missing packages:
 
 ```
-sudo apt-get update
-sudo apt-get install emacs24
-sudo apt-get install make
-sudo apt-get install gcc
-sudo apt-get install g++
-sudo apt-get install git
-sudo apt-get install mercurial
+sudo apt-get update -y
+sudo apt-get install emacs24 -y
+sudo apt-get install make -y
+sudo apt-get install gcc -y
+sudo apt-get install g++ -y
+sudo apt-get install git -y
+sudo apt-get install mercurial -y
 ```
 
 After that, the collection is mounted:
