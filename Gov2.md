@@ -50,9 +50,12 @@ ATIRE   | 701-750 |        442ms
 Terrier | 701-750 |        484ms
         | 751-800 |        300ms
         | 801-850 |        337ms
+Galago  | 701-750 |       1077ms
+        | 751-800 |       1813ms
+        | 801-850 |       1026ms
 
 
-The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings.
+The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings. Galago calculates expensive ordered and unordered window features, which explains the extreme difference.
 
 ### Search Effectiveness
 The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
