@@ -15,8 +15,11 @@ System  |  Size
 --------|-----:
 ATIRE   |  13GB
 Terrier | 9.1GB
+Galago  | 45 GB
 
 The substantial size difference between the systems can be probably be explained by the methods of compression enabled by both systems. The ATIRE indexer for example uses variable-byte compression of the docids (after they have been delta encoded), and term frequencies, while the Terrier uses gamma delta-gaps for the docids and unary for the term frequencies.
+
+The substantial size difference demonstrated by Galago is most likely explained by the fact that Galago uses variable-byte compression like ATIRE, except it also by default stores positions in the index, so that phrases might be calculated, and it doesn't do any vocabulary pruning at index time.
 
 The commands run to get these sizes are:
 ```
@@ -31,6 +34,7 @@ System  |          Time
 --------|-------------:
 ATIRE   |    34m 34.17s
 Terrier | 9h 24m 44.35s
+Galago  | 7h < t < 17h
 
 ## Searching
 Two metrics for searching are reported below: the average time to search, and the Mean Average Precision (MAP) of the results.
@@ -47,6 +51,7 @@ Terrier | 701-750 |        484ms
         | 751-800 |        300ms
         | 801-850 |        337ms
 
+
 The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings.
 
 ### Search Effectiveness
@@ -60,6 +65,9 @@ ATIRE   | 701-750 | 0.2397
 Terrier | 701-750 | 0.2429
         | 751-800 | 0.3081
         | 801-850 | 0.2640
+Galago  | 701-750 | 0.2726
+        | 751-800 | 0.2911
+        | 801-850 | 0.3161
 
 There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.
 
