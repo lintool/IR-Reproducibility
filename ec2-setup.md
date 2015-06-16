@@ -6,13 +6,15 @@ For the Gov2 experiments, we are currently running the `r3.4xlarge` instance, wi
 After logging in, the instance is first prepped by installing common missing packages:
 
 ```
-sudo apt-get update -y
-sudo apt-get install emacs24 -y
-sudo apt-get install make -y
-sudo apt-get install gcc -y
-sudo apt-get install g++ -y
-sudo apt-get install git -y
-sudo apt-get install mercurial -y
+sudo apt-add-repository -y ppa:webupd8team/java
+sudo apt-get -y update
+sudo apt-get -y install oracle-java8-installer
+sudo apt-get -y install emacs24
+sudo apt-get -y install make
+sudo apt-get -y install gcc
+sudo apt-get -y install g++
+sudo apt-get -y install git
+sudo apt-get -y install mercurial
 ```
 
 After that, the collection is mounted:
