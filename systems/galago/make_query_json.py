@@ -22,9 +22,9 @@ with open(sys.argv[1]) as fp:
         if line.startswith('<num>'):
             number = line.split('Number: ')[1].strip()
         if line.startswith('<title>'):
-            query = line[len('<title>'):].strip()
+            query = line[len('<title>'):].strip().replace(".", "")
             if not query:
-                query = next(fp).strip()
+                query = next(fp).strip().replace(".","")
         #print line;
 
 queries_json = {'queries': queries}
