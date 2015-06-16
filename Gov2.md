@@ -60,6 +60,9 @@ ATIRE   | 701-750 | 0.2397
 Terrier | 701-750 | 0.2429
         | 751-800 | 0.3081
         | 801-850 | 0.2640
+Galago  | 701-750 | 0.2726
+        | 751-800 | 0.2911
+        | 801-850 | 0.3161
 
 There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.
 
