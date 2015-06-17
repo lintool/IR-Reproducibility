@@ -10,7 +10,7 @@ version=5.4
 
 source ../common.sh
 
-#export GOV2_LOCATION=/mnt/extra/text/GOV2/GX000/
+WORK_DIR=/media/workspace
 
 if [[ ! -f mg4j-big-$version-bin.tar.gz ||  ! -f mg4j-big-deps.tar.gz ]]; then
 	curl http://mg4j.di.unimi.it/mg4j-big-$version-bin.tar.gz >mg4j-big-$version-bin.tar.gz
@@ -26,14 +26,14 @@ if false; then
 
 java -Xmx30G -server \
 	it.unimi.di.big.mg4j.document.TRECDocumentCollection \
-		-f HtmlDocumentFactory -p encoding=iso-8859-1 -z /media/workspace/gov2.collection $(find $GOV2_LOCATION -type f)
+		-f HtmlDocumentFactory -p encoding=iso-8859-1 -z $WORK_DIR/gov2.collection $(find $GOV2_LOCATION -type f)
 
 java -Xmx30G -server \
-	it.unimi.di.big.mg4j.tool.IndexBuilder -s 2000000 -S /media/workspace/gov2.collection -t EnglishStemmer -I text -c POSITIONS:NONE /media/workspace/gov2
+	it.unimi.di.big.mg4j.tool.IndexBuilder -s 2000000 -S $WORK_DIR/gov2.collection -t EnglishStemmer -I text -c POSITIONS:NONE $WORK_DIR/gov2
 
 else
 
-rm -f /media/workspace/gov2-split-*-text@*.* /media/workspace/gov2-split-*.titles split-*
+rm -f $WORK_DIR/gov2-split-*-text@*.* $WORK_DIR/gov2-split-*.titles split-*
 
 TMP=$(mktemp)
 find $GOV2_LOCATION -type f | sort >$TMP
@@ -44,10 +44,10 @@ split -n l/16 $TMP split-
 
 	java -Xmx4G -server \
 		it.unimi.di.big.mg4j.document.TRECDocumentCollection \
-			-z -f HtmlDocumentFactory -p encoding=iso-8859-1 /media/workspace/gov2-$split.collection $(cat $split)
+			-z -f HtmlDocumentFactory -p encoding=iso-8859-1 $WORK_DIR/gov2-$split.collection $(cat $split)
 
 	java -Xmx4G -server \
-		it.unimi.di.big.mg4j.tool.Scan -s 2000000 -S /media/workspace/gov2-$split.collection -t EnglishStemmer -I text -c COUNTS /media/workspace/gov2-$split
+		it.unimi.di.big.mg4j.tool.Scan -b 1Mi -s 2000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text -c COUNTS $WORK_DIR/gov2-$split
 
 )& 
 
@@ -55,12 +55,12 @@ done
 
 wait)
 
-java -server it.unimi.di.big.mg4j.tool.Concatenate -c POSITIONS:NONE /media/workspace/gov2-text \
-	$(find /media/workspace -iname gov2-split-\*-text@\*.sizes | sort | sed s/.sizes//)
-cat $(find /media/workspace -iname gov2-split-\*.titles | sort) >/media/workspace/gov2.titles
+java -server it.unimi.di.big.mg4j.tool.Concatenate -c POSITIONS:NONE $WORK_DIR/gov2-text \
+	$(find $WORK_DIR -iname gov2-split-\*-text@\*.sizes | sort | sed s/.sizes//)
+cat $(find $WORK_DIR -iname gov2-split-\*.titles | sort) >$WORK_DIR/gov2.titles
 
-java -server it.unimi.dsi.sux4j.mph.MWHCFunction -s 32 /media/workspace/gov2-text.mwhc /media/workspace/gov2-text.terms
+java -server it.unimi.dsi.sux4j.mph.MWHCFunction -s 32 $WORK_DIR/gov2-text.mwhc $WORK_DIR/gov2-text.terms
 
-java -server it.unimi.dsi.sux4j.util.SignedFunctionStringMap /media/workspace/gov2-text.mwhc /media/workspace/gov2-text.termmap
+java -server it.unimi.dsi.sux4j.util.SignedFunctionStringMap $WORK_DIR/gov2-text.mwhc $WORK_DIR/gov2-text.termmap
 
 fi

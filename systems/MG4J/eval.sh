@@ -3,6 +3,8 @@ set -e
 
 source ../common.sh
 
+WORK_DIR=/media/workspace
+
 for queries in "701-750" "751-800" "801-850"
 do
 	topics=$TOPICS_QRELS/topics.$queries.txt
@@ -15,7 +17,7 @@ do
 	# Generate input files
 	cat <(echo -e "\$score BM25Scorer(1.2,0.3)\n\$limit 1000\n\$divert $run\n\$mplex off") <(./genqueries.sh $(echo ${queries%-*}) <titles.$queries.txt) >in.$queries.txt
 
-	java -server it.unimi.di.big.mg4j.query.Query /media/workspace/gov2-text -T /media/workspace/gov2.titles <in.$queries.txt 2>$err
+	java -server it.unimi.di.big.mg4j.query.Query $WORK_DIR/gov2-text -T $WORK_DIR/gov2.titles <in.$queries.txt 2>$err
 
 	./trec_eval $qrels $run >eval.$queries.txt
 
