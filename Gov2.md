@@ -45,7 +45,7 @@ The ATIRE system was searched to completion, and while it also supports quantizi
 
 The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
 
-System         |   ATIRE | Terrier | Galago | MG4J      |       
+System         |   ATIRE | Terrier | Galago | MG4J      | MG4J      
 ---------------|--------:|--------:|-------:|----------:|-------:
 *Model*        |      ?? |     ??  |     ?? | "Model B" |  BM25 
 Topics 701-750 |  0.2397 |  0.2429 | 0.2726 |    0.2469 | 0.2640
