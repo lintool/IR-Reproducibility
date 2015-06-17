@@ -5,7 +5,7 @@ source ../common.sh
 
 GOV2_FILES=$(find $GOV2_LOCATION -mindepth 1 -maxdepth 1 -type d -name 'GX*' -printf '%p/*.gz ')
 
-hg clone http://atire.org/hg/atire
+hg clone http://atire.org/hg/atire -r rigor-2015
 
 cd atire
 
