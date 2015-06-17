@@ -43,14 +43,31 @@ The ATIRE system was searched to completion, and while it also supports quantizi
 
 ### Search Effectiveness
 
-The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems. The BM25 column
-shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
+The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
 
-Queries |   ATIRE | Terrier | Galago |   MG4J |  BM25 |
---------|---------|---------|--------|--------|-------:
-701-750 |  0.2397 |  0.2429 | 0.2726 | 0.2469 | 0.2640
-751-800 |  0.2972 |  0.3081 | 0.2911 | 0.3207 | 0.3336
-801-850 |  0.2791 |  0.2640 | 0.3161 | 0.3003 | 0.2999
+System         |   ATIRE | Terrier | Galago | MG4J      |       
+---------------|--------:|--------:|-------:|----------:|-------:
+*Model*        |      ?? |     ??  |     ?? | "Model B" |  BM25 
+Topics 701-750 |  0.2397 |  0.2429 | 0.2726 |    0.2469 | 0.2640
+Topics 751-800 |  0.2972 |  0.3081 | 0.2911 |    0.3207 | 0.3336
+Topics 801-850 |  0.2791 |  0.2640 | 0.3161 |    0.3003 | 0.2999
+
+**ATIRE**
+
++ Add some description of the ATIRE models
+
+**Terrier**
+
++ Add some description of the Terrier models
+
+**Terrier**
+
++ Add some description of the Galago models
+
+**MG4J**
+
++ Model B is described [here](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
++ The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.
 
