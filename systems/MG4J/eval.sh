@@ -1,7 +1,11 @@
 #!/bin/bash
 set -e
 
+# Runs the MG4J k-out-of-n queries and perform evaluation
+
 source ../common.sh
+
+export CLASSPATH=$(find -iname \*.jar | paste -d: -s)
 
 WORK_DIR=/media/workspace
 
@@ -22,5 +26,4 @@ do
 	./trec_eval $qrels $run >eval.$queries.txt
 
 	grep ms\; $err | cut -d' ' -f6 | paste -d+ -s | bc -l >time.$queries.txt
-	#grep 'Total Time to Search' ${stat_file} | sed \$d
 done

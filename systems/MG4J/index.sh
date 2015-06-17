@@ -22,16 +22,22 @@ tar -zxvf mg4j-big-deps.tar.gz
 
 export CLASSPATH=$(find -iname \*.jar | paste -d: -s)
 
+starttime=$(date +%s)
+
 if false; then
 
-java -Xmx30G -server \
+# Sequential
+
+java -Xmx8G -server \
 	it.unimi.di.big.mg4j.document.TRECDocumentCollection \
 		-f HtmlDocumentFactory -p encoding=iso-8859-1 -z $WORK_DIR/gov2.collection $(find $GOV2_LOCATION -type f)
 
-java -Xmx30G -server \
+java -Xmx8G -server \
 	it.unimi.di.big.mg4j.tool.IndexBuilder -s 2000000 -S $WORK_DIR/gov2.collection -t EnglishStemmer -I text -c POSITIONS:NONE $WORK_DIR/gov2
 
 else
+
+# Parallel
 
 rm -f $WORK_DIR/gov2-split-*-text@*.* $WORK_DIR/gov2-split-*.titles split-*
 
@@ -42,12 +48,12 @@ split -n l/16 $TMP split-
 (for split in split-*; do
 (
 
-	java -Xmx4G -server \
+	java -Xmx8G -server \
 		it.unimi.di.big.mg4j.document.TRECDocumentCollection \
 			-z -f HtmlDocumentFactory -p encoding=iso-8859-1 $WORK_DIR/gov2-$split.collection $(cat $split)
 
-	java -Xmx4G -server \
-		it.unimi.di.big.mg4j.tool.Scan -b 1Mi -s 2000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text -c COUNTS $WORK_DIR/gov2-$split
+	java -Xmx8G -server \
+		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text -c COUNTS $WORK_DIR/gov2-$split
 
 )& 
 
@@ -64,3 +70,7 @@ java -server it.unimi.dsi.sux4j.mph.MWHCFunction -s 32 $WORK_DIR/gov2-text.mwhc 
 java -server it.unimi.dsi.sux4j.util.SignedFunctionStringMap $WORK_DIR/gov2-text.mwhc $WORK_DIR/gov2-text.termmap
 
 fi
+
+endtime=$(date +%s)
+
+echo "Indexing time: $((endtime-starttime))s"
