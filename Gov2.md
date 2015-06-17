@@ -25,50 +25,50 @@ du -h terrier/terrier-4.0/var/index/
 du -h ATIRE/atire/index.aspt
 ```
 
-**TODO:** Explain why the Galago index is so much bigger?
+## Retrieval
 
-## Searching
-Two metrics for searching are reported below: the average time to search, and the Mean Average Precision (MAP) of the results.
-
-### Search Time
-The table below shows the average search time across all the queries by query set. The search times were taken from the internal reporting for each query of each of the systems.
-
-Queries |   ATIRE | Terrier |   Galago  | MG4J |
---------|---------|---------|-----------|------:
-701-750 |   442ms |   484ms |  1077ms   |  30ms
-751-800 |   435ms |   300ms |  1813ms   |  43ms
-801-850 |   430ms |   337ms |  1026ms   |  30ms
-
-The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings. Galago calculates expensive ordered and unordered window features, which explains the extreme difference.
-
-### Search Effectiveness
-
-The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
-
-System         |   ATIRE | Terrier | Galago | MG4J      | MG4J      
----------------|--------:|--------:|-------:|----------:|-------:
-*Model*        |      ?? |     ??  |     ?? | "Model B" |  BM25 
-Topics 701-750 |  0.2397 |  0.2429 | 0.2726 |    0.2469 | 0.2640
-Topics 751-800 |  0.2972 |  0.3081 | 0.2911 |    0.3207 | 0.3336
-Topics 801-850 |  0.2791 |  0.2640 | 0.3161 |    0.3003 | 0.2999
+### Retrieval Models
 
 **ATIRE**
 
-+ Add some description of the ATIRE models
++ **TODO:** Add some description of the ATIRE models
 
 **Terrier**
 
-+ Add some description of the Terrier models
++ **TODO:** Add some description of the Terrier models
 
 **Terrier**
 
-+ Add some description of the Galago models
++ **TODO:** Add some description of the Galago models
 
 **MG4J**
 
 + Model B is described [here](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
+### Retrieval Latency
+
+The table below shows the average search time across all the queries by query set. The search times were taken from the internal reporting for each query of each of the systems.
+
+System         |   ATIRE | Terrier | Galago | MG4J    | MG4J
+---------------|--------:|--------:|-------:|--------:|-------:
+*Model*        |      ?? |     ??  |     ?? | Model B |   BM25
+Topics 701-750 |   442ms |   484ms | 1077ms |    30ms |  344ms
+Topics 751-800 |   435ms |   300ms | 1813ms |    43ms |  248ms
+Topics 801-850 |   430ms |   337ms | 1026ms |    30ms |  261ms
+
+The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings. Galago calculates expensive ordered and unordered window features, which explains the extreme difference.
+
+### Retrieval Effectiveness
+
+The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
+
+System         |   ATIRE | Terrier | Galago | MG4J    | MG4J
+---------------|--------:|--------:|-------:|--------:|-------:
+*Model*        |      ?? |     ??  |     ?? | Model B |   BM25
+Topics 701-750 |  0.2397 |  0.2429 | 0.2726 |  0.2469 | 0.2640
+Topics 751-800 |  0.2972 |  0.3081 | 0.2911 |  0.3207 | 0.3336
+Topics 801-850 |  0.2791 |  0.2640 | 0.3161 |  0.3003 | 0.2999
 
 **TODO:** Update statistical analyses below:
 
