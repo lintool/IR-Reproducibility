@@ -9,7 +9,7 @@ More detailed information about the ATIRE script can be found [here](./tree/mast
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index.
 
 System  |   Size |         Time
---------|--------|--------------:
+--------|-------:|--------------:
 ATIRE   |  13 GB | 34m
 Terrier | 9.1 GB | 9h 24m
 Galago  |  45 GB | 7h < t < 17h
@@ -68,6 +68,9 @@ Topics 801-850 |  0.2791 |  0.2640 | 0.3161 |    0.3003 | 0.2999
 
 + Model B is described [here](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
+
+
+**TODO:** Update statistical analyses below:
 
 There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.
 
