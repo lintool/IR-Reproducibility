@@ -1,10 +1,11 @@
 import sys, json
 
+operator = sys.argv[1]
 queries = []
 inTopic = False
 number=None
 query = None
-with open(sys.argv[1]) as fp:
+with open(sys.argv[2]) as fp:
     for line in fp:
 
         if not inTopic:
@@ -15,7 +16,7 @@ with open(sys.argv[1]) as fp:
         if line.startswith('</top>'):
             queries += [{
                 'number': number, 
-                'text': '#sdm('+query.lower()+')'
+                'text': '#'+operator+'('+query.lower()+')'
                 }]
             inTopic = False
             continue
