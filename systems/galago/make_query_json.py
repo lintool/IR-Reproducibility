@@ -14,9 +14,10 @@ with open(sys.argv[2]) as fp:
             continue
         # inTopic=True
         if line.startswith('</top>'):
+            terms = ['#dirichlet(%s)' % x for x in query.split()]
             queries += [{
                 'number': number, 
-                'text': '#'+operator+'('+query.lower()+')'
+                'text': '#'+operator+'('+' '.join(terms)+')'
                 }]
             inTopic = False
             continue
