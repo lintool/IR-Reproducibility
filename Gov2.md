@@ -8,12 +8,13 @@ More detailed information about the ATIRE script can be found [here](./tree/mast
 ## Indexing
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index.
 
-System  |   Size |         Time
---------|-------:|--------------:
-ATIRE   |  13 GB | 34m
-Terrier | 9.1 GB | 9h 24m
-Galago  |  45 GB | 7h < t < 17h
-MG4J    | 7.8 GB | 1h 27m
+System  | Type      |   Size |         Time
+--------|-----------|--------|--------------:
+ATIRE   | Count     |  13 GB | 34m
+Terrier | Count     | 9.1 GB | 9h 24m
+Galago  | Count     | 14 GB  | 6h 32m
+Galago  | Positions | 45 GB  | 7h < t < 17h
+MG4J    | Count     | 7.8 GB | 1h 27m
 
 The substantial size difference between the systems can be probably be explained by the methods of compression enabled by both systems. The ATIRE indexer for example uses variable-byte compression of the docids (after they have been delta encoded), and term frequencies, while the Terrier uses gamma delta-gaps for the docids and unary for the term frequencies.
 
