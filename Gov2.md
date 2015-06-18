@@ -8,16 +8,15 @@ More detailed information about the ATIRE script can be found [here](./tree/mast
 ## Indexing
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index.
 
-System  |   Size |         Time
---------|-------:|--------------:
-ATIRE   |  13 GB | 34m
-Terrier | 9.1 GB | 9h 24m
-Galago  |  45 GB | 7h < t < 17h
-MG4J    | 7.8 GB | 1h 27m
+System  | Type      |   Size |         Time
+--------|-----------|--------|--------------:
+ATIRE   | Count     |  13 GB | 34m
+Terrier | Count     | 9.1 GB | 9h 24m
+Galago  | Count     | 14 GB  | 6h 32m
+Galago  | Positions | 45 GB  | 7h &lt; t &lt; 17h
+MG4J    | Count     | 7.8 GB | 1h 27m
 
 The substantial size difference between the systems can be probably be explained by the methods of compression enabled by both systems. The ATIRE indexer for example uses variable-byte compression of the docids (after they have been delta encoded), and term frequencies, while the Terrier uses gamma delta-gaps for the docids and unary for the term frequencies.
-
-The substantial size difference demonstrated by Galago is most likely explained by the fact that Galago uses variable-byte compression like ATIRE, except it also by default stores positions in the index, so that phrases might be calculated, and it doesn't do any vocabulary pruning at index time.
 
 The commands run to get these sizes are:
 ```
@@ -37,9 +36,12 @@ du -h ATIRE/atire/index.aspt
 
 + **TODO:** Add some description of the Terrier models
 
-**Terrier**
+**Galago**
 
-+ **TODO:** Add some description of the Galago models
++ QL is our baseline query-likelihood (bag-of-words) model with dirichlet smoothing and default mu parameters.
++ SDM is our implemntation of the Markov-Random-Field model for Term Dependencies (Metzler & Croft 2005)
+    + The features used are: unigrams, bigrams, and unordered windows of size 8.
++ Both of these models require parameter tuning for best performance. No stopping was done for these models.
 
 **MG4J**
 
@@ -50,25 +52,28 @@ du -h ATIRE/atire/index.aspt
 
 The table below shows the average search time across all the queries by query set. The search times were taken from the internal reporting for each query of each of the systems.
 
-System         |   ATIRE | Terrier | Galago | MG4J    | MG4J
----------------|--------:|--------:|-------:|--------:|-------:
-*Model*        |      ?? |     ??  |     ?? | Model B |   BM25
-Topics 701-750 |   442ms |   484ms | 1077ms |    30ms |  344ms
-Topics 751-800 |   435ms |   300ms | 1813ms |    43ms |  248ms
-Topics 801-850 |   430ms |   337ms | 1026ms |    30ms |  261ms
+System         |   ATIRE | Terrier | Galago | Galago | MG4J    | MG4J
+---------------|--------:|--------:|-------:|-------:|--------:|-------:
+*Model*        |      ?? |     ??  |    QL  |   SDM  | Model B |   BM25
+Topics 701-750 |   442ms |   484ms | 771ms  | 1077ms |    30ms |  344ms
+Topics 751-800 |   435ms |   300ms | 821ms  | 1813ms |    43ms |  248ms
+Topics 801-850 |   430ms |   337ms | 650ms  | 1026ms |    30ms |  261ms
 
-The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings. Galago calculates expensive ordered and unordered window features, which explains the extreme difference.
+The ATIRE system was searched to completion, and while it also supports quantizing the scores at indexing time this option was not enabled for these runs. These choices may be the reasoning for the differences in timings. 
+
+** Galago **
+Galago's SDM calculates expensive ordered and unordered window features, which explains part of the extreme difference. Even Galago's QL, simple unigram model is quite slow in comparison to other engines. We are investigating the bottleneck.
 
 ### Retrieval Effectiveness
 
 The systems generated run files to be consumed by the `trec_eval` tool. Each system generated the top 1000 results for each query, and the table below shows the MAP scores for the systems.
 
-System         |   ATIRE | Terrier | Galago | MG4J    | MG4J
----------------|--------:|--------:|-------:|--------:|-------:
-*Model*        |      ?? |     ??  |     ?? | Model B |   BM25
-Topics 701-750 |  0.2397 |  0.2429 | 0.2726 |  0.2469 | 0.2640
-Topics 751-800 |  0.2972 |  0.3081 | 0.2911 |  0.3207 | 0.3336
-Topics 801-850 |  0.2791 |  0.2640 | 0.3161 |  0.3003 | 0.2999
+System         |   ATIRE | Terrier | Galago | Galago | MG4J    | MG4J
+---------------|--------:|--------:|-------:|-------:|--------:|-------:
+*Model*        |      ?? |     ??  |   QL   |  SDM   | Model B |   BM25
+Topics 701-750 |  0.2397 |  0.2429 | 0.2776 | 0.2726 |  0.2469 | 0.2640
+Topics 751-800 |  0.2972 |  0.3081 | 0.2937 | 0.2911 |  0.3207 | 0.3336
+Topics 801-850 |  0.2791 |  0.2640 | 0.2845 | 0.3161 |  0.3003 | 0.2999
 
 **TODO:** Update statistical analyses below:
 
