@@ -14,7 +14,7 @@ MG4J    | Count             | 7.8 GB |       1h 27m
 Terrier | Count             | 9.1 GB |       9h 24m
 
 ###### ATIRE
-+ The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found [here](http://www.cs.otago.ac.nz/homepages/andrew/papers/2013-6.pdf).
++ The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
   + The quantization is performed single threaded although easily parallelized.
 + Both indexes were stemmed using an s-stripping stemmer.
 + Both indexes were pruned of SGML tags, used for typically unused search time features.
@@ -40,12 +40,12 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 
 ###### Galago
 + QL is our baseline query-likelihood (bag-of-words) model with dirichlet smoothing and default mu parameters.
-+ SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler & Croft 2005)](http://www-dev.ccs.neu.edu/home/yzsun/classes/2014Spring_CS7280/Papers/Probabilistic_Models/A%20Markov%20Random%20Field%20Model%20for%20Term%20Dependencies.pdf).
++ SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler and Croft, 2005)](http://dl.acm.org/citation.cfm?id=1076115).
     + The features used are: unigrams, bigrams, and unordered windows of size 8.
 + Both of these models require parameter tuning for best performance. No stopping was done for these models.
 
 ###### MG4J
-+ Model B is described [here](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
++ Model B is described in [Boldi et al. (2006)](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 ###### Terrier
@@ -54,15 +54,15 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
 
-System  | Model          | Topics 701-750 | Topics 751-800 | Topics 801-850
-:-------|:---------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           |          149ms |          253ms |          220ms
-ATIRE   | Quantized BM25 |           74ms |           78ms |           69ms
-Galago  | QL             |          771ms |          821ms |          650ms
-Galago  | SDM            |         1077ms |         1813ms |         1026ms
-MG4J    | BM25           |          344ms |          248ms |          261ms
-MG4J    | Model B        |           30ms |           43ms |           30ms
-Terrier | *???*          |          484ms |          300ms |          337ms
+System  | Model          | Index             | Topics 701-750 | Topics 751-800 | Topics 801-850
+:-------|:---------------|-------------------|---------------:|---------------:|--------------:
+ATIRE   | BM25           | Count             |          149ms |          253ms |          220ms
+ATIRE   | Quantized BM25 | Count + Quantized |           74ms |           78ms |           69ms
+Galago  | QL             | Count             |          771ms |          821ms |          650ms
+Galago  | SDM            | Positions         |         1077ms |         1813ms |         1026ms
+MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
+MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
+Terrier | *???*          | Count             |          484ms |          300ms |          337ms
 
 ##### Extra Notes
 ###### Galago
@@ -71,26 +71,16 @@ Galago's SDM calculates expensive ordered and unordered window features, which e
 ### Retrieval Effectiveness
 The systems generated run files to be consumed by the `trec_eval` tool. Each system was evaluated on the top 1000 results for each query, and the table below shows the MAP scores for the systems.
 
-System  | Model          | Topics 701-750 | Topics 751-800 | Topics 801-850
-:-------|:---------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           |         0.2616 |         0.3106 |         0.2978
-ATIRE   | Quantized BM25 |         0.2361 |         0.2952 |         0.2844
-Galago  | QL             |         0.2776 |         0.2937 |         0.2845
-Galago  | SDM            |         0.2726 |         0.2911 |         0.3161
-MG4J    | BM25           |         0.2640 |         0.3336 |         0.2999
-MG4J    | Model B        |         0.2469 |         0.3207 |         0.3003
-Terrier | *???*          |         0.2429 |         0.3081 |         0.2640
+System  | Model          | Index             |Topics 701-750 | Topics 751-800 | Topics 801-850
+:-------|:---------------|-------------------|--------------:|---------------:|--------------:
+ATIRE   | BM25           | Count             |        0.2616 |         0.3106 |         0.2978
+ATIRE   | Quantized BM25 | Count + Quantized |        0.2361 |         0.2952 |         0.2844
+Galago  | QL             | Count             |        0.2776 |         0.2937 |         0.2845
+Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
+MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
+MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
+Terrier | *???*          | Count             |        0.2429 |         0.3081 |         0.2640
 
 ##### Statistical Analysis
-**TODO:** Update statistical analyses below:
 
-~~There are negligible differences between these systems for MAP, with Terrier performing better on queries 701-750 and 751-800, and ATIRE better on queries 801-850. These negligible differences hold true for the other metrics reported by the `trec_eval` tool.~~
-
-~~The table below shows the p-value when performing a paired two-tailed t-test between the ATIRE and Terrier systems on the per-query AP scores.~~
-
-Queries  | p-value
----------|-------:
- 701-750 |  0.8006
- 751-800 |  0.3759
- 801-850 |  0.2126
-Combined |  0.9590
+**TODO:** Need to run statistical analyses.
