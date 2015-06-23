@@ -9,25 +9,22 @@ import org.apache.lucene.benchmark.byTask.feeds.NoMoreDataException;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
 import org.apache.lucene.benchmark.byTask.utils.Config;
 import org.apache.solr.client.solrj.SolrServerException;
-import org.apache.solr.client.solrj.impl.CloudSolrClient;
+import org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrClient;
 import org.apache.solr.common.SolrInputDocument;
 
 
 public class Gov2Ingester {
   public static void main(String[] args) throws FileNotFoundException, IOException {
-    if(args.length != 3) {
-      System.out.println("Usage: <parser> datadir zkhost collection");
+    if(args.length != 2) {
+      System.out.println("Usage: <parser> datadir solrUrl");
       System.exit(1);
     }
     String dataDir = args[0];
-    String zkHost = args[1];
-    String coll = args[2];
+    String solrUrl = args[1];
     
     long start = System.currentTimeMillis();
 
-    CloudSolrClient css = new CloudSolrClient(zkHost);
-    css.setDefaultCollection(coll);
-    css.setParallelUpdates(true);
+    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 8);
 
     try (TrecContentSource tcs = new TrecContentSource()) {
       Properties props = new Properties();
