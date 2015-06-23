@@ -27,6 +27,7 @@ public class Gov2Ingester {
 
     CloudSolrClient css = new CloudSolrClient(zkHost);
     css.setDefaultCollection(coll);
+    css.setParallelUpdates(true);
 
     try (TrecContentSource tcs = new TrecContentSource()) {
       Properties props = new Properties();
@@ -55,7 +56,7 @@ public class Gov2Ingester {
 
           if (counter%5000==0) {
             css.commit();
-            System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\ttime: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds");
+            System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000);
             batchStartTime = System.currentTimeMillis();
           }
         } catch (IOException ex) {
