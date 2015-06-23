@@ -56,7 +56,7 @@ public class Gov2Ingester {
 
           if (counter%5000==0) {
             css.commit();
-            System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000);
+            System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000+" seconds");
             batchStartTime = System.currentTimeMillis();
           }
         } catch (IOException ex) {
