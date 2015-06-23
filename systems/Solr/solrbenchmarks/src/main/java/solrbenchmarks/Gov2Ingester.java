@@ -24,7 +24,7 @@ public class Gov2Ingester {
     
     long start = System.currentTimeMillis();
 
-    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 8);
+    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 16);
 
     try (TrecContentSource tcs = new TrecContentSource()) {
       Properties props = new Properties();
@@ -51,7 +51,7 @@ public class Gov2Ingester {
           doc.setField("body_t", dd.getBody());
           css.add(doc);
 
-          if (counter%5000==0) {
+          if (counter%10000==0) {
             css.commit();
             System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000+" seconds");
             batchStartTime = System.currentTimeMillis();

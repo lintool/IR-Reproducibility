@@ -14,15 +14,15 @@ bin/solr -c
 bin/solr -c -z localhost:9983 -p 8984
 bin/solr -c -z localhost:9983 -p 8985
 bin/solr -c -z localhost:9983 -p 8986
-bin/solr -c -z localhost:9983 -p 8987
-bin/solr -c -z localhost:9983 -p 8988
-bin/solr -c -z localhost:9983 -p 8989
-bin/solr -c -z localhost:9983 -p 8990
+#bin/solr -c -z localhost:9983 -p 8987
+#bin/solr -c -z localhost:9983 -p 8988
+#bin/solr -c -z localhost:9983 -p 8989
+#bin/solr -c -z localhost:9983 -p 8990
 
 
 server/scripts/cloud-scripts/zkcli.sh -cmd upconfig -zkhost localhost:9983 -confname dotgov2 -solrhome server/solr -confdir ../conf
 
-bin/solr create -c dotgov2 -n dotgov2 -shards 16
+bin/solr create -c dotgov2 -n dotgov2 -shards 8
 
 cd ..
 echo "Starting indexing..."
