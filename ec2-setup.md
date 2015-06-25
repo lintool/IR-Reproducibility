@@ -15,6 +15,7 @@ sudo apt-get -y install gcc
 sudo apt-get -y install g++
 sudo apt-get -y install git
 sudo apt-get -y install mercurial
+sudo apt-get -y install zlibc zlib1g zlib1g-dev
 ```
 
 After that, the collection is mounted:
