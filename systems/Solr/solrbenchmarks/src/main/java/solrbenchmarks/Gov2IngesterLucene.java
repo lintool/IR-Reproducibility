@@ -2,30 +2,39 @@ package solrbenchmarks;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.Properties;
-
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.benchmark.byTask.feeds.DocData;
 import org.apache.lucene.benchmark.byTask.feeds.NoMoreDataException;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
 import org.apache.lucene.benchmark.byTask.utils.Config;
-import org.apache.solr.client.solrj.SolrServerException;
-import org.apache.solr.client.solrj.impl.ConcurrentUpdateSolrClient;
-import org.apache.solr.common.SolrInputDocument;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.Field.Store;
+import org.apache.lucene.document.StringField;
+import org.apache.lucene.document.TextField;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;
 
 
-public class Gov2Ingester {
+public class Gov2IngesterLucene {
   public static void main(String[] args) throws FileNotFoundException, IOException {
     if(args.length != 2) {
-      System.out.println("Usage: <parser> datadir solrUrl");
+      System.out.println("Usage: <parser> datadir luceneDir");
       System.exit(1);
     }
     String dataDir = args[0];
-    String solrUrl = args[1];
+    String luceneDir = args[1];
     
     long start = System.currentTimeMillis();
 
-    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 8);
-
+    Directory dir = FSDirectory.open(Paths.get(luceneDir));
+    StandardAnalyzer analyzer = new StandardAnalyzer();
+    IndexWriterConfig conf = new IndexWriterConfig(analyzer);
+    IndexWriter iw = new IndexWriter(dir, conf);
+    
     try (TrecContentSource tcs = new TrecContentSource()) {
       Properties props = new Properties();
       props.setProperty("print.props", "false");
@@ -45,14 +54,14 @@ public class Gov2Ingester {
           counter++;
           dd = tcs.getNextDocData(dd);
 
-          SolrInputDocument doc = new SolrInputDocument();
-          doc.setField("id", dd.getName());
-          doc.setField("title_t", dd.getTitle());
-          doc.setField("body_t", dd.getBody());
-          css.add(doc);
+          Document doc = new Document();
+          doc.add(new StringField("docname", dd.getName(), Store.YES));
+          doc.add(new TextField("title", dd.getTitle(), Store.YES));
+          doc.add(new TextField("body", dd.getBody(), Store.YES));
+          iw.addDocument(doc);
 
           if (counter%10000==0) {
-            css.commit();
+            iw.commit();
             System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000+" seconds");
             batchStartTime = System.currentTimeMillis();
           }
@@ -72,14 +81,14 @@ public class Gov2Ingester {
 
     } finally {
       try {
-        css.commit();
-      } catch (SolrServerException e) {
+        iw.commit();
+      } catch (Exception e) {
         e.printStackTrace();
       }
       
       System.out.println("Time: "+(System.currentTimeMillis()-start)/1000+" seconds");
 
-      css.close();
+      iw.close();
     }
   }
 }
