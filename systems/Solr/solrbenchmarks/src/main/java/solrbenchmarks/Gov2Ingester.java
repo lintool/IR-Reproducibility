@@ -24,7 +24,7 @@ public class Gov2Ingester {
     
     long start = System.currentTimeMillis();
 
-    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 8);
+    ConcurrentUpdateSolrClient css = new ConcurrentUpdateSolrClient(solrUrl, 32000, 16);
 
     try (TrecContentSource tcs = new TrecContentSource()) {
       Properties props = new Properties();

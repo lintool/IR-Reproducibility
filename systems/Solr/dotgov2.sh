@@ -14,19 +14,19 @@ bin/solr -c
 bin/solr -c -z localhost:9983 -p 8984
 bin/solr -c -z localhost:9983 -p 8985
 bin/solr -c -z localhost:9983 -p 8986
-bin/solr -c -z localhost:9983 -p 8987
-bin/solr -c -z localhost:9983 -p 8988
-bin/solr -c -z localhost:9983 -p 8989
-bin/solr -c -z localhost:9983 -p 8990
+#bin/solr -c -z localhost:9983 -p 8987
+#bin/solr -c -z localhost:9983 -p 8988
+#bin/solr -c -z localhost:9983 -p 8989
+#bin/solr -c -z localhost:9983 -p 8990
 
 
 server/scripts/cloud-scripts/zkcli.sh -cmd upconfig -zkhost localhost:9983 -confname dotgov2 -solrhome server/solr -confdir ../conf
 
-bin/solr create -c dotgov2 -n dotgov2 -shards 16
+bin/solr create -c dotgov2 -n dotgov2 -shards 8
 
 cd ..
 echo "Starting indexing..."
-java -cp .:solrbenchmarks/target/solrbenchmarks-0.0.1-SNAPSHOT-jar-with-dependencies.jar solrbenchmarks.Gov2Ingester $GOV2_LOCATION/GX000 localhost:9983 dotgov2
+java -cp .:solrbenchmarks/target/solrbenchmarks-0.0.1-SNAPSHOT-jar-with-dependencies.jar solrbenchmarks.Gov2Ingester $GOV2_LOCATION http://localhost:8983/solr/dotgov2
 
 echo "Stopping Solr..."
 cd solr-5.2.1
