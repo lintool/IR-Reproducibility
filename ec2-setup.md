@@ -10,11 +10,8 @@ sudo apt-add-repository -y ppa:webupd8team/java
 sudo apt-get -y update
 sudo apt-get -y install oracle-java8-installer
 sudo apt-get -y install emacs24
-sudo apt-get -y install make
-sudo apt-get -y install gcc
-sudo apt-get -y install g++
-sudo apt-get -y install git
-sudo apt-get -y install mercurial
+sudo apt-get -y install make gcc g++
+sudo apt-get -y install git mercurial
 sudo apt-get -y install zlibc zlib1g zlib1g-dev
 ```
 
