@@ -5,7 +5,8 @@ mvn clean compile assembly:single
 cd ..
 
 echo "Starting indexing..."
-#java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.Gov2IngesterLucene $GOV2_LOCATION gov2.lucene
+rm -rf gov2.lucene
+java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.Gov2IngesterLucene $GOV2_LOCATION gov2.lucene
 
 echo "Evaluating..."
 java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:. org.apache.lucene.benchmark.quality.trec.QueryDriver ../../topics-and-qrels/topics.701-750.txt ../../topics-and-qrels/qrels.701-750.txt submission_701.txt gov2.lucene TDN > submission_701.log
