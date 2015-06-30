@@ -60,7 +60,7 @@ public class Gov2IngesterLucene {
           doc.add(new TextField("body", dd.getBody(), Store.YES));
           iw.addDocument(doc);
 
-          if (counter%10000==0) {
+          if (counter%100000==0) {
             iw.commit();
             System.out.println(counter+": "+dd.getName()+": "+dd.getTitle()+"\tbatch time: "+(System.currentTimeMillis()-batchStartTime)/1000+" seconds"+", total time: "+(System.currentTimeMillis()-start)/1000+" seconds");
             batchStartTime = System.currentTimeMillis();
