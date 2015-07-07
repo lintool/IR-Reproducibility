@@ -17,6 +17,8 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 
 
 public class Gov2IngesterLucene {
@@ -31,7 +33,7 @@ public class Gov2IngesterLucene {
     long start = System.currentTimeMillis();
 
     Directory dir = FSDirectory.open(Paths.get(luceneDir));
-    StandardAnalyzer analyzer = new StandardAnalyzer();
+    Analyzer analyzer = new EnglishAnalyzer();
     IndexWriterConfig conf = new IndexWriterConfig(analyzer);
     IndexWriter iw = new IndexWriter(dir, conf);
     
@@ -56,7 +58,7 @@ public class Gov2IngesterLucene {
 
           Document doc = new Document();
           doc.add(new StringField("docname", dd.getName(), Store.YES));
-          doc.add(new TextField("title", dd.getTitle(), Store.YES));
+          doc.add(new TextField("body", dd.getTitle(), Store.YES));
           doc.add(new TextField("body", dd.getBody(), Store.YES));
           iw.addDocument(doc);
 

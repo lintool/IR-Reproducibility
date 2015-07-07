@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.benchmark.quality.Judge;
 import org.apache.lucene.benchmark.quality.QualityBenchmark;
 import org.apache.lucene.benchmark.quality.QualityQuery;
@@ -18,11 +19,16 @@ import org.apache.lucene.benchmark.quality.QualityStats;
 import org.apache.lucene.benchmark.quality.trec.QueryDriver;
 import org.apache.lucene.benchmark.quality.trec.TrecJudge;
 import org.apache.lucene.benchmark.quality.trec.TrecTopicsReader;
-import org.apache.lucene.benchmark.quality.utils.SimpleQQParser;
 import org.apache.lucene.benchmark.quality.utils.SubmissionReport;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.ParseException;
+import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.queryparser.classic.QueryParserBase;
+import org.apache.lucene.search.BooleanClause;
+import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.FSDirectory;
 
@@ -71,7 +77,7 @@ public class Gov2QueryDriver extends QueryDriver {
     if (fieldSpec.indexOf('N') >= 0) fieldSet.add("narrative");
     
     // set the parsing of quality queries into Lucene queries.
-    QualityQueryParser qqParser = new SimpleQQParser(fieldSet.toArray(new String[0]), "body");
+    QualityQueryParser qqParser = new EnglishQQParser(fieldSet.toArray(new String[0]), "body");
 
     // run the benchmark
     QualityBenchmark qrun = new QualityBenchmark(qqs, qqParser, searcher, docNameField);
@@ -84,5 +90,49 @@ public class Gov2QueryDriver extends QueryDriver {
     reader.close();
     dir.close();
   }
+}
+
+class EnglishQQParser implements QualityQueryParser {
+
+  private String qqNames[];
+  private String indexField;
+  ThreadLocal<QueryParser> queryParser = new ThreadLocal<>();
+
+  /**
+   * Constructor of a simple qq parser.
+   * @param qqNames name-value pairs of quality query to use for creating the query
+   * @param indexField corresponding index field  
+   */
+  public EnglishQQParser(String qqNames[], String indexField) {
+    this.qqNames = qqNames;
+    this.indexField = indexField;
+  }
+
+  /**
+   * Constructor of a simple qq parser.
+   * @param qqName name-value pair of quality query to use for creating the query
+   * @param indexField corresponding index field  
+   */
+  public EnglishQQParser(String qqName, String indexField) {
+    this(new String[] { qqName }, indexField);
+  }
+
+  /* (non-Javadoc)
+   * @see org.apache.lucene.benchmark.quality.QualityQueryParser#parse(org.apache.lucene.benchmark.quality.QualityQuery)
+   */
+  @Override
+  public Query parse(QualityQuery qq) throws ParseException {
+    QueryParser qp = queryParser.get();
+    if (qp==null) {
+      qp = new QueryParser(indexField, new EnglishAnalyzer());
+      queryParser.set(qp);
+    }
+    BooleanQuery bq = new BooleanQuery();
+    for (int i = 0; i < qqNames.length; i++)
+      bq.add(qp.parse(QueryParserBase.escape(qq.getValue(qqNames[i]))), BooleanClause.Occur.SHOULD);
+    
+    return bq;
+  }
+
 }
 
