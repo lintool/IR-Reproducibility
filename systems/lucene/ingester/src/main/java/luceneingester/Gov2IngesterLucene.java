@@ -4,7 +4,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Properties;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
+
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.benchmark.byTask.feeds.DocData;
 import org.apache.lucene.benchmark.byTask.feeds.NoMoreDataException;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
@@ -17,8 +19,6 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.en.EnglishAnalyzer;
 
 
 public class Gov2IngesterLucene {
@@ -58,8 +58,8 @@ public class Gov2IngesterLucene {
 
           Document doc = new Document();
           doc.add(new StringField("docname", dd.getName(), Store.YES));
-          doc.add(new TextField("body", dd.getTitle(), Store.YES));
-          doc.add(new TextField("body", dd.getBody(), Store.YES));
+          doc.add(new TextField("body", dd.getTitle(), Store.NO));
+          doc.add(new TextField("body", dd.getBody(), Store.NO));
           iw.addDocument(doc);
 
           if (counter%100000==0) {
@@ -94,3 +94,4 @@ public class Gov2IngesterLucene {
     }
   }
 }
+
