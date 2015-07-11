@@ -13,6 +13,7 @@ sudo apt-get -y install emacs24
 sudo apt-get -y install make gcc g++
 sudo apt-get -y install git mercurial
 sudo apt-get -y install zlibc zlib1g zlib1g-dev
+sudo apt-get -y install maven
 ```
 
 After that, the collection is mounted:
