@@ -31,7 +31,6 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.document.Field.Store;
 import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.util.TestUtil;
 
 class IndexThreads {
 
@@ -214,19 +213,5 @@ class IndexThreads {
         lastCount = numDocs;
       }
     }
-  }
-
-  // NOTE: returned array might have dups
-  private static String[] randomStrings(int count, Random random) {
-    final String[] strings = new String[count];
-    int i = 0;
-    while(i < count) {
-      final String s = TestUtil.randomRealisticUnicodeString(random);
-      if (s.length() >= 7) {
-        strings[i++] = s;
-      }
-    }
-
-    return strings;
   }
 }
