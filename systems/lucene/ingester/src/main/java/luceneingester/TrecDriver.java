@@ -32,7 +32,7 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.FSDirectory;
 
-public class Gov2QueryDriver extends QueryDriver {
+public class TrecDriver extends QueryDriver {
   public static void main(String[] args) throws Exception {
 
     if (args.length < 4 || args.length > 5) {

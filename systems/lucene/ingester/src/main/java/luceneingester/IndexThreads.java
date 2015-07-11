@@ -18,7 +18,6 @@ package luceneingester;
  */
 
 import java.io.IOException;
-import java.util.Random;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -41,9 +40,8 @@ class IndexThreads {
   final TrecContentSource tcs;
   final Thread[] threads;
 
-  public IndexThreads(Random random, IndexWriter w,
-      TrecContentSource tcs, int numThreads, int docCountLimit, boolean printDPS,
-      float docsPerSecPerThread, boolean cloneDocs) throws IOException, InterruptedException {
+  public IndexThreads(IndexWriter w,
+      TrecContentSource tcs, int numThreads, int docCountLimit, boolean printDPS) throws IOException, InterruptedException {
 
     this.tcs = tcs;
 
@@ -55,7 +53,7 @@ class IndexThreads {
     failed = new AtomicBoolean(false);
 
     for(int thread=0;thread<numThreads;thread++) {
-      threads[thread] = new IndexThread(random, startLatch, stopLatch, w, tcs, docCountLimit, count, stop, docsPerSecPerThread, failed);
+      threads[thread] = new IndexThread(startLatch, stopLatch, w, tcs, docCountLimit, count, stop, failed);
       threads[thread].start();
     }
 
@@ -74,7 +72,6 @@ class IndexThreads {
   }
 
   public long getBytesIndexed() {
-    //return docs.getBytesIndexed();
     return tcs.getBytesCount();
   }
 
@@ -108,9 +105,9 @@ class IndexThreads {
     private final CountDownLatch stopLatch;
     private final AtomicBoolean failed;
 
-    public IndexThread(Random random, CountDownLatch startLatch, CountDownLatch stopLatch, IndexWriter w,
+    public IndexThread(CountDownLatch startLatch, CountDownLatch stopLatch, IndexWriter w,
         TrecContentSource tcs, int numTotalDocs, AtomicInteger count,
-        AtomicBoolean stop, float docsPerSec, AtomicBoolean failed) {
+        AtomicBoolean stop, AtomicBoolean failed) {
       this.startLatch = startLatch;
       this.stopLatch = stopLatch;
       this.w = w;
