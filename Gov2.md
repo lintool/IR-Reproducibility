@@ -12,6 +12,7 @@ Galago  | Count             |  14 GB |       6h 32m
 Galago  | Positions         |  45 GB | 7h < t < 17h
 MG4J    | Count             | 7.8 GB |       1h 27m
 Terrier | Count             | 9.1 GB |       9h 24m
+Lucene  | Count             |  38 GB |       1h 35m
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
@@ -51,6 +52,10 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 ###### Terrier
 + **TODO:** Add some description of the Terrier models.
 
+###### Lucene
++ BM25 similarity with parameters same as ATIRE (k1=0.9, b=0.4).
++ EnglishAnalyzer shipped with Lucene used, with all default settings.
+
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
 
@@ -63,6 +68,7 @@ Galago  | SDM            | Positions         |         1077ms |         1813ms |
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
 Terrier | *???*          | Count             |          484ms |          300ms |          337ms
+Lucene  | BM25           | Count             |          173ms |          132ms |          160ms
 
 ##### Extra Notes
 ###### Galago
@@ -80,6 +86,7 @@ Galago  | SDM            | Positions         |        0.2726 |         0.2911 | 
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
 Terrier | *???*          | Count             |        0.2429 |         0.3081 |         0.2640
+Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 
 ##### Statistical Analysis
 

@@ -15,6 +15,7 @@ sudo apt-get -y install gcc
 sudo apt-get -y install g++
 sudo apt-get -y install git
 sudo apt-get -y install mercurial
+sudo apt-get -y install maven
 ```
 
 After that, the collection is mounted:
