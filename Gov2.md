@@ -10,9 +10,9 @@ ATIRE   | Count             |  12 GB |          33m
 ATIRE   | Count + Quantized |  12 GB |          51m
 Galago  | Count             |  14 GB |       6h 32m
 Galago  | Positions         |  45 GB | 7h < t < 17h
+Lucene  | Count             |  38 GB |       1h 35m
 MG4J    | Count             | 7.8 GB |       1h 27m
 Terrier | Count             | 9.1 GB |       9h 24m
-Lucene  | Count             |  38 GB |       1h 35m
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
@@ -45,17 +45,17 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
     + The features used are: unigrams, bigrams, and unordered windows of size 8.
 + Both of these models require parameter tuning for best performance. No stopping was done for these models.
 
+###### Lucene
++ Lucene 5.2.1
++ BM25 similarity with parameters same as ATIRE (k1=0.9, b=0.4).
++ [EnglishAnalyzer](https://lucene.apache.org/core/5_2_1/analyzers-common/org/apache/lucene/analysis/en/EnglishAnalyzer.html) shipped with Lucene used, with all default settings.
+
 ###### MG4J
 + Model B is described in [Boldi et al. (2006)](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 ###### Terrier
 + **TODO:** Add some description of the Terrier models.
-
-###### Lucene
-+ Lucene 5.2.1
-+ BM25 similarity with parameters same as ATIRE (k1=0.9, b=0.4).
-+ [EnglishAnalyzer](https://lucene.apache.org/core/5_2_1/analyzers-common/org/apache/lucene/analysis/en/EnglishAnalyzer.html) shipped with Lucene used, with all default settings.
 
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
@@ -66,10 +66,10 @@ ATIRE   | BM25           | Count             |          149ms |          253ms |
 ATIRE   | Quantized BM25 | Count + Quantized |           74ms |           78ms |           69ms
 Galago  | QL             | Count             |          771ms |          821ms |          650ms
 Galago  | SDM            | Positions         |         1077ms |         1813ms |         1026ms
+Lucene  | BM25           | Count             |          173ms |          132ms |          160ms
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
 Terrier | *???*          | Count             |          484ms |          300ms |          337ms
-Lucene  | BM25           | Count             |          173ms |          132ms |          160ms
 
 ##### Extra Notes
 ###### Galago
@@ -84,10 +84,10 @@ ATIRE   | BM25           | Count             |        0.2616 |         0.3106 | 
 ATIRE   | Quantized BM25 | Count + Quantized |        0.2361 |         0.2952 |         0.2844
 Galago  | QL             | Count             |        0.2776 |         0.2937 |         0.2845
 Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
+Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
 Terrier | *???*          | Count             |        0.2429 |         0.3081 |         0.2640
-Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 
 ##### Statistical Analysis
 
