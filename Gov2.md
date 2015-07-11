@@ -53,8 +53,9 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + **TODO:** Add some description of the Terrier models.
 
 ###### Lucene
++ Lucene 5.2.1
 + BM25 similarity with parameters same as ATIRE (k1=0.9, b=0.4).
-+ EnglishAnalyzer shipped with Lucene used, with all default settings.
++ [EnglishAnalyzer](https://lucene.apache.org/core/5_2_1/analyzers-common/org/apache/lucene/analysis/en/EnglishAnalyzer.html) shipped with Lucene used, with all default settings.
 
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
