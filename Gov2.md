@@ -4,15 +4,16 @@ What follows is an initial comparison of selected information retrieval systems 
 ## Indexing
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index.
 
-System  | Type              |   Size |         Time
-:-------|:------------------|-------:|------------:
-ATIRE   | Count             |  12 GB |          33m
-ATIRE   | Count + Quantized |  12 GB |          51m
-Galago  | Count             |  14 GB |       6h 32m
-Galago  | Positions         |  45 GB | 7h < t < 17h
-Lucene  | Count             |  38 GB |       1h 35m
-MG4J    | Count             | 7.8 GB |       1h 27m
-Terrier | Count             | 9.1 GB |       9h 24m
+System  | Type              |   Size |         Time | Terms | Postings | Tokens |
+:-------|:------------------|-------:|-------------:|------:|---------:|--------:
+ATIRE   | Count             | 12 GB  |          33m |       |          |        |
+ATIRE   | Count + Quantized | 12 GB  |          51m |       |          |        |
+Galago  | Count             | 14 GB  |       6h 32m |       |          |        |
+Galago  | Positions         | 45 GB  | 7h < t < 17h |       |          |        |
+Lucene  | Count             | 38 GB  |       1h 35m |       |          |        |
+MG4J    | Count             | 7.6 GB |       1h 27m | 34.9M |     5.5G |        |
+MG4J    | Positions         | 37 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
+Terrier | Count             | 9.1 GB |       9h 24m |       |          |        |
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
