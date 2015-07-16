@@ -120,7 +120,7 @@ class IndexThreads {
     private Document getDocumentFromDocData(DocData dd) {
       Document doc = new Document();
       doc.add(new StringField("docname", dd.getName(), Store.YES));
-      doc.add(new TextField("body", dd.getTitle(), Store.NO));
+      doc.add(new TextField("title", dd.getTitle(), Store.NO));
       doc.add(new TextField("body", dd.getBody(), Store.NO));
       return doc;
     }
