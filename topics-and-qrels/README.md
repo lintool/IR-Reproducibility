@@ -8,3 +8,18 @@ Gov2
 + qrels.751-800.txt: [qrels for Topics 751-800 (TREC 2005 Terabyte Track)](http://trec.nist.gov/data/terabyte/05/05.adhoc_qrels)
 + qrels.801-850.txt: [qrels for Topics 801-850 (TREC 2006 Terabyte Track)](http://trec.nist.gov/data/terabyte/06/qrels.tb06.top50)
 
+ClueWeb09
+=========
+
++ topics.1-50.txt:    [Topics 1-50 (TREC 2009 Web Track)](http://trec.nist.gov/data/web/09/wt09.topics.full.xml)
++ topics.51-100.txt:  [Topics 51-100 (TREC 2010 Web Track)](http://trec.nist.gov/data/web/10/wt2010-topics.xml)
++ topics.101-150.txt: [Topics 101-150 (TREC 2011 Web Track)](http://trec.nist.gov/data/web/11/full-topics.xml)
++ topics.151-200.txt: [Topics 151-200 (TREC 2012 Web Track)](http://trec.nist.gov/data/web/12/full-topics.xml)
++ topics.201-250.txt: [Topics 201-250 (TREC 2013 Web Track)](http://trec.nist.gov/data/web/2013/trec2013-topics.xml)
++ topics.251-300.txt: [Topics 251-300 (TREC 2014 Web Track)](http://trec.nist.gov/data/web/2014/trec2014-topics.xml)
++ qrels.1-50.txt:    _TBD_
++ qrels.51-100.txt:  [adhoc qrels for Topics 101-150 (TREC 2010 Web Track)](http://trec.nist.gov/data/web/10/10.adhoc-qrels.final)
++ qrels.101-150.txt: [adhoc qrels for Topics 151-200 (TREC 2011 Web Track)](http://trec.nist.gov/data/web/11/qrels.adhoc)
++ qrels.151-200.txt: [adhoc qrels for Topics 201-250 (TREC 2012 Web Track)](http://trec.nist.gov/data/web/12/qrels.adhoc)
++ qrels.201-250.txt: [one aspect per topic qrels for Topics 251-300 (TREC 2013 Web Track)](http://trec.nist.gov/data/web/2013/qrels.adhoc.txt)
++ qrels.251-300.txt: [one aspect per topic qrels for Topics 251-300 (TREC 2014 Web Track)](http://trec.nist.gov/data/web/2014/qrels.adhoc.txt)
