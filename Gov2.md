@@ -96,6 +96,8 @@ ATIRE   | BM25           | Count             |        0.2616 |         0.3106 | 
 ATIRE   | Quantized BM25 | Count + Quantized |        0.2361 |         0.2952 |         0.2844
 Galago  | QL             | Count             |        0.2776 |         0.2937 |         0.2845
 Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
+Indri   | QL             | Positions         |        0.2597 |         0.3179 |         0.2830 
+Indri   | SDM            | Positions         |        0.2621 |         0.3086 |         0.3165
 Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
