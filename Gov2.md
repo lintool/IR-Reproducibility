@@ -10,6 +10,7 @@ ATIRE   | Count             | 12 GB  |          33m |       |          |        
 ATIRE   | Count + Quantized | 12 GB  |          51m |       |          |        |
 Galago  | Count             | 14 GB  |       6h 32m |       |          |        |
 Galago  | Positions         | 45 GB  | 7h < t < 17h |       |          |        |
+Indri   | Positions         | 86 GB  |       7h 46m |       |          |        |
 Lucene  | Count             | 38 GB  |       1h 35m |       |          |        |
 MG4J    | Count             | 7.6 GB |       1h 27m | 34.9M |     5.5G |        |
 MG4J    | Positions         | 37 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
@@ -45,6 +46,14 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler and Croft, 2005)](http://dl.acm.org/citation.cfm?id=1076115).
     + The features used are: unigrams, bigrams, and unordered windows of size 8.
 + Both of these models require parameter tuning for best performance. No stopping was done for these models.
+
+###### Indri
++ version 5.3
++ QL is our baseline query-likelihood (bag-of-words) model with dirichlet smoothing and default mu parameters.
++ SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler and Croft, 2005)](http://dl.acm.org/citation.cfm?id=1076115).
+    + The features used are: unigrams, bigrams, and unordered windows of size 8.
+    + mu = 3000
++ Both of these models require parameter tuning for best performance.
 
 ###### Lucene
 + Lucene 5.2.1
