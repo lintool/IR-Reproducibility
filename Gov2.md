@@ -49,6 +49,8 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 
 ###### Indri
 + version 5.3
++ The index contains an inverted index and DocumentTerm vectors (a forward index).
++ Stopwords were removed and terms were stemmed with the Krovetz stemmer.
 + QL is our baseline query-likelihood (bag-of-words) model with dirichlet smoothing and default mu parameters.
 + SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler and Croft, 2005)](http://dl.acm.org/citation.cfm?id=1076115).
     + The features used are: unigrams, bigrams, and unordered windows of size 8.
