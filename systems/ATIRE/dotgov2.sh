@@ -2,20 +2,15 @@
 set -ef
 
 source ../common.sh
-
-hg clone http://www.atire.org/hg/atire -r rigor2015
-
-cd atire
-
-make clean all
+source setup.sh
 
 GOV2_FILES=$(find $GOV2_LOCATION -mindepth 1 -maxdepth 1 -type d -name 'GX*' -printf '%p/*.gz ')
 
 BASE_INDEX="stdbuf -oL ./bin/index -N1000000 -sa -rrtrec -iscrub:an -ts -kt"
-${BASE_INDEX} -findex index.aspt ${GOV2_FILES[@]} | tee indexing.txt
-${BASE_INDEX} -QBM25 -q -findex quantized.aspt ${GOV2_FILES[@]} | tee quantized.indexing.txt
+${BASE_INDEX} -findex dg2_index.aspt ${GOV2_FILES[@]} | tee dg2_indexing.txt
+${BASE_INDEX} -QBM25 -q -findex dg2_quantized.aspt ${GOV2_FILES[@]} | tee dg2_quantized.indexing.txt
 
-for index in "index.aspt" "quantized.aspt"
+for index in "dg2_index.aspt" "dg2_quantized.aspt"
 do
 	for queries in "701-750" "751-800" "801-850"
 	do
