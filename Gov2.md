@@ -29,7 +29,7 @@ Terrier | Count             | 9.1 GB |       9h 24m |       |          |        
 + The size was determined by running `du -h` on the `var/index` folder.
 
 ## Retrieval
-Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were measured on three query sets: 701-750, 751-800 and 801-850.
+Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were measured on three query sets: 701-750, 751-800, and 801-850.
 
 ### Retrieval Models
 
