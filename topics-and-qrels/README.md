@@ -15,10 +15,10 @@ ClueWeb09
 + topics.web.51-100.txt:  [Topics 51-100 (TREC 2010 Web Track)](http://trec.nist.gov/data/web/10/wt2010-topics.xml)
 + topics.web.101-150.txt: [Topics 101-150 (TREC 2011 Web Track)](http://trec.nist.gov/data/web/11/full-topics.xml)
 + topics.web.151-200.txt: [Topics 151-200 (TREC 2012 Web Track)](http://trec.nist.gov/data/web/12/full-topics.xml)
-+ qrels.web.1-50.txt:    _TBD_
-+ qrels.web.51-100.txt:  [adhoc qrels for Topics 101-150 (TREC 2010 Web Track)](http://trec.nist.gov/data/web/10/10.adhoc-qrels.final)
-+ qrels.web.101-150.txt: [adhoc qrels for Topics 151-200 (TREC 2011 Web Track)](http://trec.nist.gov/data/web/11/qrels.adhoc)
-+ qrels.web.151-200.txt: [adhoc qrels for Topics 201-250 (TREC 2012 Web Track)](http://trec.nist.gov/data/web/12/qrels.adhoc)
++ qrels.web.1-50.txt:    [adhoc prels for category B runs for Topics 1-50 (TREC 2009 Web Track)](http://trec.nist.gov/data/web/09/prels.catB.1-50.gz)
++ qrels.web.51-100.txt:  [adhoc qrels for Topics 51-100 (TREC 2010 Web Track)](http://trec.nist.gov/data/web/10/10.adhoc-qrels.final)
++ qrels.web.101-150.txt: [adhoc qrels for Topics 101-150 (TREC 2011 Web Track)](http://trec.nist.gov/data/web/11/qrels.adhoc)
++ qrels.web.151-200.txt: [adhoc qrels for Topics 151-200 (TREC 2012 Web Track)](http://trec.nist.gov/data/web/12/qrels.adhoc)
 
 ClueWeb12
 =========
