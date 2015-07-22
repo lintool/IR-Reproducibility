@@ -24,6 +24,7 @@ do
 
 		echo "Searching queries ${queries} on index ${index}"
 		./bin/atire -findex ${index} -sa -QN:q -k1000 -q ${query_file} -et -l1000 -o${run_file} -iatire > ${stat_file}
-		../$TREC_EVAL ${qrel_file} ${run_file} > ${eval_file}
+		../${TREC_EVAL} ${qrel_file} ${run_file} > ${eval_file}
+		../${GD_EVAL} -c -traditional ${qrel_file} ${run_file} >> ${eval_file}
 	done
 done
