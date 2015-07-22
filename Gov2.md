@@ -78,6 +78,8 @@ ATIRE   | BM25           | Count             |          149ms |          253ms |
 ATIRE   | Quantized BM25 | Count + Quantized |           74ms |           78ms |           69ms
 Galago  | QL             | Count             |          771ms |          821ms |          650ms
 Galago  | SDM            | Positions         |         1077ms |         1813ms |         1026ms
+Indri   | QL             | Positions         |          192ms |          274ms |          197ms
+Indri   | SDM            | Positions         |         2268ms |         2048ms |         1305ms
 Lucene  | BM25           | Count             |          173ms |          132ms |          160ms
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
