@@ -64,7 +64,7 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + Lucene 5.2.1
 + BM25 similarity with parameters same as ATIRE (k1=0.9, b=0.4).
 + [EnglishAnalyzer](https://lucene.apache.org/core/5_2_1/analyzers-common/org/apache/lucene/analysis/en/EnglishAnalyzer.html) shipped with Lucene used, with all default settings.
-+ Positions index build with [TextField](https://lucene.apache.org/core/5_2_1/core/org/apache/lucene/document/TextField.html). Counts index built with [custom field](https://github.com/lintool/IR-Reproducibility/blob/master/systems/lucene/ingester/src/main/java/luceneingester/NoPositionsTextField.java) that doesn't store positions.
++ Positions index built with [TextField](https://lucene.apache.org/core/5_2_1/core/org/apache/lucene/document/TextField.html). Counts index built with [custom field](https://github.com/lintool/IR-Reproducibility/blob/master/systems/lucene/ingester/src/main/java/luceneingester/NoPositionsTextField.java) that doesn't store positions.
 
 ###### MG4J
 + Model B is described in [Boldi et al. (2006)](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
