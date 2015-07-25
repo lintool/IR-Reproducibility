@@ -6,7 +6,16 @@ cd ..
 
 echo "Starting indexing..."
 rm -rf gov2.lucene
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene -threadCount 32 -docCountLimit -1 
+
+
+# To build a counts only index, leave POSITIONS as blank.
+POSITIONS=
+# To build a positions index, uncomment this line:
+#POSITIONS='-positions'
+
+# Counts index
+java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath $POSITIONS gov2.lucene -threadCount 32 -docCountLimit -1 
+
 
 echo "Evaluating..."
 java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ../../topics-and-qrels/topics.701-750.txt ../../topics-and-qrels/qrels.701-750.txt submission_701.txt gov2.lucene/index T > submission_701.log

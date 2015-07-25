@@ -40,11 +40,10 @@ class IndexThreads {
   final TrecContentSource tcs;
   final Thread[] threads;
 
-  public IndexThreads(IndexWriter w,
+  public IndexThreads(IndexWriter w, boolean positions,
       TrecContentSource tcs, int numThreads, int docCountLimit, boolean printDPS) throws IOException, InterruptedException {
 
     this.tcs = tcs;
-
     threads = new Thread[numThreads];
 
     final CountDownLatch stopLatch = new CountDownLatch(numThreads);
@@ -53,7 +52,7 @@ class IndexThreads {
     failed = new AtomicBoolean(false);
 
     for(int thread=0;thread<numThreads;thread++) {
-      threads[thread] = new IndexThread(startLatch, stopLatch, w, tcs, docCountLimit, count, stop, failed);
+      threads[thread] = new IndexThread(startLatch, stopLatch, w, positions, tcs, docCountLimit, count, stop, failed);
       threads[thread].start();
     }
 
@@ -104,13 +103,15 @@ class IndexThreads {
     private final CountDownLatch startLatch;
     private final CountDownLatch stopLatch;
     private final AtomicBoolean failed;
+    private final boolean positions;
 
-    public IndexThread(CountDownLatch startLatch, CountDownLatch stopLatch, IndexWriter w,
+    public IndexThread(CountDownLatch startLatch, CountDownLatch stopLatch, IndexWriter w, boolean positions,
         TrecContentSource tcs, int numTotalDocs, AtomicInteger count,
         AtomicBoolean stop, AtomicBoolean failed) {
       this.startLatch = startLatch;
       this.stopLatch = stopLatch;
       this.w = w;
+      this.positions = positions;
       this.tcs = tcs;
       this.numTotalDocs = numTotalDocs;
       this.count = count;
@@ -120,8 +121,13 @@ class IndexThreads {
     private Document getDocumentFromDocData(DocData dd) {
       Document doc = new Document();
       doc.add(new StringField("docname", dd.getName(), Store.YES));
-      doc.add(new TextField("title", dd.getTitle(), Store.NO));
-      doc.add(new TextField("body", dd.getBody(), Store.NO));
+      if(positions) {
+        doc.add(new TextField("body", dd.getTitle(), Store.NO));
+        doc.add(new TextField("body", dd.getBody(), Store.NO));
+      } else {
+        doc.add(new NoPositionsTextField("body", dd.getTitle()));
+        doc.add(new NoPositionsTextField("body", dd.getBody()));
+      }
       return doc;
     }
 

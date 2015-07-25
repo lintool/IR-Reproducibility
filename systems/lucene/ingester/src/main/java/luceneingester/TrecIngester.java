@@ -22,17 +22,18 @@ import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
+
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
 import org.apache.lucene.benchmark.byTask.utils.Config;
+import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.*;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.*;
 import org.apache.lucene.util.*;
 
 public final class TrecIngester {
-
   private static TrecContentSource createTrecSource(String dataDir) {
     TrecContentSource tcs = new TrecContentSource();
     Properties props = new Properties();
@@ -60,6 +61,7 @@ public final class TrecIngester {
     final boolean verbose = args.getFlag("-verbose");
     final boolean printDPS = args.getFlag("-printDPS");
     final boolean doUpdate = args.getFlag("-update");
+    final boolean positions = args.getFlag("-positions");
 
     args.check();
 
@@ -71,6 +73,7 @@ public final class TrecIngester {
     System.out.println("Doc count limit: " + (docCountLimit == -1 ? "all docs" : ""+docCountLimit));
     System.out.println("Threads: " + numThreads);
     System.out.println("Verbose: " + (verbose ? "yes" : "no"));
+    System.out.println("Positions: " + (positions ? "yes" : "no"));
 
     if (verbose) {
       InfoStream.setDefault(new PrintStreamInfoStream(System.out));
@@ -87,7 +90,7 @@ public final class TrecIngester {
     System.out.println("IW config=" + iwc);
 
     final IndexWriter w = new IndexWriter(dir, iwc);
-    IndexThreads threads = new IndexThreads(w, trecSource, numThreads, docCountLimit, printDPS);
+    IndexThreads threads = new IndexThreads(w, positions, trecSource, numThreads, docCountLimit, printDPS);
     System.out.println("\nIndexer: start");
 
     final long t0 = System.currentTimeMillis();
