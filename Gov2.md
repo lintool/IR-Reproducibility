@@ -9,7 +9,7 @@ System  | Type              |   Size |         Time | Terms | Postings | Tokens 
 ATIRE   | Count             | 12 GB  |          33m |       |          |        |
 ATIRE   | Count + Quantized | 12 GB  |          51m |       |          |        |
 Galago  | Count             | 14 GB  |       6h 32m |       |          |        |
-Galago  | Positions         | 45 GB  | 7h < t < 17h |       |          |        |
+Galago  | Positions         | 45 GB  | 22h 58m      |       |          |        |
 Indri   | Positions         | 86 GB  |       7h 46m |       |          |        |
 Lucene  | Count             | 11 GB  |       1h 24m |       |          |        |
 Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
