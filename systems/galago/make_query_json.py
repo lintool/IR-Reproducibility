@@ -5,6 +5,14 @@ queries = []
 inTopic = False
 number=None
 query = None
+
+def makeCombineQuery(query):
+    terms = ['#dirichlet(%s)' % x for x in query.split()]
+    return '#combine('+' '.join(terms)+')'
+
+def makeSDMQuery(query):
+    return '#sdm('+' '.join(query.split())+')'
+
 with open(sys.argv[2]) as fp:
     for line in fp:
 
@@ -14,11 +22,10 @@ with open(sys.argv[2]) as fp:
             continue
         # inTopic=True
         if line.startswith('</top>'):
-            terms = ['#dirichlet(%s)' % x for x in query.split()]
-            queries += [{
-                'number': number, 
-                'text': '#'+operator+'('+' '.join(terms)+')'
-                }]
+            if operator == 'combine':
+                queries += [{ 'number': number, 'text': makeCombineQuery(query) }]
+            elif operator=='sdm':
+                queries += [{ 'number': number, 'text': makeSDMQuery(query) }]
             inTopic = False
             continue
         if line.startswith('<num>'):
