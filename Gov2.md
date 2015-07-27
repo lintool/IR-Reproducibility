@@ -13,8 +13,8 @@ Galago  | Positions         | 45 GB  | 7h < t < 17h |       |          |        
 Indri   | Positions         | 86 GB  |       7h 46m |       |          |        |
 Lucene  | Count             | 11 GB  |       1h 24m |       |          |        |
 Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
-MG4J    | Count             | 7.6 GB |       1h 27m | 34.9M |     5.5G |        |
-MG4J    | Positions         | 37 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
+MG4J    | Count             | 7.3 GB |       1h 27m | 34.9M |     5.5G |        |
+MG4J    | Positions         | 35 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
 Terrier | Count             | 9.1 GB |       9h 24m |       |          |        |
 
 ###### ATIRE
