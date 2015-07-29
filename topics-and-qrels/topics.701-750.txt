@@ -1,8 +1,7 @@
 <top>
 <num> Number: 701
 
-<title>
-U.S. oil industry history
+<title> U.S. oil industry history
 
 <desc> Description:
 Describe the history of the U.S. oil industry
@@ -18,8 +17,7 @@ or later.
 <top>
 <num> Number: 702
 
-<title>
-Pearl farming
+<title> Pearl farming
 
 <desc> Description:
 Pearl farming operations: actual farming operations described,
@@ -39,8 +37,7 @@ production are relevant.
 <top>
 <num> Number: 703
 
-<title>
-U.S. against International Criminal Court
+<title> U.S. against International Criminal Court
 
 <desc> Description:
 What are the arguments the U.S. uses against joining the International 
@@ -56,8 +53,7 @@ content.
 <top>
 <num> Number: 704
 
-<title>
-Green party political views
+<title> Green party political views
 
 <desc> Description:
 What are the goals and political views of the Green Party.
@@ -75,8 +71,7 @@ noted are considered relevant.
 <top>
 <num> Number: 705
 
-<title>
-Iraq foreign debt reduction
+<title> Iraq foreign debt reduction
 
 <desc> Description:
 Identify any efforts, proposed or undertaken, by world governments to seek 
@@ -91,8 +86,7 @@ reconstruction is irrelevant.
 <top>
 <num> Number: 706
 
-<title>
-Controlling type II diabetes
+<title> Controlling type II diabetes
 
 <desc> Description:
 What are methods used to control type II diabetes?
@@ -109,8 +103,7 @@ relevant.
 <top>
 <num> Number: 707
 
-<title>
-Aspirin cancer prevention
+<title> Aspirin cancer prevention
 
 <desc> Description:
 What evidence is there that aspirin may help prevent cancer?
@@ -126,8 +119,7 @@ rather than having this information in the document, are not relevant.
 <top>
 <num> Number: 708
 
-<title>
-Decorative slate sources
+<title> Decorative slate sources
 
 <desc> Description:
 What are sources of slate stone for decorative use?
@@ -143,8 +135,7 @@ imply a source of slate.
 <top>
 <num> Number: 709
 
-<title>
-Horse racing jockey weight
+<title> Horse racing jockey weight
 
 <desc> Description:
 What are the limits and regulations concerning jockey weight in horse
@@ -161,8 +152,7 @@ relevant.
 <top>
 <num> Number: 710
 
-<title>
-Prostate cancer treatments
+<title> Prostate cancer treatments
 
 <desc> Description:
 What are the various treatments for prostate cancer?
@@ -177,8 +167,7 @@ considered relevant.
 <top>
 <num> Number: 711
 
-<title>
-Train station security measures
+<title> Train station security measures
 
 <desc> Description:
 What security measures have been employed at train stations due to
@@ -194,8 +183,7 @@ considered relevant.
 <top>
 <num> Number: 712
 
-<title>
-Pyramid scheme
+<title> Pyramid scheme
 
 <desc> Description:
 What are some actual examples of pyramid schemes?
@@ -211,8 +199,7 @@ relevant (they are a type of pyramid).
 <top>
 <num> Number: 713
 
-<title>
-Chesapeake Bay Maryland clean
+<title> Chesapeake Bay Maryland clean
 
 <desc> Description:
 What is the state of Maryland doing to clean up the Chesapeake Bay?
@@ -227,8 +214,7 @@ mention Maryland in a group of cooperating states are not relevant.
 <top>
 <num> Number: 714
 
-<title>
-License restrictions older drivers
+<title> License restrictions older drivers
 
 <desc> Description:
 What restrictions are placed on older persons renewing their drivers'
@@ -245,8 +231,7 @@ restriction information.
 <top>
 <num> Number: 715
 
-<title>
-Schizophrenia drugs
+<title> Schizophrenia drugs
 
 <desc> Description:
 What organizations (private or governmental) are developing drugs to combat 
@@ -263,8 +248,7 @@ were still under investigation.
 <top>
 <num> Number: 716
 
-<title>
-Spammer arrest sue
+<title> Spammer arrest sue
 
 <desc> Description:
 Have any spammers been arrested or sued for sending unsolicited
@@ -282,8 +266,7 @@ criminal trials are not relevant.
 <top>
 <num> Number: 717
 
-<title>
-Gifted talented student programs
+<title> Gifted talented student programs
 
 <desc> Description:
 What states or localities offer programs for gifted and talented students?
@@ -300,8 +283,7 @@ students.
 <top>
 <num> Number: 718
 
-<title>
-Controlling acid rain
+<title> Controlling acid rain
 
 <desc> Description:
 What methods are used to control acid rain and its effects?
@@ -317,8 +299,7 @@ burning of fossil fuels is also relevant. Documents pertaining to the
 <top>
 <num> Number: 719
 
-<title>
-Cruise ship damage sea life
+<title> Cruise ship damage sea life
 
 <desc> Description:
 What kinds of harm do cruise ships do to sea life such as coral reefs,
@@ -334,8 +315,7 @@ otherwise apparent from name or picture.
 <top>
 <num> Number: 720
 
-<title>
-Federal welfare reform
+<title> Federal welfare reform
 
 <desc> Description:
 Find documents about Federal welfare reform legislation, regulation,
@@ -351,8 +331,7 @@ reports on the progress of Federal welfare reform are relevant.
 <top>
 <num> Number: 721
 
-<title>
-Census data applications
+<title> Census data applications
 
 <desc> Description:
 What applications are there for U.S. decennial census data, and how is
@@ -368,8 +347,7 @@ relevant.
 <top>
 <num> Number: 722
 
-<title>
-Iran terrorism
+<title> Iran terrorism
 
 <desc> Description:
 In what ways does Iran support terrorism?
@@ -385,8 +363,7 @@ attacks, or funding trails.
 <top>
 <num> Number: 723
 
-<title>
-Executive privilege
+<title> Executive privilege
 
 <desc> Description:
 What is the U.S. government's definition of "executive privilege?"
@@ -402,8 +379,7 @@ executive branch is relevant.
 <top>
 <num> Number: 724
 
-<title>
-Iran Contra
+<title> Iran Contra
 
 <desc> Description:
 What was the Iran-Contra scandal and what were the consequences?
@@ -417,8 +393,7 @@ peripherally in discussing some other subject.
 <top>
 <num> Number: 725
 
-<title>
-Low white blood cell count
+<title> Low white blood cell count
 
 <desc> Description:
 What would cause a lowered white blood cell count?
@@ -435,8 +410,7 @@ be relevant.
 <top>
 <num> Number: 726
 
-<title>
-Hubble telescope repairs
+<title> Hubble telescope repairs
 
 <desc> Description:
 What repairs have been made on the Hubble telescope?
@@ -451,8 +425,7 @@ the captions discuss or describe repairs.
 <top>
 <num> Number: 727
 
-<title>
-Church arson
+<title> Church arson
 
 <desc> Description:
 Identify any specific instances of church arson.
@@ -469,8 +442,7 @@ Suspected arson and burning of synagogues are considered relevant.
 <top>
 <num> Number: 728
 
-<title>
-whales save endangered
+<title> whales save endangered
 
 <desc> Description:
 What's being done to save endangered whales?
@@ -488,8 +460,7 @@ whaling are relevant.
 <top>
 <num> Number: 729
 
-<title>
-Whistle blower department of defense
+<title> Whistle blower department of defense
 
 <desc> Description:
 What have been revelations of whistle blowers concerning the U.S.
@@ -506,8 +477,7 @@ relevant.
 <top>
 <num> Number: 730
 
-<title>
-Gastric bypass complications
+<title> Gastric bypass complications
 
 <desc> Description:
 What are some of the possible complications and potential dangers of
@@ -522,8 +492,7 @@ vertical banding, etc) are not considered relevant.
 <top>
 <num> Number: 731
 
-<title>
-Kurds history
+<title> Kurds history
 
 <desc> Description:
 What is the history of the Kurds?
@@ -539,8 +508,7 @@ unrelated subjects that only briefly mention the Halabja attack.
 <top>
 <num> Number: 732
 
-<title>
-U.S. cheese production 
+<title> U.S. cheese production 
 
 <desc> Description:
 What cheese production is carried out in the U.S.?
@@ -557,8 +525,7 @@ cheese.
 <top>
 <num> Number: 733
 
-<title>
-Airline overbooking
+<title> Airline overbooking
 
 <desc> Description:
 What are the regulations regarding airline overbooking?
@@ -573,8 +540,7 @@ the plane.  Schedules for reporting over-sales are relevant.
 <top>
 <num> Number: 734
 
-<title>
-Recycling successes
+<title> Recycling successes
 
 <desc> Description:
 What recycling projects have been successful?
@@ -592,8 +558,7 @@ are relevant.
 <top>
 <num> Number: 735
 
-<title>
-Afghan women condition
+<title> Afghan women condition
 
 <desc> Description:
 Is the condition of Afghan women better under the new government than
@@ -610,8 +575,7 @@ or describing U.S. aid to Afghanistan aimed to help women.
 <top>
 <num> Number: 736
 
-<title>
-location BSE infections
+<title> location BSE infections
 
 <desc> Description:
 Where have animals infected with bovine spongiform encephalopathy
@@ -628,8 +592,7 @@ curb BSE infections are not relevant.
 <top>
 <num> Number: 737
 
-<title>
-Enron California energy crisis
+<title> Enron California energy crisis
 
 <desc> Description:
 What allegations have been made about Enron's culpability in the
@@ -645,8 +608,7 @@ is not relevant.
 <top>
 <num> Number: 738
 
-<title>
-Anthrax hoaxes
+<title> Anthrax hoaxes
 
 <desc> Description:
 What are some examples of anthrax hoaxes?
@@ -660,8 +622,7 @@ as "20 individuals arrested for hoaxes" are not relevant.
 <top>
 <num> Number: 739
 
-<title>
-Habitat for Humanity
+<title> Habitat for Humanity
 
 <desc> Description:
 What is the organization "Habitat for Humanity", and what activities
@@ -678,8 +639,7 @@ are relevant.
 <top>
 <num> Number: 740
 
-<title>
-regulate assisted living Maryland
+<title> regulate assisted living Maryland
 
 <desc> Description:
 Who regulates assisted living facilities in Maryland?
@@ -696,8 +656,7 @@ relevant.
 <top>
 <num> Number: 741
 
-<title>
-Artificial Intelligence
+<title> Artificial Intelligence
 
 <desc> Description:
 What is artificial intelligence?
@@ -712,8 +671,7 @@ artificial intelligence, are relevant.
 <top>
 <num> Number: 742
 
-<title>
-hedge funds fraud protection
+<title> hedge funds fraud protection
 
 <desc> Description:
 What protection do investors have against fraud by hedge funds?
@@ -730,8 +688,7 @@ funds.
 <top>
 <num> Number: 743
 
-<title>
-Freighter ship registration
+<title> Freighter ship registration
 
 <desc> Description:
 What are the regulations and other considerations concerning
@@ -748,8 +705,7 @@ of ships is not relevant.
 <top>
 <num> Number: 744
 
-<title>
-Counterfeit ID punishments
+<title> Counterfeit ID punishments
 
 <desc> Description:
 What punishments or sentences have been given in the U.S. for
@@ -768,8 +724,7 @@ relevant.  "Counterfeiting" with no indication of type is relevant.
 <top>
 <num> Number: 745
 
-<title>
-Doomsday cults
+<title> Doomsday cults
 
 <desc> Description:
 Identify any doomsday cult, their name, and location throughout the world.
@@ -785,8 +740,7 @@ other than doomsday cults is not relevant.
 <top>
 <num> Number: 746
 
-<title>
-Outsource job India
+<title> Outsource job India
 
 <desc> Description:
 What jobs have been outsourced to India?
@@ -802,8 +756,7 @@ besides India is not relevant.
 <top>
 <num> Number: 747
 
-<title>
-Library computer oversight
+<title> Library computer oversight
 
 <desc> Description:
 What control or oversight is there over computer use in public libraries?
@@ -822,8 +775,7 @@ not relevant.  Restrictions to legal research is relevant.
 <top>
 <num> Number: 748
 
-<title>
-Nuclear reactor types
+<title> Nuclear reactor types
 
 <desc> Description:
 Name the types of nuclear reactor power plants in operation in the United 
@@ -842,8 +794,7 @@ numbers of each type of reactor is of relevance.
 <top>
 <num> Number: 749
 
-<title>
-Puerto Rico state
+<title> Puerto Rico state
 
 <desc> Description:
 Do people in Puerto Rico want for it to become a U.S. State?
@@ -861,8 +812,7 @@ geographical, economic, etc. information is not relevant.
 <top>
 <num> Number: 750
 
-<title>
-John Edwards womens issues
+<title> John Edwards womens issues
 
 <desc> Description:
 What are Senator John Edwards' positions on women's issues such as pay
