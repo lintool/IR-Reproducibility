@@ -68,6 +68,8 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 
 ###### MG4J
 + Model B is described in [Boldi et al. (2006)](http://trec.nist.gov/pubs/trec15/papers/umilano.tera.final.pdf).
++ Model B+ is very similar to Model B, but it uses positions to retrieve first documents satisfying
+each conjunctive subquery within a window equal to two times the number of terms in the query.
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 ###### Terrier
@@ -88,6 +90,7 @@ Lucene  | BM25           | Count             |          142ms |          107ms |
 Lucene  | BM25           | Positions         |          173ms |          132ms |          160ms
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
+MG4J    | Model B+       | Positions         |           90ms |           89ms |           73ms
 Terrier | *???*          | Count             |          484ms |          300ms |          337ms
 
 ##### Extra Notes
@@ -109,6 +112,7 @@ Lucene  | BM25           | Count             |        0.2684 |         0.3347 | 
 Lucene  | BM25           | Positions         |        0.2684 |         0.3347 |         0.3050
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
+MG4J    | Model B+       | Positions         |        0.2322 |         0.3179 |         0.3257
 Terrier | *???*          | Count             |        0.2429 |         0.3081 |         0.2640
 
 ##### Statistical Analysis
