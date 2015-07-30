@@ -10,7 +10,7 @@ version=5.4
 
 source ../common.sh
 
-WORK_DIR=/media/workspace
+WORK_DIR=.
 
 if [[ ! -f mg4j-big-$version-bin.tar.gz ||  ! -f mg4j-big-deps.tar.gz ]]; then
 	curl http://mg4j.di.unimi.it/mg4j-big-$version-bin.tar.gz >mg4j-big-$version-bin.tar.gz

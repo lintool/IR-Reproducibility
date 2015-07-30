@@ -7,7 +7,7 @@ source ../common.sh
 
 export CLASSPATH=$(find -iname \*.jar | paste -d: -s)
 
-WORK_DIR=/media/workspace
+WORK_DIR=.
 
 for queries in "701-750" "751-800" "801-850"
 do

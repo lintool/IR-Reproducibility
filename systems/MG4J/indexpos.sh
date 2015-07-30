@@ -10,7 +10,7 @@ version=5.4
 
 source ../common.sh
 
-WORK_DIR=/media/workspace
+WORK_DIR=.
 
 if [[ ! -f mg4j-big-$version-bin.tar.gz ||  ! -f mg4j-big-deps.tar.gz ]]; then
 	curl http://mg4j.di.unimi.it/mg4j-big-$version-bin.tar.gz >mg4j-big-$version-bin.tar.gz
@@ -50,7 +50,7 @@ split -n l/16 $TMP split-
 
 	java -Xmx8G -server \
 		it.unimi.di.big.mg4j.document.TRECDocumentCollection \
-			-z -f HtmlDocumentFactory -p encoding=iso-8859-1 $WORK_DIR/gov2-$split.collection $(cat $split)
+			-f HtmlDocumentFactory -p encoding=iso-8859-1 -z $WORK_DIR/gov2-$split.collection $(cat $split)
 
 	java -Xmx8G -server \
 		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text $WORK_DIR/gov2-$split
