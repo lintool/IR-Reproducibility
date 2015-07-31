@@ -1,6 +1,6 @@
 GOV2_LOCATION=/media/Gov2/data
-CW09B_LOCATION=/media/ClueWeb09/ClueWeb09_English_1
-CW12B_LOCATION=/media/ClueWeb12/DiskB
+CW09B_LOCATION=/media/ClueWeb09b/ClueWeb09_English_1
+CW12B_LOCATION=/media/ClueWeb12-B13/DiskB
 
 TOPICS_QRELS=../../topics-and-qrels/
 TREC_EVAL=../../eval/trec_eval.9.0/trec_eval
