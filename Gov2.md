@@ -15,7 +15,9 @@ Lucene  | Count             | 11 GB  |       1h 24m |       |          |        
 Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
 MG4J    | Count             | 7.3 GB |       1h 27m | 34.9M |     5.5G |        |
 MG4J    | Positions         | 35 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
-Terrier | Count             | 9.1 GB |       9h 24m |       |          |        |
+Terrier | Count             | 9.1 GB |       9h 24m | 15.3M |     4.6G |  16.2G |
+Terrier | Positions         | 34 GB  |       9h 45m | 15.3M |     4.6G |  16.2G |
+
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
@@ -32,6 +34,9 @@ Terrier | Count             | 9.1 GB |       9h 24m |       |          |        
 ###### Terrier
 + Docids are compressed using gamma delta-gaps and the term frequencies using unary.
 + The size was determined by running `du -h` on the `var/index` folder.
++ Positions are compressed using gamma delta-gaps.
++ * denotes that the index also has field frequencies within the index, namely the TITLE and body.
+
 
 ## Retrieval
 Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were measured on three query sets: 701-750, 751-800, and 801-850.
@@ -71,7 +76,9 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 ###### Terrier
-+ **TODO:** Add some description of the Terrier models.
++ DPH is a hypergeometric parameter-free model from the Divergence from Randomness family.
++ BM25 uses the default settings recommended by Robertson
++ The proximity approaches uses a DFR model called [pBiL](http://dl.acm.org/citation.cfm?id=1277937), using sequential dependencies.
 
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
@@ -88,7 +95,7 @@ Lucene  | BM25           | Count             |          142ms |          107ms |
 Lucene  | BM25           | Positions         |          173ms |          132ms |          160ms
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
-Terrier | *???*          | Count             |          484ms |          300ms |          337ms
+Terrier | DPH            | Count             |          484ms |          300ms |          337ms
 
 ##### Extra Notes
 ###### Galago
@@ -103,13 +110,15 @@ ATIRE   | BM25           | Count             |        0.2616 |         0.3106 | 
 ATIRE   | Quantized BM25 | Count + Quantized |        0.2361 |         0.2952 |         0.2844
 Galago  | QL             | Count             |        0.2776 |         0.2937 |         0.2845
 Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
-Indri   | QL             | Positions         |        0.2597 |         0.3179 |         0.2830 
+Indri   | QL             | Positions         |        0.2597 |         0.3179 |         0.2830
 Indri   | SDM            | Positions         |        0.2621 |         0.3086 |         0.3165
 Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 Lucene  | BM25           | Positions         |        0.2684 |         0.3347 |         0.3050
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
-Terrier | *???*          | Count             |        0.2429 |         0.3081 |         0.2640
+Terrier | BM25           | Count             |        0.2485 |         0.3153 |         0.2726
+Terrier | DPH            | Count             |        0.2768 |         0.3311 |         0.2899
+Terrier | DPH + Proximity (SD)| Positions    |        0.2792 |         0.3261 |         0.2906
 
 ##### Statistical Analysis
 

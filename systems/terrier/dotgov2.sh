@@ -3,6 +3,17 @@ set -ef
 
 source ../common.sh
 
+INDEX="noblocks"
+#INDEX="classical"
+#INDEX="blocks_fields"
+#INDEX="blocks"
+#INDEX="classical"
+#RANKER="DPH"
+#RANKER="BM25"
+#RANKER="DPH_Prox"
+RANKER="DPH_QE"
+
+
 if [[ ! -f terrier-4.0.tar.gz ]]; then
 	curl http://www.dcs.gla.ac.uk/~craigm/terrier-4.0.tar.gz> terrier-4.0.tar.gz
 fi
@@ -12,7 +23,12 @@ cd  terrier-4.0
 
 bin/trec_setup.sh $GOV2_LOCATION 2>&1  | tee trec_setup.log
 #mv etc/collection.spec collection.spec && head collection.spec > etc/collection.spec
-TERRIER_HEAP_MEM=26g bin/trec_terrier.sh -i -j 2>&1 | tee trec_setup.log
+
+OPTS="-i -j"
+if [ "$INDEX" == "classical" ];
+then
+ OPTS="-i"
+fi
 
 echo <<EOF >> etc/terrier.properties
 trec.collection.class=TRECWebCollection
@@ -22,19 +38,27 @@ indexer.meta.forward.keys=docno
 indexer.meta.forward.keylens=26
 indexer.meta.reverse.keys=
 ignore.low.idf.terms=false
-trec.model=DPH
+
+#faster indexing with more memory
+memory.reserved=104857600
 EOF
 
-for queries in "701-750" "751-800" "801-850"
+if [ "$INDEX" == "blocks" ];
+then
+ OPTS="$OPTS -Dblock.indexing=true"
+elif [[ "$INDEX" == "blocks_fields" ]]; then
+ OPTS="$OPTS -Dblock.indexing=true -DFieldTags.process=TITLE,ELSE"
+fi
+
+JAVA_OPTIONS=-XX:-UseGCOverheadLimit TERRIER_HEAP_MEM=100g bin/trec_terrier.sh $OPTS 2>&1 | tee indexing.log
+
+if [[ "$INDEX" == "blocks_fields" ]]; then
+	 perl -pi -e 's/FSADocumentIndex$/FSAFieldDocumentIndex/g' var/index/data.properties
+fi
+
+
+
+for RANKER in DPH DPH_QE;
 do
-	query_file=../$TOPICS_QRELS/topics.${queries}.txt
-	qrel_file=../$TOPICS_QRELS/qrels.${queries}.txt
-	stat_file=${queries}.search_stats.txt
-	run_file=$PWD/terrier.${queries}.txt
-
-	TERRIER_HEAP_MEM=26g bin/trec_terrier.sh -r -Dtrec.topics=$query_file -Dtrec.results.file=$run_file > $stat_file 2>&1
-
-	../$TREC_EVAL ${qrel_file} ${run_file}
-
-	#grep 'Total Time to Search' ${stat_file} | sed \$d
+  ../dotgov2-ranker.sh $INDEX $RANKER
 done
