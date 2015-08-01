@@ -26,7 +26,7 @@ starttime=$(date +%s)
 
 # Parallel
 
-rm -f $WORK_DIR/gov2-text.* $WORK_DIR/gov2-split-* split-*
+rm -f $WORK_DIR/gov2.titles $WORK_DIR/gov2-text.* $WORK_DIR/gov2-split-* split-*
 
 TMP=$(mktemp)
 find $GOV2_LOCATION -type f | sort >$TMP

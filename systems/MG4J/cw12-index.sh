@@ -26,7 +26,7 @@ starttime=$(date +%s)
 
 # Parallel
 
-rm -f $WORK_DIR/cw12-text.* $WORK_DIR/cw12-split-* split-*
+rm -f $WORK_DIR/cw12.titles $WORK_DIR/cw12-text.* $WORK_DIR/cw12-split-* split-*
 
 TMP=$(mktemp)
 find $CW12B_LOCATION -iname \*.gz -type f | sort >$TMP
