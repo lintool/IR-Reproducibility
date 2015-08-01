@@ -40,13 +40,20 @@ split -n l/16 $TMP split-
 			-f HtmlDocumentFactory -p encoding=iso-8859-1 -z $WORK_DIR/gov2-$split.collection $(cat $split)
 
 	java -Xmx7512M -server \
-		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text $WORK_DIR/gov2-$split
+		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/gov2-$split.collection -t EnglishStemmer -I text $WORK_DIR/gov2-$split >$split.out 2>$split.err
 
 )& 
 
 done
 
 wait)
+
+# Check that all instances have completed
+
+if (( $(find -iname gov2-split-\*-text.cluster.properties | wc -l) != 16 )); then
+	echo "ERROR: Some instance did not complete correctly" 1>&2
+	exit 1
+fi
 
 java -Xmx7512M -server it.unimi.di.big.mg4j.tool.Concatenate $WORK_DIR/gov2-text \
 	$(find $WORK_DIR -iname gov2-split-\*-text@\*.sizes | sort | sed s/.sizes//)

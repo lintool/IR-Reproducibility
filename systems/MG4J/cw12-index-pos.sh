@@ -42,13 +42,20 @@ split -n l/16 $TMP split-
 	# Do not check version. Use BURL to sanitize non-conformant URLs.
 
 	java -Xmx7512M -server -Dit.unimi.di.law.warc.io.version=false -Dit.unimi.di.law.warc.records.useburl=true \
-		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/cw12-$split.sequence -t EnglishStemmer -I text $WORK_DIR/cw12-$split
+		it.unimi.di.big.mg4j.tool.Scan -s 1000000 -S $WORK_DIR/cw12-$split.sequence -t EnglishStemmer -I text $WORK_DIR/cw12-$split >$split.out 2>$split.err
 
 )& 
 
 done
 
 wait)
+
+# Check that all instances have completed
+
+if (( $(find -iname cw12-split-\*-text.cluster.properties | wc -l) != 16 )); then
+	echo "ERROR: Some instance did not complete correctly" 1>&2
+	exit 1
+fi
 
 java -Xmx7512M -server it.unimi.di.big.mg4j.tool.Concatenate $WORK_DIR/cw12-text \
 	$(find $WORK_DIR -iname cw12-split-\*-text@\*.sizes | sort | sed s/.sizes//)
