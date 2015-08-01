@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Runs the MG4J k-out-of-n *positional* queries and perform evaluation
+# Runs the MG4J k-out-of-n *positional* queries and performs evaluation
 
 source ../common.sh
 
