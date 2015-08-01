@@ -20,7 +20,7 @@ fi
 tar -zxvf mg4j-big-$version-bin.tar.gz
 tar -zxvf mg4j-big-deps.tar.gz
 
-export CLASSPATH=$(find -iname \*.jar | paste -d: -s)
+export CLASSPATH=.:$(find -iname \*.jar | paste -d: -s)
 
 starttime=$(date +%s)
 
