@@ -16,6 +16,7 @@ Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        
 MG4J    | Count             | 7.3 GB |       1h 27m | 34.9M |     5.5G |        |
 MG4J    | Positions         | 35 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
 Terrier | Count             | 9.1 GB |       9h 24m | 15.3M |     4.6G |  16.2G |
+Terrier | Count (inc direct)| 17GB   |      17h 05m | 15.3M |     4.6G |  16.2G |
 Terrier | Positions         | 34 GB  |       9h 45m | 15.3M |     4.6G |  16.2G |
 
 
@@ -35,8 +36,8 @@ Terrier | Positions         | 34 GB  |       9h 45m | 15.3M |     4.6G |  16.2G 
 + Docids are compressed using gamma delta-gaps and the term frequencies using unary.
 + The size was determined by running `du -h` on the `var/index` folder.
 + Positions are compressed using gamma delta-gaps.
++ All indexes are built using the singlepass indexer, except the index that includes a direct file, for which we used the slower traditional indexer.
 + * denotes that the index also has field frequencies within the index, namely the TITLE and body.
-+ All indexes are built using the singlepass indexer.
 
 
 ## Retrieval
@@ -77,9 +78,10 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + The BM25 column shows a baseline based on the BM25 score function applied to the results of the title query treated as a bag of words.
 
 ###### Terrier
++ BM25 uses the default settings recommended by Robertson.
 + DPH is a hypergeometric parameter-free model from the Divergence from Randomness family.
-+ BM25 uses the default settings recommended by Robertson
-+ The proximity approaches uses a DFR model called [pBiL](http://dl.acm.org/citation.cfm?id=1277937), using sequential dependencies.
++ Query expansion (QE) is performed using the Bo1 Divergence from Randomness query expansion model, 10 terms were added from 3 pseudo-relevance feedback documents.
++ The proximity approach uses a DFR model called [pBiL](http://dl.acm.org/citation.cfm?id=1277937), using sequential dependencies.
 
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
@@ -97,6 +99,7 @@ Lucene  | BM25           | Positions         |          173ms |          132ms |
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
 Terrier | DPH            | Count             |          484ms |          300ms |          337ms
+Terrier | DPH + Bo1 QE   | Count (inc. direct) |       1636ms |         1326ms |         1402ms
 Terrier | DPH + Prox SD  | Positions         |         1579ms |         1373ms |         1413ms
 
 ##### Extra Notes
@@ -123,6 +126,7 @@ MG4J    | BM25           | Count             |        0.2640 |         0.3336 | 
 MG4J    | Model B        | Count             |        0.2469 |         0.3207 |         0.3003
 Terrier | BM25           | Count             |        0.2485 |         0.3153 |         0.2726
 Terrier | DPH            | Count             |        0.2768 |         0.3311 |         0.2899
+Terrier | DPH + Bo1 QE   | Count (inc direct)|        0.3037 |         0.3742 |         0.3480
 Terrier | DPH + Proximity (SD)| Positions    |        0.2792 |         0.3261 |         0.2906
 
 ##### Statistical Analysis
