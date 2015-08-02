@@ -35,6 +35,7 @@ Terrier | Positions         | 34 GB  |       9h 45m | 15.3M |     4.6G |  16.2G 
 + The size was determined by running `du -h` on the `var/index` folder.
 + Positions are compressed using gamma delta-gaps.
 + * denotes that the index also has field frequencies within the index, namely the TITLE and body.
++ All indexes are built using the singlepass indexer.
 
 
 ## Retrieval
@@ -98,8 +99,12 @@ MG4J    | BM25           | Count             |          344ms |          248ms |
 MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
 MG4J    | Model B+       | Positions         |           90ms |           89ms |           73ms
 Terrier | DPH            | Count             |          484ms |          300ms |          337ms
+Terrier | DPH + Prox SD  | Positions         |         1579ms |         1373ms |         1413ms
 
 ##### Extra Notes
+###### Terrier
+Terrier's indexing as of v4.0 is comparably slow. An inspection of indexing using a profiler found that an [inefficiency had been introduced](http://terrier.org/issues/browse/TR-340). We expect to trivially fix this for the next version 4.1 release.
+
 ###### Galago
 Galago's SDM calculates expensive ordered and unordered window features, which explains part of the extreme difference. Even Galago's QL, simple unigram model is quite slow in comparison to other engines. We are investigating the bottleneck.
 
