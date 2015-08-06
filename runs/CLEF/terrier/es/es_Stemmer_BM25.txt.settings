@@ -1,0 +1,76 @@
+# Settings of Terrier (TRECQuerying) generated for run /nas1/promise/ims/terrier_clef/runs/es/es_Stemmer_BM25.txt
+#Wed Aug 05 17:30:53 CEST 2015
+trec.models=trec.models
+trec.topics=./topics/es_topics.xml
+trec.runtag=es_Stemmer_BM25
+tokeniser=UTFTokeniser
+memory.reserved=100000000
+TrecQueryTags.idtag=identifier
+trec.matching=Matching
+.casesensitive=false
+termpipelines=SpanishSnowballStemmer
+files.to.cache=
+trec.topics.list=trec.topics.list
+expansion.terms=10
+TrecQueryTags.casesensitive=false
+trec.iteration=Q
+querying.postprocesses.controls=qe\:QueryExpansion
+matching.retrieved_set_size=1000
+matching.dsms=
+querying.no.negative.requirement=
+expansion.models=qemodels
+trec.querying.dump.settings=true
+trec.querying.resultscache=org.terrier.structures.cache.NullQueryResultCache
+expansion.documents=3
+trec.qrels=trec.qrels
+trecquery.ignore.desc.narr.name.tokens=true
+docs.check=20
+terrier.index.retrievalLoadingProfile.default=true
+log4j.config=terrier-log.xml
+trec.querying.outputformat=org.terrier.structures.outputformat.TRECDocnoOutputFormat
+querying.postfilters.controls=decorate\:SimpleDecorate,site\:SiteFilter,scope\:Scope
+matching.postinglist.manager.plugins=
+trec.results.file=/nas1/promise/ims/terrier_clef/runs/es/es_Stemmer_BM25.txt
+blocks.max=100000
+files.transforms=
+TrecQueryTags.doctag=topic
+collection.spec=collection.spec
+trec.results=results
+blocks.size=1
+terrier.index.path=../../indexes/es_Stemmer
+TrecQueryTags.skip=<?xml,narrative
+querying.default.controls=
+match.empty.query=false
+ignore.empty.documents=false
+trec.topics.parser=TRECQuery
+field.querying=false
+max.term.length=20
+terrier.share=share
+querying.postfilters.order=SimpleDecorate,SiteFilter,Scope
+trec.results.suffix=.res
+trec.model=BM25
+block.indexing=false
+terrier.etc=/nas1/promise/ims/terrier_clef/terrier-4.0/etc
+ignore.low.idf.terms=true
+terrier.var=var
+lowercase=true
+querying.allowed.controls=scope,qe,qemodel,start,end,site,scope
+TrecQueryTags.process=topic,identifier,title,description
+terrier.home=/nas1/promise/ims/terrier_clef/terrier-4.0
+trec.encoding=UTF-8
+querying.preprocesses.controls=
+terrier.index.prefix=data
+trec.querying.outputformat.docno.meta.key=docno
+trec.qe.model=org.terrier.matching.models.queryexpansion.Bo1
+trec.output.format.length=1000
+manager.caching.filters=false
+terrier.plugins=
+files.default.scheme=file
+querying.preprocesses.order=
+trec.manager=Manager
+querying.postprocesses.order=QueryExpansion
+# topicfile: ./topics/es_topics.xml
+# run started at: 1438788643952
+# run finished at 1438788653158
+# c=0.0 c_set=false
+# model=BM25
