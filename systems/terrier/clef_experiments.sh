@@ -159,6 +159,10 @@ cd systems/terrier
 
 mkdir ../../results/CLEF/terrier/"$lang";
 
+## create the directory for the indexes
+if [[ ! -d indexes ]]; then
+	mkdir indexes;
+fi
 
 ## create the tmp dir for the corpus
 mkdir corpus;
