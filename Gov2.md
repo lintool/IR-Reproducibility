@@ -11,6 +11,7 @@ ATIRE   | Count + Quantized | 12 GB  |          51m |       |          |        
 Galago  | Count             | 14 GB  |       6h 32m |       |          |        |
 Galago  | Positions         | 45 GB  | 22h 58m      |       |          |        |
 Indri   | Positions         | 86 GB  |       7h 46m |       |          |        |
+JASS    |                   | 20 GB  | ATIRE Quantized + 2m |       |          |        |
 Lucene  | Count             | 11 GB  |       1h 24m |       |          |        |
 Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
 MG4J    | Count             | 7.3 GB |       1h 27m | 34.9M |     5.5G |        |
@@ -95,6 +96,8 @@ Galago  | QL             | Count             |          771ms |          821ms |
 Galago  | SDM            | Positions         |         1077ms |         1813ms |         1026ms
 Indri   | QL             | Positions         |          192ms |          274ms |          197ms
 Indri   | SDM            | Positions         |         2268ms |         2048ms |         1305ms
+JASS    |                |                   |           47ms |           51ms |           46ms
+JASS    | 2.5M Postings  |                   |           26ms |           25ms |           25ms
 Lucene  | BM25           | Count             |          142ms |          107ms |          120ms
 Lucene  | BM25           | Positions         |          173ms |          132ms |          160ms
 MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
@@ -122,6 +125,8 @@ Galago  | QL             | Count             |        0.2776 |         0.2937 | 
 Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
 Indri   | QL             | Positions         |        0.2597 |         0.3179 |         0.2830
 Indri   | SDM            | Positions         |        0.2621 |         0.3086 |         0.3165
+JASS    |                |                   |        0.2603 |         0.3109 |         0.2972
+JASS    | 2.5M Postings  |                   |        0.2579 |         0.3053 |         0.2959
 Lucene  | BM25           | Count             |        0.2684 |         0.3347 |         0.3050
 Lucene  | BM25           | Positions         |        0.2684 |         0.3347 |         0.3050
 MG4J    | BM25           | Count             |        0.2640 |         0.3336 |         0.2999
