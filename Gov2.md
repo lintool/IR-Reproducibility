@@ -1,6 +1,8 @@
 # .GOV2 Comparisons
 What follows is an initial comparison of selected information retrieval systems on the .GOV2 collection using scripts provided by authors/leading contributors of those systems. The systems are listed in alphabetical order.
 
+A \* indicates that the at least part of the result is not official.
+
 ## Indexing
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index.
 
