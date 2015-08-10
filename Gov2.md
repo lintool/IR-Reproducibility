@@ -6,19 +6,19 @@ Two metrics for indexing are reported below: the size of the generated index, an
 
 System  | Type              |   Size |         Time | Terms | Postings | Tokens |
 :-------|:------------------|-------:|-------------:|------:|---------:|--------:
-ATIRE   | Count             | 12 GB  |          33m |       |          |        |
-ATIRE   | Count + Quantized | 12 GB  |          51m |       |          |        |
-Galago  | Count             | 14 GB  |       6h 32m |       |          |        |
-Galago  | Positions         | 45 GB  | 22h 58m      |       |          |        |
-Indri   | Positions         | 86 GB  |       7h 46m |       |          |        |
-JASS    |                   | 20 GB  | ATIRE Quantized + 2m |       |          |        |
-Lucene  | Count             | 11 GB  |       1h 24m |       |          |        |
-Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
-MG4J    | Count             | 7.3 GB |       1h 27m | 34.9M |     5.5G |        |
-MG4J    | Positions         | 35 GB  |       2h 20m | 34.9M |     5.5G |  23.1G |
-Terrier | Count             | 9.1 GB |       9h 24m | 15.3M |     4.6G |  16.2G |
-Terrier | Count (inc direct)| 17GB   |      17h 05m | 15.3M |     4.6G |  16.2G |
-Terrier | Positions         | 34 GB  |       9h 45m | 15.3M |     4.6G |  16.2G |
+ATIRE   | Count             | 12 GB  |          46m |       |          |        |
+ATIRE   | Count + Quantized | 15 GB  |          56m |       |          |        |
+Galago  | Count             | 15 GB  |       6h 32m |       |          |        |
+Galago  | Positions         | 48 GB  | 26h 33m      |       |          |        |
+Indri   | Positions         | 92 GB  |       6h 40m |       |          |        |
+JASS    |                   | 21 GB  |          58m |       |          |        |
+Lucene  | Count             | 12 GB  |       1h 25m |       |          |        |
+\*Lucene  | Positions         | 38 GB  |       1h 35m |       |          |        |
+MG4J    | Count             | 8 GB |       1h 25m | 34.9M |     5.5G |        |
+MG4J    | Positions         | 37 GB  |       2h 06m | 34.9M |     5.5G |  23.1G |
+Terrier | Count             | 10 GB |       8h 04m | 15.3M |     4.6G |  16.2G |
+\*Terrier | Count (inc direct)| 17GB   |      17h 05m | 15.3M |     4.6G |  16.2G |
+Terrier | Positions         | 36 GB  |       9h 44m | 15.3M |     4.6G |  16.2G |
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
@@ -90,22 +90,22 @@ The table below shows the average search time across queries by query set. The s
 
 System  | Model          | Index             | Topics 701-750 | Topics 751-800 | Topics 801-850
 :-------|:---------------|-------------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           | Count             |          149ms |          253ms |          220ms
-ATIRE   | Quantized BM25 | Count + Quantized |           74ms |           78ms |           69ms
-Galago  | QL             | Count             |          771ms |          821ms |          650ms
-Galago  | SDM            | Positions         |         1077ms |         1813ms |         1026ms
-Indri   | QL             | Positions         |          192ms |          274ms |          197ms
-Indri   | SDM            | Positions         |         2268ms |         2048ms |         1305ms
-JASS    |                |                   |           47ms |           51ms |           46ms
+ATIRE   | BM25           | Count             |          210ms |          205ms |          166ms
+ATIRE   | Quantized BM25 | Count + Quantized |           91ms |           94ms |           85ms
+Galago  | QL             | Count             |          776ms |          806ms |          656ms
+Galago  | SDM            | Positions         |         4069ms |         6177ms |         3989ms
+Indri   | QL             | Positions         |         1924ms |         2015ms |         1458ms
+Indri   | SDM            | Positions         |         8200ms |        14290ms |         7101ms
+JASS    |                |                   |           47ms |           50ms |           45ms
 JASS    | 2.5M Postings  |                   |           26ms |           25ms |           25ms
-Lucene  | BM25           | Count             |          142ms |          107ms |          120ms
-Lucene  | BM25           | Positions         |          173ms |          132ms |          160ms
-MG4J    | BM25           | Count             |          344ms |          248ms |          261ms
-MG4J    | Model B        | Count             |           30ms |           43ms |           30ms
-MG4J    | Model B+       | Positions         |           90ms |           89ms |           73ms
-Terrier | DPH            | Count             |          484ms |          300ms |          337ms
-Terrier | DPH + Bo1 QE   | Count (inc. direct) |       1636ms |         1326ms |         1402ms
-Terrier | DPH + Prox SD  | Positions         |         1579ms |         1373ms |         1413ms
+Lucene  | BM25           | Count             |          148ms |          106ms |          139ms
+Lucene  | BM25           | Positions         |          173ms |          135ms |          136ms
+MG4J    | BM25           | Count             |          342ms |          247ms |          254ms
+MG4J    | Model B        | Count             |           30ms |           41ms |           30ms
+MG4J    | Model B+       | Positions         |           92ms |           90ms |           74ms
+Terrier | DPH            | Count             |          408ms |          317ms |          577ms
+\*Terrier | DPH + Bo1 QE   | Count (inc. direct) |       1636ms |         1326ms |         1402ms
+\*Terrier | DPH + Prox SD  | Positions         |         1579ms |         1373ms |         1413ms
 
 ##### Extra Notes
 ###### Terrier
@@ -120,7 +120,7 @@ The systems generated run files to be consumed by the `trec_eval` tool. Each sys
 System  | Model          | Index             |Topics 701-750 | Topics 751-800 | Topics 801-850
 :-------|:---------------|-------------------|--------------:|---------------:|--------------:
 ATIRE   | BM25           | Count             |        0.2616 |         0.3106 |         0.2978
-ATIRE   | Quantized BM25 | Count + Quantized |        0.2361 |         0.2952 |         0.2844
+ATIRE   | Quantized BM25 | Count + Quantized |        0.2603 |         0.3108 |         0.2974
 Galago  | QL             | Count             |        0.2776 |         0.2937 |         0.2845
 Galago  | SDM            | Positions         |        0.2726 |         0.2911 |         0.3161
 Indri   | QL             | Positions         |        0.2597 |         0.3179 |         0.2830
@@ -134,8 +134,8 @@ MG4J    | Model B        | Count             |        0.2469 |         0.3207 | 
 MG4J    | Model B+       | Positions         |        0.2322 |         0.3179 |         0.3257
 Terrier | BM25           | Count             |        0.2485 |         0.3153 |         0.2726
 Terrier | DPH            | Count             |        0.2768 |         0.3311 |         0.2899
-Terrier | DPH + Bo1 QE   | Count (inc direct)|        0.3037 |         0.3742 |         0.3480
-Terrier | DPH + Proximity (SD)| Positions    |        0.2792 |         0.3261 |         0.2906
+\*Terrier | DPH + Bo1 QE   | Count (inc direct)|        0.3037 |         0.3742 |         0.3480
+\*Terrier | DPH + Proximity (SD)| Positions    |        0.2792 |         0.3261 |         0.2906
 
 ##### Statistical Analysis
 
