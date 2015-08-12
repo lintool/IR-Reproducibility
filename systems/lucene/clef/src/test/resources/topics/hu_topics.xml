@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+    <topic>
+        <identifier>251-AH</identifier>
+        <title>Alternatív gyógyászat</title>
+        <description>Keressünk cikkeket alternatív vagy természetes gyógymódokról ill. speciális       terápiákról, mint például az akupunktúra, a homeopátia vagy a csontkovácsolás.</description>
+        <narrative>A megfelelő cikkek a természetes vagy alternatív gyógyászati kezelésekről vagy       praktikákról írnak általában vagy konkrétan.</narrative>
+    </topic>
+    <topic>
+        <identifier>252-AH</identifier>
+        <title>Európai nyugdíjrendszerek</title>
+        <description>Keressünk cikkeket, melyek valamely európai ország jelenlegi nyugdíjrendszeréről       vagy nyugdíjasokra vonatkozó járulékairól szólnak.</description>
+        <narrative>A megfelelő cikkek az egyes európai országok nyugdíjrendszeréről, illetve a       nyugdíjaskorúakra vonatkozó járulékokról tartalmaznak információkat. Számunkra érdekes       adat a nyugdíjba vonulás lehetséges alsó, illetve kötelező felső korhatára, valamint a       nyugdíj mértékének kiszámítási módja is. A jövőbeni nyugdíjreformokra vonatkozó tervek       nem érdekesek.</narrative>
+    </topic>
+    <topic>
+        <identifier>253-AH</identifier>
+        <title>A halálbüntetés elterjedtsége</title>
+        <description>Mely országokban vagy államokban alkalmazzák még a halálbüntetést ill. teszi       lehetővé annak alkalmazását az alkotmány?</description>
+        <narrative>Nem csak azok a cikkek relevánsak, amelyekben tételesen szerepel, hogy az adott       ország vagy állam alkotmánya lehetővé teszi a halálbüntetést, hanem azok is, amelyek       olyan konkrét esetekről szólnak (az ország vagy állam nevének feltüntetésével),       amelyekben halálbüntetést róttak ki.</narrative>
+    </topic>
+</topics>
