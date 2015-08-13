@@ -39,7 +39,6 @@ Terrier | Positions         | 36 GB  |       9h 44m | 15.3M |     4.6G |  16.2G 
 + The size was determined by running `du -h` on the `var/index` folder.
 + Positions are compressed using gamma delta-gaps.
 + All indexes are built using the singlepass indexer, except the index that includes a direct file, for which we used the slower traditional indexer.
-+ * denotes that the index also has field frequencies within the index, namely the TITLE and body.
 
 
 ## Retrieval
