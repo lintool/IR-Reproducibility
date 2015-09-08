@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-#sudo apt-add-repository -y ppa:webupd8team/java
-#sudo apt-get -y update
-#sudo apt-get -y install oracle-java8-installer
-#sudo apt-get -y install ruby
+sudo apt-add-repository -y ppa:webupd8team/java
+sudo apt-get -y update
+sudo apt-get -y install oracle-java8-installer
+sudo apt-get -y install ruby
 
 version=5.4.1
 
