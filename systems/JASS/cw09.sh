@@ -23,7 +23,7 @@ do
 	run_file=${queries}.txt
 	eval_file=eval.${queries}.txt
 
-	./trec2query/trec2query ${query_file} q > ${queries}.txt
+	./trec2query/trec2query ${query_file} q -s s > ${queries}.txt
 
 	echo "Searching queries ${queries} to 1B postings"
 	./jass ${queries}.txt 1000 1000000000 -d > comp.${stat_file}
