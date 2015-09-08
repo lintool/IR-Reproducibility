@@ -15,6 +15,7 @@ if [[ ! -f ${TREC_EVAL} ]]; then
 	tar xzf ../../eval/trec_eval.9.0.tar.gz -C ../../eval
 	make -C ../../eval/trec_eval.9.0/
 fi
+TREC_EVAL="${TREC_EVAL} -q"
 
 # Get statMAP eval tool for the 2009 queries
 if [[ ! -f ${SAP_EVAL} ]]; then
