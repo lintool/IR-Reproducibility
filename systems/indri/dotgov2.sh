@@ -20,7 +20,7 @@ QPARAM_RULE_DIRICHLET_MU_SDM=3000
 
 # number of threads to use for the queries		
 # best results will be dependant upon the machine it runs on
-number_of_threads=16 
+number_of_threads=1 
 
 # provides GOV2_LOCATION, TOPICS_QRELS and TREC_EVAL
 # (also builds trec_Eval if needed)
