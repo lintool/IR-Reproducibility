@@ -38,8 +38,8 @@ for queries in "701-750" "751-800" "801-850"
 do
 	query_file=../$TOPICS_QRELS/topics.${queries}.txt
 	qrel_file=../$TOPICS_QRELS/qrels.${queries}.txt
-	stat_file=${queries}.search_stats.txt
-	run_file=$PWD/terrier.${queries}.txt
+	stat_file=${INDEX}.${RANKER}.${queries}.search_stats.txt
+	run_file=$PWD/${INDEX}.${RANKER}.terrier.${queries}.txt
 
 	TERRIER_HEAP_MEM=26g bin/trec_terrier.sh -r -Dtrec.topics=$query_file -Dtrec.results.file=$run_file $OPTIONS > $stat_file 2>&1
 	../$TREC_EVAL ${qrel_file} ${run_file}| tee -a $stat_file

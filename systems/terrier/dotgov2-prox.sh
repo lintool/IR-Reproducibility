@@ -3,7 +3,7 @@ set -ef
 
 source ../common.sh
 
-INDEX="singlepass"
+INDEX="blocks"
 
 if [[ ! -f terrier-4.0.tar.gz ]]; then
 	curl http://www.dcs.gla.ac.uk/~craigm/terrier-4.0.tar.gz> terrier-4.0.tar.gz
@@ -46,7 +46,7 @@ if [[ "$INDEX" == "blocks_fields" ]]; then
 	 perl -pi -e 's/FSADocumentIndex$/FSAFieldDocumentIndex/g' var/index/data.properties
 fi
 
-for RANKER in DPH BM25;
+for RANKER in DPH_Prox;
 do
   ../dotgov2-ranker.sh $INDEX $RANKER
 done
