@@ -5,28 +5,27 @@ mvn clean compile assembly:single
 cd ..
 
 echo "Starting indexing..."
-rm -rf gov2.lucene
-
-
-# To build a counts only index, leave POSITIONS as blank.
-POSITIONS=
-# To build a positions index, uncomment this line:
-#POSITIONS='-positions'
+#rm -rf gov2.lucene
 
 # Counts index
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene $POSITIONS -threadCount 32 -docCountLimit -1 
+#java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1 
+#
+## Positional index
+#java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1 
 
+for index in "cnt" "pos"
+do
+	echo "Evaluation index ${index}"
+	for queries in "701-750" "751-800" "801-850"
+	do
+		query_file=$TOPICS_QRELS/topics.${queries}.txt
+		qrel_file=$TOPICS_QRELS/qrels.${queries}.txt
+		run_file=submission_${queries}_${index}.txt
+		stat_file=submission_${queries}_${index}.log
+		eval_file=submission_${queries}_${index}.eval
 
-echo "Evaluating..."
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ../../topics-and-qrels/topics.701-750.txt ../../topics-and-qrels/qrels.701-750.txt submission_701.txt gov2.lucene/index T > submission_701.log
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ../../topics-and-qrels/topics.751-800.txt ../../topics-and-qrels/qrels.751-800.txt submission_751.txt gov2.lucene/index T > submission_751.log
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver  ../../topics-and-qrels/topics.801-850.txt ../../topics-and-qrels/qrels.801-850.txt submission_801.txt gov2.lucene/index T > submission_801.log
+		java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ${query_file} ${qrel_file} ${run_file} gov2.lucene.${index}/index T > ${stat_file}
 
-echo "Results:"
-echo "-------"
-../../eval/trec_eval.9.0/trec_eval ../../topics-and-qrels/qrels.701-750.txt submission_701.txt
-echo "-------"
-../../eval/trec_eval.9.0/trec_eval ../../topics-and-qrels/qrels.751-800.txt submission_751.txt
-echo "-------"
-../../eval/trec_eval.9.0/trec_eval ../../topics-and-qrels/qrels.801-850.txt submission_801.txt
-
+		${TREC_EVAL} ${qrel_file} ${run_file} > ${eval_file}
+	done
+done
