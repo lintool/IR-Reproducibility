@@ -94,23 +94,23 @@ The table below shows the average search time across queries by query set. The s
 
 System  | Model          | Index               | Topics 701-750 | Topics 751-800 | Topics 801-850
 :-------|:---------------|---------------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           | Count               |          210ms |          205ms |          166ms
+ATIRE   | BM25           | Count               |          181ms |          208ms |          168ms
 ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           94ms |           85ms
-Galago  | QL             | Count               |          776ms |          806ms |          656ms
-Galago  | SDM            | Positions           |         4069ms |         6177ms |         3989ms
-Indri   | QL             | Positions           |         1924ms |         2015ms |         1458ms
-Indri   | SDM            | Positions           |         8200ms |        14290ms |         7101ms
-JASS    | 1B Postings    | Count               |           47ms |           50ms |           45ms
+Galago  | QL             | Count               |         1301ms |          925ms |          682ms
+Galago  | SDM            | Positions           |         4122ms |         6155ms |         3931ms
+Indri   | QL             | Positions           |         2425ms |         2210ms |         1594ms
+Indri   | SDM            | Positions           |         8312ms |        14334ms |         7139ms
+JASS    | 1B Postings    | Count               |           47ms |           50ms |           46ms
 JASS    | 2.5M Postings  | Count               |           26ms |           25ms |           25ms
-Lucene  | BM25           | Count               |          148ms |          106ms |          139ms
-Lucene  | BM25           | Positions           |          173ms |          135ms |          136ms
-MG4J    | BM25           | Count               |          342ms |          247ms |          254ms
-MG4J    | Model B        | Count               |           30ms |           41ms |           30ms
-MG4J    | Model B+       | Positions           |           92ms |           90ms |           74ms
-Terrier | BM25           | Count               |          370ms |          290ms |          314ms
-Terrier | DPH            | Count               |          747ms |          458ms |          435ms
-Terrier | DPH + Bo1 QE   | Count (inc. direct) |         1637ms |         1329ms |         1395ms
-Terrier | DPH + Prox SD  | Positions           |         1781ms |         1154ms |         1114ms
+Lucene  | BM25           | Count               |          148ms |          105ms |          139ms
+Lucene  | BM25           | Positions           |          118ms |          109ms |          117ms
+MG4J    | BM25           | Count               |          360ms |          256ms |          269ms
+MG4J    | Model B        | Count               |           36ms |           48ms |           36ms
+MG4J    | Model B+       | Positions           |           90ms |           89ms |           74ms
+Terrier | BM25           | Count               |          394ms |          320ms |          337ms
+Terrier | DPH            | Count               |         1147ms |          642ms |          558ms
+Terrier | DPH + Bo1 QE   | Count (inc. direct) |         2421ms |         1681ms |         1640ms
+Terrier | DPH + Prox SD  | Positions           |         1252ms |          945ms |          992ms
 
 ##### Extra Notes
 ###### Terrier
