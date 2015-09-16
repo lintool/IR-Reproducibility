@@ -13,7 +13,7 @@ Galago  | Positions         | 48 GB | 26h 33m |       |          |        |
 Indri   | Positions         | 92 GB |  6h 40m |       |          |        |
 JASS    | ATIRE Quantized   | 21 GB |     58m |       |          |        |
 Lucene  | Count             | 12 GB |  1h 25m |       |          |        |
-Lucene  | Positions         | 38 GB |  1h 35m |       |          |        |
+Lucene  | Positions         | 40 GB |  1h 35m |       |          |        |
 MG4J    | Count             |  8 GB |  1h 25m | 34.9M |     5.5G |        |
 MG4J    | Positions         | 37 GB |  2h 06m | 34.9M |     5.5G |  23.1G |
 Terrier | Count             | 10 GB |  8h 04m | 15.3M |     4.6G |  16.2G |
