@@ -90,27 +90,27 @@ each conjunctive subquery within a window equal to two times the number of terms
 + The proximity approach uses a DFR model called [pBiL](http://dl.acm.org/citation.cfm?id=1277937), using sequential dependencies.
 
 ### Retrieval Latency
-The table below shows the average search time across queries by query set. The search times were taken from the internal reporting of each systems.
+The table below shows the average search time across queries by query set. The average is taken from three runs of the queries. The search times were taken from the internal reporting of each systems.
 
 System  | Model          | Index               | Topics 701-750 | Topics 751-800 | Topics 801-850
 :-------|:---------------|---------------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           | Count               |          181ms |          208ms |          168ms
-ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           94ms |           85ms
-Galago  | QL             | Count               |         1301ms |          925ms |          682ms
-Galago  | SDM            | Positions           |         4122ms |         6155ms |         3931ms
-Indri   | QL             | Positions           |         2425ms |         2210ms |         1594ms
-Indri   | SDM            | Positions           |         8312ms |        14334ms |         7139ms
-JASS    | 1B Postings    | Count               |           47ms |           50ms |           46ms
+ATIRE   | BM25           | Count               |          131ms |          176ms |          131ms
+ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           93ms |           85ms
+Galago  | QL             | Count               |          769ms |          820ms |          661ms
+Galago  | SDM            | Positions           |         4134ms |         6091ms |         3943ms
+Indri   | QL             | Positions           |         1338ms |         1715ms |         1205ms
+Indri   | SDM            | Positions           |         8146ms |        14277ms |         7093ms
+JASS    | 1B Postings    | Count               |           47ms |           50ms |           45ms
 JASS    | 2.5M Postings  | Count               |           26ms |           25ms |           25ms
-Lucene  | BM25           | Count               |          148ms |          105ms |          139ms
-Lucene  | BM25           | Positions           |          118ms |          109ms |          117ms
-MG4J    | BM25           | Count               |          360ms |          256ms |          269ms
-MG4J    | Model B        | Count               |           36ms |           48ms |           36ms
-MG4J    | Model B+       | Positions           |           90ms |           89ms |           74ms
-Terrier | BM25           | Count               |          394ms |          320ms |          337ms
-Terrier | DPH            | Count               |         1147ms |          642ms |          558ms
-Terrier | DPH + Bo1 QE   | Count (inc. direct) |         2421ms |         1681ms |         1640ms
-Terrier | DPH + Prox SD  | Positions           |         1252ms |          945ms |          992ms
+Lucene  | BM25           | Count               |          148ms |          109ms |          141ms
+Lucene  | BM25           | Positions           |          119ms |          111ms |          118ms
+MG4J    | BM25           | Count               |          362ms |          257ms |          267ms
+MG4J    | Model B        | Count               |           37ms |           48ms |           36ms
+MG4J    | Model B+       | Positions           |           91ms |           90ms |           73ms
+Terrier | BM25           | Count               |          357ms |          277ms |          296ms
+Terrier | DPH            | Count               |          441ms |          338ms |          369ms
+Terrier | DPH + Bo1 QE   | Count (inc. direct) |         1633ms |         1323ms |         1402ms
+Terrier | DPH + Prox SD  | Positions           |         1250ms |          950ms |          986ms
 
 ##### Extra Notes
 ###### Terrier
