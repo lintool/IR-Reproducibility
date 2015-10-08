@@ -35,6 +35,11 @@ Terrier | Positions         | 36 GB |  9h 37m | 15.3M |     4.6G |  16.2G |
 + JASS creates a transformation of ATIRE's quantized indexes.
 + The indexing time includes the time taken for ATIRE to generate the index.
 
+###### MG4J
++ MG4J does not use gap-based compression, but rather [quasi-succinct indices](vigna.di.unimi.it/papers.php#VigQSI).
++ After extracting text from HTML, all maximal subsequences of alphanumerical characters are 
+stemmed using the Porter2 stemmer and indexed.
+
 ###### Terrier
 + Docids are compressed using gamma delta-gaps and the term frequencies using unary.
 + Positions are compressed using gamma delta-gaps.
