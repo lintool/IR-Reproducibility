@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+<topic>
+<identifier>251-AH</identifier>
+<title>Medicina alternativa</title>
+<description>Encontrar documentos sobre tratamentos que empreguem medicina natural ou alternativa. Aqui são incluídas terapias como a acupuntura, a hemopatia, a quiroprática, entre outras.</description>
+<narrative>Documentos relevantes devem fornecer informação, específica ou genérica, sobre o uso de tratamentos ou técnicas de medicina natural ou alternativa.</narrative>
+</topic>
+<topic>
+<identifier>252-AH</identifier>
+<title>Sistemas de reforma e pensões na Europa</title>
+<description>Encontrar documentos sobre os esquemas de pensões e benefícios na reforma em qualquer país europeu.</description>
+<narrative>Documentos relevantes devem conter informação sobre os actuais esquemas de pensões em estados europeus individuais. Informação de interesse engloba as idades de reforma mínima e máxima, assim como a forma de calcular o valor das pensões de reforma. Planos de reformulação dos esquemas de reforma não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>253-AH</identifier>
+<title>Países com pena de morte</title>
+<description>Em quais países ainda é usada, ou pelo menos constitucionalmente permitida, a pena de morte?</description>
+<narrative>Documentos que afirmem de forma explícita que a constituição de um dado estado permite a pena capital são obviamente relevantes. Documentos de relatos de sentenças de morte específicas também são relevantes caso o estado ou país em questão seja explicitamente mencionado.</narrative>
+</topic>
+<topic>
+<identifier>254-AH</identifier>
+<title>Danos provocados por terramotos</title>
+<description>Encontrar documentos que descrevam os danos causados a pessoas e bens por tremores de terra e que especifiquem a área afetada.</description>
+<narrative>Documentos relevantes devem fornecer informações sobre os danos a edifícios e outros bens materiais ou indivíduos como resultado de um terramoto. A localização geográfica (país, região, cidade) afetada pelo tremor de terra deve ser também mencionada.</narrative>
+</topic>
+<topic>
+<identifier>255-AH</identifier>
+<title>Viciados na Internet</title>
+<description>O uso frequente da Internet produz habituação?</description>
+<narrative>Documentos relevantes devem discutir se o uso habitual da Internet pode levar a um vício semelhante ao provocado pelas drogas, conduzindo a dependência fisiológica ou psicológica.</narrative>
+</topic>
+<topic>
+<identifier>256-AH</identifier>
+<title>Doença de Creutzfeldt-Jakob</title>
+<description>Encontrar documentos que descrevam os sintomas de qualquer variante da doença de Creutzfeldt-Jakob ou relatem a ligação desta doença à encefalopatia espongiforme (BSE), também conhecida como "doença das vacas loucas".</description>
+<narrative>Documentos relevantes descrevem os sintomas de pessoas suspeitas ou diagnosticadas com a doença de Creutzfeldt-Jakob, ou focam relatos de ligações entre esta doença e a BSE, também conhecida como «doença das vacas loucas».</narrative>
+</topic>
+<topic>
+<identifier>257-AH</identifier>
+<title>Limpeza étnica nos Balcãs</title>
+<description>Encontrar documentos que relatam incidentes específicos de genocídio ou crimes contra a humanidade na antiga Jugoslávia ou na Península Balcânica.</description>
+<narrative>Documentos relevantes devem descrever casos específicos de limpeza étnica ou genocídio na região dos Balcãs e, em particular, na Bósnia, Kosovo, Croácia e Macedónia.</narrative>
+</topic>
+<topic>
+<identifier>258-AH</identifier>
+<title>Impacto da "fuga de cérebros"</title>
+<description>Encontrar documentos sobre o problema causado pela fuga de cérebros ("brain drain") e informação sobre os países e regiões mais afectados.</description>
+<narrative>Documentos relevantes devem citar problemas causados pela transferência de pessoal altamente qualificado ou força de trabalho especializada das regiões do mundo mais pobres ou em desenvolvimento para áreas mais prósperas. Os países em questão devem ser identificados.</narrative>
+</topic>
+<topic>
+<identifier>259-AH</identifier>
+<title>Urso de Ouro</title>
+<description>Encontrar documentos mencionando filmes galardoados com o Urso de Ouro no Festival de Cinema de Berlim.</description>
+<narrative>Qualquer documento mencionando um filme que ganhou um Urso de Ouro é relevante.</narrative>
+</topic>
+<topic>
+<identifier>260-AH</identifier>
+<title>Legislação anti-tabagista</title>
+<description>Encontrar documentos que descrevam leis ou qualquer legislação anti-tabaco que proíba o fumo em locais públicos.</description>
+<narrative>Documentos relevantes devem fornecer informações sobre leis, regras ou políticas anti-tabaco atualmente em vigor num país. A pena para as transgressões também pode ser especificada. Porém documentos sobre propostas de lei anti-tabagistas não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>261-AH</identifier>
+<title>Adivinhação</title>
+<description>Como é que os videntes prevêem o futuro?</description>
+<narrative>Documentos relevantes devem mencionar qualquer das várias técnicas empregadas por videntes ou adivinhos para prever o futuro (i.e., astrologia, leitura das palmas da mão, bolas de cristal, leitura das cartas ou cartomância). Previsões que não informam sobre a técnica usada não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>262-AH</identifier>
+<title>Espectáculos de beneficiência</title>
+<description>Que causas ou instituições humanitárias recebem fundos dos concertos de beneficência?</description>
+<narrative>Documentos relevantes devem relatar espectáculos específicos com fins humanitários e fornecer informação sobre as causas ou instituições de solidariedade ou caridade para que revertem os fundos reunidos pelo concerto.</narrative>
+</topic>
+<topic>
+<identifier>263-AH</identifier>
+<title>Disputas de arbitragem no futebol</title>
+<description>Encontrar documentos nos quais decisões feitas por um árbitro num jogo de futebol são criticadas.</description>
+<narrative>Documentos relevantes relatam jogos de futebol nos quais o árbitro fez uma decisão discutida ou discutível.</narrative>
+</topic>
+<topic>
+<identifier>264-AH</identifier>
+<title>Contrabando de material radioativo</title>
+<description>Encontrar documentos sobre o tráfico internacional ilegal de substâncias radioactivas e materiais nucleares.</description>
+<narrative>Qualquer documento que relate casos de tráfico ilegal ou contrabando de material nuclear ou lixo radioactivo, civil e militar, além das fronteiras nacionais é relevante.</narrative>
+</topic>
+<topic>
+<identifier>265-AH</identifier>
+<title>Aquisições do Deutsche Bank</title>
+<description>Encontrar os nomes das empresas que foram total ou parcialmente adquiridas pelo Deutsche Bank ou daquelas que ainda estão em fase de negociação.</description>
+<narrative>Documentos relevantes listam firmas que foram compradas ou adquiridas pelo Deutsche Bank; relatos de negociações decorrentes também são importantes.</narrative>
+</topic>
+<topic>
+<identifier>266-AH</identifier>
+<title>Discriminação contra os ciganos na Europa</title>
+<description>Encontrar documentos relatando episódios recentes de perseguição, discriminação ou violência contra indivíduos de etnia cigana na Europa.</description>
+<narrative>De interesse são documentos descrevendo, na Europa nos dias de hoje, qualquer tipo de acção contra ciganos, ou casos de ciganos discriminados ou mal tratados.</narrative>
+</topic>
+<topic>
+<identifier>267-AH</identifier>
+<title>Melhor Filme Estrangeiro</title>
+<description>Quais foram os filmes candidatos ao Oscar de Melhor Filme Estrangeiro?</description>
+<narrative>Documentos relevantes devem indicar o título e nacionalidade dos filmes indicados para o Óscar na categoria de Melhor Filme em Língua Estrangeira.</narrative>
+</topic>
+<topic>
+<identifier>268-AH</identifier>
+<title>Ética e a Clonagem Humana</title>
+<description>Encontrar documentos que tragam relatos sobre os problemas éticos e morais relacionados à clonagem de seres humanos.</description>
+<narrative>Documentos relevantes devem relatar discussões dos problemas éticos levantados pela possibilidade da criação de clones humanos. Propostas de leis para a proibição da clonagem humana por razões éticas também são relevantes. Porém relatos sobre os limites tecnológicos ou as dificuldades dos métodos de clonagem quando aplicados a seres humanos não têm relevância.</narrative>
+</topic>
+<topic>
+<identifier>269-AH</identifier>
+<title>Ratificação de tratados</title>
+<description>Encontrar documentos que mencionem a ratificação oficial de tratados internacionais.</description>
+<narrative>Documentos relevantes devem mencionar o tratado ou país ou países que o ratificam. Documentos que apenas mencionem a assinatura de um país ou se ele é parte de um tratado não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>270-AH</identifier>
+<title>Concorrentes da Microsoft</title>
+<description>Quais companhias são concorrentes ou rivais, reais ou potenciais, da Microsoft?</description>
+<narrative>Documentos relevantes devem mencionar os nomes das empresas que competem com a Microsoft. Os nomes dos produtos rivais também são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>271-AH</identifier>
+<title>Casamentos Gays</title>
+<description>As uniões de casais homossexuais devem ser reconhecidas pelo Estado como casamentos legais?</description>
+<narrative>Documentos relevantes devem trazer discussões e debates sobre a questão de se as uniões entre pessoas do mesmo sexo devem ser legalmente reconhecidas ou não. São relevantes todas as opiniões e posições sobre o assunto, sejam aquelas feitas por entidades religiosas ou por indivíduos comuns.</narrative>
+</topic>
+<topic>
+<identifier>272-AH</identifier>
+<title>Biografia do presidente checo</title>
+<description>Encontrar documentos que mencionem de forma específica a história pessoal, literária e humanista do presidente da República Checa, Vacláv Havel.</description>
+<narrative>Documentos relevantes devem fazer referência ao passado de dramaturgo e filósofo de Havel, além do fato de ser presidente da República Checa.</narrative>
+</topic>
+<topic>
+<identifier>273-AH</identifier>
+<title>Expansão da OTAN</title>
+<description>Procurar discussões sobre a expansão da Organização do Tratado do Atlântico Norte (OTAN) incluindo antigos países do Leste Europeu, membros do pacto de Varsóvia.</description>
+<narrative>É relevante qualquer discussão a favor ou contra a expansão da NATO para o leste com a inclusão países anteriormente pertencentes, aliados ou sob a influência política da URSS.</narrative>
+</topic>
+<topic>
+<identifier>274-AH</identifier>
+<title>Bombas não detonadas da Segunda Guerra Mundial</title>
+<description>Encontrar documentos sobre a descoberta de bombas não denotadas, minas terrestres ou outras munições abandonadas no período da Segunda Grande Guerra.</description>
+<narrative>Documentos relevantes devem especificar a localização onde as bombas foram encontradas intactas (ainda armadas) ou outras munições da época da 2ª Guerra Mundial. Informações sobre as medidas de escavação nas áreas em questão e ações de unidades anti-bombas também são de interesse. Não são pertinentes, porém, relatórios sobre depósitos oficiais de munições.</narrative>
+</topic>
+<topic>
+<identifier>275-AH</identifier>
+<title>Doenças relacionadas ao fumo</title>
+<description>Quais doenças ou problemas médicos são suspeitos de estarem relacionados ao fumo ativo ou passivo?</description>
+<narrative>Documentos relevantes devem relatar informação específica sobre pelo menos uma doença que seja considerada consequência direta do fumo ou da exposição a ele. Discussões gerais sobre os riscos do fumo à saúde não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>276-AH</identifier>
+<title>Subsídios agrícolas da UE</title>
+<description>Encontrar informações sobre subsídios agrícolas na União Europeia.</description>
+<narrative>Documentos relevantes devem conter informações sobre os subsídios agrícolas da União Européia e suas respectivas políticas. Subsídios de outros países não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>277-AH</identifier>
+<title>Eutanásia por profissionais da saúde</title>
+<description>Documentos relevantes devem relatar casos específicos de eutanásia declarada ou suspeita realizados em hospitais ou por médicos e enfermeiros.</description>
+<narrative>Todos os documentos que forneçam qualquer tipo de informação sobre possíveis ocorrências de eutanásia &#150; provadas ou suspeitas &#150; por médicos, enfermeiros ou outros profissionais da área médica são relevantes. Discussões gerais de leis para a regulamentação da eutanásia e afirmações de líderes religiosos ou políticos não são de nenhum interesse.</narrative>
+</topic>
+<topic>
+<identifier>278-AH</identifier>
+<title>Transporte para deficientes</title>
+<description>Que problemas afrontam as pessoas com deficiência física quando se utilizam de transportes públicos e quais soluções estão sendo propostas ou adotadas?</description>
+<narrative>Documentos relevantes devem descrever as dificuldades defrontadas por deficientes físicos quando devem usar os transportes públicos ou relatar os progressos para a eliminação desses problemas.</narrative>
+</topic>
+<topic>
+<identifier>279-AH</identifier>
+<title>Referendos suíços</title>
+<description>Encontrar documentos descrevendo a realização de referendos na Suíça.</description>
+<narrative>Documentos relevantes devem mencionar as razões para ou os resultados de qualquer referendo na Suíça.</narrative>
+</topic>
+<topic>
+<identifier>280-AH</identifier>
+<title>Crime em Nova York</title>
+<description>Encontrar informações sobre incidentes criminosos ou relatos de alterações na taxa de criminalidade na cidade de Nova Iorque.</description>
+<narrative>Documentos relevantes devem fornecer informações sobre atividades criminosas em Nova York. São de interesse descrições de episódios individuais de roubo, furto ou violência, bem como relatórios sobre as estatísticas da criminalidade e aumento ou diminuição da incidência de crimes na cidade.</narrative>
+</topic>
+<topic>
+<identifier>281-AH</identifier>
+<title>Radovan Karadzic</title>
+<description>Encontrar material sobre o líder sérbio Radovan Karadzic, que examine sua história pessoal e forneça informação sobre o seu envolvimento em genocídio e crimes contra a humanidade.</description>
+<narrative>É de interesse qualquer informação sobre crimes cometidos por Karadzic, assim como sobre a acusação do Tribunal de Crimes de Guerra das Nações Unidas.</narrative>
+</topic>
+<topic>
+<identifier>282-AH</identifier>
+<title>Maus-tratos nas prisões</title>
+<description>Encontrar relatos de casos específicos de maus tratos ou tortura de presos por carcereiros, polícia ou militares.</description>
+<narrative>Documentos relevantes devem fazer referência a incidentes específicos de maus-tratos, sevícias ou tortura, e fornecer dados sobre o local onde ocorreram. Discussões genéricas não são pertinentes.</narrative>
+</topic>
+<topic>
+<identifier>283-AH</identifier>
+<title>Filmes da série James Bond</title>
+<description>Encontrar documentos que contenham os nomes dos filmes da série James Bond e/ou nomes dos atores que atuaram no papel de James Bond ao longo dos tempos.</description>
+<narrative>Documentos relevantes devem relatar os nomes dos vários filmes de Bond ou os nomes dos actores que protagonizaram o célebre agente secreto.</narrative>
+</topic>
+<topic>
+<identifier>284-AH</identifier>
+<title>Missões do vaivém espacial</title>
+<description>Encontrar informação sobre missões de vaivém espacial, ou ônibus espacial, nas quais ocorreram dificuldades, atrasos, ou mesmo o fracasso das experiências realizadas.</description>
+<narrative>Qualquer documento que relate qualquer tipo de problemas ou desvios da agenda planeada da missão do vaivém ou ônibus é relevante.</narrative>
+</topic>
+<topic>
+<identifier>285-AH</identifier>
+<title>Movimentos anti-aborto</title>
+<description>Encontrar documentos sobre ações dos membros de movimentos anti-aborto ou sobre esforços para restrição ou revogação das leis que regulamentem o aborto.</description>
+<narrative>São relevantes qualquer ação de membros do movimento anti-aborto, incluindo manifestações, marchas de protesto, ou ações específicas contra clínicas onde abortos são praticados. Declarações de pessoas a favor da revogação ou restrição do aborto legal também são de interesse.</narrative>
+</topic>
+<topic>
+<identifier>286-AH</identifier>
+<title>Lesões no futebol</title>
+<description>Encontrar documentos que descrevam lesões de jogadores profissionais durante partidas de futebol ou treinos antes do jogo.</description>
+<narrative>Documentos relevantes devem descrever a ocorrência de qualquer tipo de lesão sofrida em partidas de futebol, incluindo contusões, distensões musculares, e danos à cartilagem, além de lesões mais sérias como fraturas ou concussões. Danos físicos durante os treinamentos também são pertinentes.</narrative>
+</topic>
+<topic>
+<identifier>287-AH</identifier>
+<title>Ações terroristas com reféns</title>
+<description>Encontrar documentos que discutam ações de terroristas ou outros grupos militantes envolvendo reféns.</description>
+<narrative>Documentos relevantes descrevem casos concretos em que indivíduos foram feitos reféns de terroristas ou grupos militantes. São excluídas histórias ou filmes que incluam a captura de reféns, assim como quaisquer ações legais de antigos reféns.</narrative>
+</topic>
+<topic>
+<identifier>288-AH</identifier>
+<title>Importações de carros para os EUA</title>
+<description>Que marcas automóveis são importadas para os Estados Unidos?</description>
+<narrative>Documentos relevantes devem conter informação sobre as marcas ou fabricantes de carros que são vendidos nos Estados Unidos, mas não produzidos nesse país.</narrative>
+</topic>
+<topic>
+<identifier>289-AH</identifier>
+<title>Ilhas Malvinas</title>
+<description>Encontrar documentos com informação sobre as ilhas Malvinas</description>
+<narrative>Documentos relevantes devem ser realmente sobre as Malvinas (também conhecidas como Falkland), não apenas mencioná-las, e devem fornecer alguma informação histórica, geográfica, económica ou social.</narrative>
+</topic>
+<topic>
+<identifier>290-AH</identifier>
+<title>Flutuação do preço do petróleo</title>
+<description>Porque se altera o preço internacional do petróleo?</description>
+<narrative>Documentos relevantes descrevem as razões directas para as flutuações do preço do petróleo (i.e., redução de reservas, guerra, condições metereológicas). Documentos relatando alterações dos preços internacionais do petróleo sem mencionar as causas são irrelevantes.</narrative>
+</topic>
+<topic>
+<identifier>291-AH</identifier>
+<title>Imigrantes ilegais na UE</title>
+<description>Encontrar documentos relacionados com o fenómeno da imigração ilegal para países da União Europeia, incluindo descrições de incidentes envolvendo a descoberta de imigrantes ilegais ou as suas actividades, ou apresentando afirmações mais gerais discutindo o problema.</description>
+<narrative>Documentos relevantes devem referir-se apenas à imigração ilegal para países da União Europeia. Qualquer informação sobre o papel desempenhado por grupos criminosos em esconder, transportar ou explorar essas pessoas é de interesse.</narrative>
+</topic>
+<topic>
+<identifier>292-AH</identifier>
+<title>Reconstrução de cidades alemãs</title>
+<description>Encontrar descrições sobre a reconstrução de monumentos ou edifícios importantes ou históricos que foram gravemente danificados ou destruídos em cidades alemãs bombardeadas durante a Segunda Guerra Mundial.</description>
+<narrative>Documentos relevantes devem descrever obras que foram reconstruídas após serem seriamente sujeitas a bombardeamento durante a Segunda Grande Guerra em cidades da Alemanha. Qualquer cidade alemã ao tempo da guerra é pertinente, mas espera-se que a maioria dos documentos se refira a Berlim, Dresden ou Leipzig.</narrative>
+</topic>
+<topic>
+<identifier>293-AH</identifier>
+<title>Relações entre a China e a Formosa</title>
+<description>Encontrar informação sobre as relações actuais entre a China e a Formosa (Taiwan), incluindo relatos de qualquer acção hostil da China contra a Formosa.</description>
+<narrative>Qualquer documento que forneça informação sobre as relações difíceis entre a China e a Formosa é relevante, incluindo relatos de esforços por parte da China para influenciar as relações de outros países com a Formosa.</narrative>
+</topic>
+<topic>
+<identifier>294-AH</identifier>
+<title>Força dos furações</title>
+<description>Qual a velocidade dos ventos num furacão ou tufão?</description>
+<narrative>A força de um furacão é assinalada pela velocidade do vento. Documentos relevantes devem fornecer números concretos para a força de um tufão ou furacão ou para a velocidade do vento.</narrative>
+</topic>
+<topic>
+<identifier>295-AH</identifier>
+<title>Lavagem de dinheiro</title>
+<description>Encontrar documentos discutindo o crime de colarinho branco conhecido como branqueamento de dinheiro, que é o processo pelos quais os criminosos escondem os fundos ilicitamente adquiridos, convertendo-os em ganhos aparentemente legais.</description>
+<narrative>Documentos relevantes devem fornecer informação sobre a lavagem de dinheiro por organizações criminosas &#150; incluindo o uso de paraísos fiscais &#150; ou descreverem medidas internacionais para a combater.</narrative>
+</topic>
+<topic>
+<identifier>296-AH</identifier>
+<title>Liszt tocado em público</title>
+<description>Encontrar documentos mencionando concertos ou outros espectáculos musicais onde são executadas obras do compositor húngaro Franz Liszt.</description>
+<narrative>Documentos relevantes devem mencionar qualquer tipo de execução pública, concerto ou recital de obras de Liszt e devem também especificar onde teve lugar o espectáculo. Documentos que apenas mencionem a existência de obras de Liszt não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>297-AH</identifier>
+<title>Expulsões de pessoal diplomático</title>
+<description>Encontrar documentos descrevendo a expulsão de diplomatas de qualquer país.</description>
+<narrative>Documentos relevantes devem mencionar o país de origem dos diplomatas e o país de onde foram expulsos.</narrative>
+</topic>
+<topic>
+<identifier>298-AH</identifier>
+<title>Centrais nucleares</title>
+<description>Encontrar documentos relatando acidentes em centrais nucleares ou atômicas ou discutindo a probabilidade de um acidente e os potenciais riscos para a população.</description>
+<narrative>Documentos relevantes devem especificar a localização ou o nome da central nuclear e, ou dar alguma informação sobre acidentes concretos, ou discutir riscos potenciais.</narrative>
+</topic>
+<topic>
+<identifier>299-AH</identifier>
+<title>Riscos das missões de manutenção de paz da ONU</title>
+<description>Encontrar documentos relatando casos em que os elementos das tropas de manutenção de paz das Nações Unidas, os chamados capacetes azuis, foram feitos reféns, feridos ou mortos.</description>
+<narrative>Documentos relevantes devem fornecer pormenores sobre incidentes nos quais as vidas de militares pertencendo às tropas de manutenção de paz da ONU foram postas em risco ou ameaçadas.</narrative>
+</topic>
+<topic>
+<identifier>300-AH</identifier>
+<title>Prémios na lotaria</title>
+<description>Encontrar documentos sobre os vencedores de prémios na lotaria.</description>
+<narrative>Apenas documentos relatando uma atribuição de prémios na lotaria e fornecendo informação sobre os vencedores, tal como nomes, passado, ou origens são relevantes. Documentos que apenas listam prémios a ser atribuídos não são relevantes.</narrative>
+</topic><topic>
+<identifier>301-AH</identifier>
+<title>Marcas da Nestlé</title>
+<description>Que marcas da Nestlé são vendidas em todo o mundo?</description>
+<narrative>Artigos relevantes devem mencionar o nome de marcas vendidas à escala global pela Nestlé ou suas subsidiárias. No segundo caso, devem fazer uma referência clara à companhia-mãe.</narrative>
+</topic>
+<topic>
+<identifier>302-AH</identifier>
+<title>Boicotes de consumidores</title>
+<description>Encontrar documentos que descrevam ou discutam o impacto de boicotes por consumidores.</description>
+<narrative>Documentos relevantes devem relatar discussões ou pontos de vista sobre a eficácia de boicotes pelos consumidores São também relevantes as questões morais envolvidas nesses boicotes. Apenas boicotes feitos por consumidores são relevantes, boicotes políticos são ignorados.</narrative>
+</topic>
+<topic>
+<identifier>303-AH</identifier>
+<title>Pinturas italianas</title>
+<description>Encontrar informação sobre locais onde pinturas ou desenhos italianos estão expostos ao público.</description>
+<narrative>Documentos relevantes devem mencionar os locais em qualquer parte do mundo onde estão expostas permanente ou temporariamente pinturas da escola italiana ou de autores italianos. A localização de pinturas ou desenhos por artistas italianos, expostos ao público em museus, galerias de arte, ou similares, também interessa. A informação deve ser suficiente para identificar o local exacto, ou seja, o nome da cidade ou do país não é suficiente.</narrative>
+</topic>
+<topic>
+<identifier>304-AH</identifier>
+<title>Património Mundial</title>
+<description>Diga o nome e/ou localização de lugares de extraordinária beleza ou importância que tenham sido designados como património mundial pela UNESCO.</description>
+<narrative>Documentos relevantes devem mencionar o nome e/ou localização geográfica de monumentos, cidades ou lugares que tenham sido oficialmente designados pela UNESCO como Património Mundial de extraordinária beleza ou importância. Discussões sobre potenciais candidatos não são relevantes. No documento deve constar que a designação foi aprovada oficialmente pela UNESCO.</narrative>
+</topic>
+<topic>
+<identifier>305-AH</identifier>
+<title>Preço do petróleo</title>
+<description>Qual é o preço atual do petróleo?</description>
+<narrative>Apenas documentos com o preço atual do petróleo são relevantes, i.e., o preço na época em que o documento foi escrito. Referências a preços passados ou previsões de mudança de preço no futuro não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>306-AH</identifier>
+<title>Actividades da ETA em França</title>
+<description>Encontrar documentos sobre as actividades do grupo terrorista basco ETA em França.</description>
+<narrative>Apenas documentos descrevendo as actividades do grupo terrorista basco ETA em território francês, sejam armadas, políticas, financeiras, ou outras, são relevantes. As actividades da ETA em Espanha não são interessantes.</narrative>
+</topic>
+<topic>
+<identifier>307-AH</identifier>
+<title>Filmes passados na Escócia</title>
+<description>Encontrar informação sobre filmes cuja acção decorre na Escócia.</description>
+<narrative>Os documentos relevantes devem mencionar filmes cuja acção se passa na Escócia. Filmes filmados na Escócia, mas cuja acção decorre noutro local, não são relevantes. Peças, tais como «Macbeth», não são relevantes, mas as suas versões filmadas são. Igualmente de interesse são todos os documentários que incluam cenas escocesas.</narrative>
+</topic>
+<topic>
+<identifier>308-AH</identifier>
+<title>Eclipse solar</title>
+<description>Encontrar documentos relatando eclipses totais ou parciais do sol.</description>
+<narrative>Qualquer documento fornecendo qualquer tipo de informação sobre eclipses solares é relevante. Documentos sobre eclipses da lua ou trânsitos planetários não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>309-AH</identifier>
+<title>Drogas duras</title>
+<description>Encontrar documentos que mencionem os perigos das drogas duras, tais como heroína ou cocaína, comparando-as com as drogas leves.</description>
+<narrative>Documentos relevantes devem fornecer informação sobre os perigos envolvidos no uso ilegal e na consequente dependência de drogas duras. Informação apenas sobre os problemas resultantes do uso de drogas leves não é relevantes.</narrative>
+</topic>
+<topic>
+<identifier>310-AH</identifier>
+<title>Tratamento de resíduos industriais</title>
+<description>Encontrar documentos descrevendo métodos usados para o tratamento ou remoção de resíduos industriais.</description>
+<narrative>Documentos devem mencionar não apenas os diferentes meios de tratar os resíduos industriais, tais como incineração ou reciclagem, mas também indicar o país, cidade, ou região onde o método é empregado.</narrative>
+</topic>
+<topic>
+<identifier>311-AH</identifier>
+<title>Desemprego na Europa</title>
+<description>Encontrar informação e números sobre o nível de desemprego em países europeus.</description>
+<narrative>Documentos relevantes devem discutir o problema do desemprego em um ou mais países europeus, fornecendo números relativos às taxas de desemprego em causa.</narrative>
+</topic>
+<topic>
+<identifier>312-AH</identifier>
+<title>Ataques de cães a seres humanos</title>
+<description>Que consequências advêm de cães atacarem pessoas?</description>
+<narrative>Documentos relevantes devem descrever as consequências de incidentes em que um ser humano foi atacado por um cão, tal como, por exemplo, o tipo de ferimentos causados e/ou o tipo de sanções aplicadas ao dono do animal.</narrative>
+</topic>
+<topic>
+<identifier>313-AH</identifier>
+<title>Celebrações de centenários</title>
+<description>Encontrar documentos relatando a celebração do 100º aniversário de qualquer evento.</description>
+<narrative>Documentos relevantes devem conter informação sobre o centésimo aniversário do nascimento ou da morte de uma pessoa famosa ou a passagem de cem anos após um acontecimento histórico significativo.</narrative>
+</topic>
+<topic>
+<identifier>314-AH</identifier>
+<title>Espécies em vias de extinção</title>
+<description>Que medidas estão a ser tomadas na Europa para proteger animais ou plantas em vias de extinção?</description>
+<narrative>Documentos relevantes devem discutir medidas tomadas para salvaguardar espécies de animais ou plantas em vias de extinção em países europeus.</narrative>
+</topic>
+<topic>
+<identifier>315-AH</identifier>
+<title>Doping no esporte</title>
+<description>Em que tipo de esporte são usadas ilegalmente drogas dopantes?</description>
+<narrative>Encontrar documentos que relatam casos específicos nos quais um (ou uma) esportista profissional foi acusado de usar drogas para melhorar sua atuação.</narrative>
+</topic>
+<topic>
+<identifier>316-AH</identifier>
+<title>Greves</title>
+<description>Quem está em greve e porquê?</description>
+<narrative>Encontrar documentos que relatem casos específicos de greves em qualquer parte do mundo. Os documentos devem fornecer informação específica sobre as causas da greve e os objectivos que os grevistas esperam alcançar através dessa greve. Apenas documentos que discutam greves concretas são relevantes; informações sobre greves potenciais ou planeadas não o são.</narrative>
+</topic>
+<topic>
+<identifier>317-AH</identifier>
+<title>Medicamentos contra o cancro</title>
+<description>Encontrar informação sobre os efeitos de medicamentos e outros tratamentos médicos contra o cancro.</description>
+<narrative>Os documentos devem conter informação sobre resultados do uso, desenvolvimento ou teste de medicamentos ou tratamentos oncológicos, tais como terapias hormonais, a quimioterapia e a imunoterapia. Tanto resultados experimentais em laboratório como estudos feitos depois do medicamento atingir o mercado são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>318-AH</identifier>
+<title>Educação sexual</title>
+<description>Ensina-se educação sexual nas escolas europeias?</description>
+<narrative>Encontrar documentos fornecendo informação sobre a educação sexual nas escolas na Europa. Documentos relevantes podem mencionar as razões para introduzir este assunto nas salas de aula, ou discutir os prós e os contras da educação sexual como parte do currículo escolar.</narrative>
+</topic>
+<topic>
+<identifier>319-AH</identifier>
+<title>Produção global de ópio</title>
+<description>Encontrar informação sobre o cultivo ou produção mundial de ópio.</description>
+<narrative>Documentos relevantes darão informação sobre o cultivo de papoilas ou a produção de ópio e seus derivados, a nível mundial. Tanto a produção legal como a ilegal são de interesse.</narrative>
+</topic>
+<topic>
+<identifier>320-AH</identifier>
+<title>Crises energéticas</title>
+<description>Encontrar informação sobre faltas de energia ou de combustível.</description>
+<narrative>Documentos relevantes devem mencionar onde ocorreu a crise energética e mencionar suas causas.</narrative>
+</topic>
+<topic>
+<identifier>321-AH</identifier>
+<title>Os Taliban no Afganistão</title>
+<description>Encontrar informação sobre as crenças e práticas dos taliban  islâmicos afegãos.</description>
+<narrative>Documentos relevantes devem fornecer informação sobre o movimento taliban no Afganistão e suas crenças e práticas. De particular interesse são relatos sobre como são tratadas as mulheres pelos Taliban.</narrative>
+</topic>
+<topic>
+<identifier>322-AH</identifier>
+<title>Energia atómica</title>
+<description>Encontrar documentos pró ou contra o emprego de energia atómica para fins pacíficos.</description>
+<narrative>Documentos relevantes devem fornecer argumentos gerais pró ou contra o uso de energia atómica para fins pacíficos. Relatos sobre acidentes ou desastres específicos envolvendo energia atómica não são de interesse a não ser que também incluam argumentos sobre o assunto.</narrative>
+</topic>
+<topic>
+<identifier>323-AH</identifier>
+<title>Reforçando o controlo de vistos</title>
+<description>Encontrar documentos com informação sobre o aumento de restrições na distribuição de vistos ou mudanças nesse sentido nas leis de imigração.</description>
+<narrative>Documentos relevantes devem dar informação sobre países que recentemente tornaram as suas regras de imigração e regulamentos para distribuição de vistos mais restritivas. Também de interesse são discussões sobre países que estão a considerar implementar restrições desse tipo.</narrative>
+</topic>
+<topic>
+<identifier>324-AH</identifier>
+<title>Top models</title>
+<description>Encontrar nomes de «top models» internacionalmente famosas.</description>
+<narrative>Top models ou supermodelos são modelos cujo sucesso resultou num estatuto de celebridade. Documentos relevantes devem fornecer o nomes das top models famosas a nível internacional. No documento tem de ser claro que esse estatuto foi atingido.</narrative>
+</topic>
+<topic>
+<identifier>325-AH</identifier>
+<title>Mensalidades universitárias</title>
+<description>Encontrar documentos que discutam a introdução ou aumento de mensalidades nas universidades.</description>
+<narrative>Documentos relevantes devem fornecer informação sobre a introdução ou aumento do valor das mensalidades em qualquer grau do ensino universitário.</narrative>
+</topic>
+<topic>
+<identifier>326-AH</identifier>
+<title>Prémios Emmy Internacional</title>
+<description>Encontrar informação sobre os vencedores do Prémio Emmy de 1995 em programação televisiva internacional.</description>
+<narrative>Todos os anos a Academia Internacional de Artes e Ciências da Televisão atribui o Prémio Emmy Internacional aos melhores programas  televisivos produzidos fora dos Estados Unidos. Documentos relevantes devem mencionar o nome dos vencedores em uma ou todas as categorias.</narrative>
+</topic>
+<topic>
+<identifier>327-AH</identifier>
+<title>Terramotos na Cidade do México</title>
+<description>Encontrar documentos que forneçam detalhes sobre o impacto ou sobre os danos causados por terramotos na Cidade do México em 1995.</description>
+<narrative>Documentos relevantes devem conter alguma informação sobre terramotos na Cidade do México em 1995, tais como a sua magnitude, os estragos causados, ou o pânico entre a população. Documentos sobre terramotos noutros pontos do México não são relevantes a não ser que o impacto sísmico também tenha sido sentido na capital.</narrative>
+</topic>
+<topic>
+<identifier>328-AH</identifier>
+<title>Curdos iraquianos e a Turquia</title>
+<description>Encontrar documentos relatando acções militares do exército turco no Curdistão iraquiano.</description>
+<narrative>Documentos relevantes devem relatar as acções do exército turco na zona curda no norte do Iraque. Documentos com informação geral sobre as relações entre turcos e curdos não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>329-AH</identifier>
+<title>Consequências do divórcio de Carlos e Diana</title>
+<description>Terá o divórcio do Príncipe Carlos e da Princesa Diana consequências constitucionais no Reino Unido?</description>
+<narrative>Apenas documentos que discutam possíveis consequências constitucionais como resultado do divórcio dos Príncipes de Gales são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>330-AH</identifier>
+<title>Filmes com Keanu Reeves</title>
+<description>Encontrar títulos de filmes com Keanu Reaves.</description>
+<narrative>Documentos relevantes devem mencionar os títulos dos filmes onde Keanu Reaves aparece como ator. Apenas os filmes já exibidos ou em exibição são relevantes. Filmes ainda em produção não são relevantes. Reeves deve ser ator no filme e não produtor ou diretor.</narrative>
+</topic>
+<topic>
+<identifier>331-AH</identifier>
+<title>Política económica de Zedillo</title>
+<description>Encontrar informação sobre a política económica de Ernesto Zedillo, presidente do México.</description>
+<narrative>Documentos relevantes devem discutir as políticas económicas e financeiras do presidente Ernesto Zedillo. São de particular interesse documentos discutindo a desvalorização da divisa mexicana. Documentos que  apenas mencionem Zedillo como responsável pela crise financeira no México sem detalhar as suas acções não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>332-AH</identifier>
+<title>Atentado a Tupac Shakur</title>
+<description>Encontrar informação sobre a tentativa de homícidio do músico &#147;rap&#148; Tupac Shakur em Novembro de 1994.</description>
+<narrative>Documentos relevantes devem conter informação sobre as circunstâncias em que Tupac Shakur foi atingido, mencionando os acontecimentos que conduziram ao atentado sofrido à entrada dos estúdios da Quad Recording em Novembro de 1994.</narrative>
+</topic>
+<topic>
+<identifier>333-AH</identifier>
+<title>Julgamento de Paul Touvier</title>
+<description>Encontrar informação sobre o julgamento do criminoso de guerra francês Paul Touvier.</description>
+<narrative>Documentos relevantes devem conter informação sobre o julgamento de Paul Touvier, que foi julgado e condenado por crimes contra a Humanidade durante a Segunda Guerra Mundial.</narrative>
+</topic>
+<topic>
+<identifier>334-AH</identifier>
+<title>Eleição de George W. Bush</title>
+<description>Quem foi derrotado por George W. Bush quando este foi eleito governador do Texas em 1994?</description>
+<narrative>Documentos relevantes devem apresentar os resultados das eleições para governador do Texas em 1994. Apenas documentos que indiquem o nome do candidato democrata derrotado por Bush são pertinentes.</narrative>
+</topic>
+<topic>
+<identifier>335-AH</identifier>
+<title>O Partido Trabalhista após John Smith</title>
+<description>Quais as conseqüências da morte de John Smith para o Partido Trabalhista britânico?</description>
+<narrative>Os documentos devem discutir ou especular sobre o futuro do Partido Trabalhista após a morte de seu líder John Smith em 1994. Tem-se particular interesse nos detalhes sobre a luta pelo poder entre as diversas correntes no interior do partido e a disputa entre os candidatos pela liderança.</narrative>
+</topic>
+<topic>
+<identifier>336-AH</identifier>
+<title>Conflitos laborais na NBA</title>
+<description>Encontrar informação sobre os conflitos laborais que atingiram a NBA durante 1994 e 1995</description>
+<narrative>Conflitos laborais relevantes incluem a greve dos árbitros, uma possível greve dos jogadores, e o lock-out pelos donos das equipas.</narrative>
+</topic>
+<topic>
+<identifier>337-AH</identifier>
+<title>Guerra civil no Iémene</title>
+<description>Qualquer informação sobre a guerra civil iemenita de 1994 é de interesse.</description>
+<narrative>Documentos devem discutir a tentativa de secessão do Iémene do Sul da República do Iémene e a curta guerra civil que se lhe seguiu.</narrative>
+</topic>
+<topic>
+<identifier>338-AH</identifier>
+<title>Extradição e julgamento de Carlos</title>
+<description>Encontrar informação sobre a extradição e julgamento do terrorista conhecido como «Carlos o Chacal».</description>
+<narrative>Os documentos relevantes devem relatar a extradição do terrorista conhecido como «Carlos, o Chacal» do Sudão e o seu julgamento em França. Relatos das suas actividades que não mencionem a extradição ou o julgamento não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>339-AH</identifier>
+<title>Sinn Fein e a Declaração Anglo-Irlandesa</title>
+<description>Qual foi a reacção do Sinn Fein à declaração anglo-irlandesa?</description>
+<narrative>Os documentos devem relatar a reacção do Sinn Fein à declaração conjunta dos governos britânico e irlandês, feita em Dezembro de 1993, sobre o futuro da Irlanda do Norte.</narrative>
+</topic>
+<topic>
+<identifier>340-AH</identifier>
+<title>Novo primiê do Québeque</title>
+<description>Quem foi eleito primiê do Québeque em setembro de 1994?</description>
+<narrative>Documentos relevantes devem indicar o nome do novo chefe do governo do Québeque (ou Quebec), eleito em setembro de 1994. Especulações sobre o possível vencedor das eleições não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>341-AH</identifier>
+<title>Roubo d'«O Grito»</title>
+<description>Encontrar informação sobre o roubo da pintura «O Grito», de Edvard Munch, da Galeria Nacional em Oslo.</description>
+<narrative>Documentos devem relatar o roubo da pintura em Oslo em Fevereiro de 1994. Informação geral sobre a pintura ou sobre o artista não são de interesse.</narrative>
+</topic>
+<topic>
+<identifier>342-AH</identifier>
+<title>«Quatro Casamentos e um Funeral»</title>
+<description>Encontrar relatos do sucesso do filme britânico «Quatro Casamentos e um Funeral».</description>
+<narrative>Documentos relevantes devem fornecer dados sobre o sucesso e popularidade deste filme. Documentos sobre o enredo do filme não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>343-AH</identifier>
+<title>Partido Nacional sul-africano</title>
+<description>Procurar informação sobre a campanha e resultados do Partido Nacional nas eleições sul-africanas de 1994.</description>
+<narrative>Documentos relevantes devem relatar a campanha do Partido-Nacional, as suas tentativas de alargar o eleitorado, e os seus resultados nas primeiras eleições multirraciais na África do Sul. Detalhes sobre a história do partido não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>344-AH</identifier>
+<title>Brasil-Suécia nas semifinais do Campeonato do Mundo</title>
+<description>Encontrar documentos sobre o jogo das meias-finais do Campeonato do Mundo de futebol de 1994 entre o Brasil e a Suécia.</description>
+<narrative>Qualquer informação sobre este jogo é de interesse, como sejam a composição das equipas, descrições do jogo, resultado final. Relatos de jogos entre o Brasil e a Suécia nas fases anteriores não são relevantes.</narrative>
+</topic>
+<topic>
+<identifier>345-AH</identifier>
+<title>Esqui cross country nos Jogos Olímpicos</title>
+<description>Quem ganhou uma prova de esqui cross country nas Olimpíadas de 1994?</description>
+<narrative>Documentos devem mencionar o nome e a nacionalidade de pelo menos um vencedor de uma das provas de esqui cross country nos Jogos Olímpicos de 1994. Documentos que indicam apenas o nome do vencedor coletivo sem dar os nomes dos esquiadores que fazem parte do time não serão considerados relevantes.</narrative>
+</topic>
+<topic>
+<identifier>346-AH</identifier>
+<title>Vencedores de provas do Grand Slam</title>
+<description>Quem ganhou torneios de ténis Grand Slam em 1995?</description>
+<narrative>Documentos relevantes devem relatar tanto o nome como a nacionalidade de pelo menos um(a) tenista vencedor(a) de uma prova do Grand Slam em 1995.</narrative>
+</topic>
+<topic>
+<identifier>347-AH</identifier>
+<title>Óscar do Melhor Filme 1994</title>
+<description>Quem ganhou o Óscar do Melhor Filme em 1994?</description>
+<narrative>Os documentos têm que mencionar quer o nome do realizador quer o nome do filme que ganhou o prémio de Melhor Filme.</narrative>
+</topic>
+<topic>
+<identifier>348-AH</identifier>
+<title>Assassinato de Yann Piat</title>
+<description>Encontrar documentos discutindo o assassinato de Yann Piat, activista política de direita, em 1994.</description>
+<narrative>Documentos relevantes devem conter detalhes do homicídio de Yann Piat perto de sua casa em Toulon.</narrative>
+</topic>
+<topic>
+<identifier>349-AH</identifier>
+<title>Morte de Nixon</title>
+<description>Encontrar documentos que relatem a doença que vitimaria Richard Nixon em 1994 e o seu falecimento.</description>
+<narrative>Documentos relevantes devem discutir as causas da doença de Nixon ou relatar a sua morte.</narrative>
+</topic>
+<topic>
+<identifier>350-AH</identifier>
+<title>Morte de Ayrton Senna</title>
+<description>Encontrar documentos descrevendo o acidente fatal de Ayrton Senna no circuito de Imola em 1994.</description>
+<narrative>Documentos devem relatar as circunstâncias da morte do piloto brasileiro de Fórmula 1 no Circuito de Imola.</narrative>
+</topic>
+</topics>
