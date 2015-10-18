@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+    <topic>
+        <identifier>251-AH</identifier>
+        <title>Medicina alternativa</title>
+        <description>Encontrar documentos sobre tratamentos que empreguem medicina natural ou alternativa. Aqui são incluídas terapias como a acupuntura, a hemopatia, a quiroprática, entre outras.</description>
+        <narrative>Documentos relevantes devem fornecer informação, específica ou genérica, sobre o uso de tratamentos ou técnicas de medicina natural ou alternativa.</narrative>
+    </topic>
+    <topic>
+        <identifier>252-AH</identifier>
+        <title>Sistemas de reforma e pensões na Europa</title>
+        <description>Encontrar documentos sobre os esquemas de pensões e benefícios na reforma em qualquer país europeu.</description>
+        <narrative>Documentos relevantes devem conter informação sobre os actuais esquemas de pensões em estados europeus individuais. Informação de interesse engloba as idades de reforma mínima e máxima, assim como a forma de calcular o valor das pensões de reforma. Planos de reformulação dos esquemas de reforma não são relevantes.</narrative>
+    </topic>
+    <topic>
+        <identifier>253-AH</identifier>
+        <title>Países com pena de morte</title>
+        <description>Em quais países ainda é usada, ou pelo menos constitucionalmente permitida, a pena de morte?</description>
+        <narrative>Documentos que afirmem de forma explícita que a constituição de um dado estado permite a pena capital são obviamente relevantes. Documentos de relatos de sentenças de morte específicas também são relevantes caso o estado ou país em questão seja explicitamente mencionado.</narrative>
+    </topic>
+</topics>
