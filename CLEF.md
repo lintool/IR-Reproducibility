@@ -97,15 +97,17 @@ You can find runs and *trec_eval* results at:
 
 ## Credits
 
-* [CLEF Initiative](http://www.clef-initiative.eu)
+* [CLEF Association](http://www.clef-initiative.eu)
 
 * [Information Management Systems Research Group](http://ims.dei.unipd.it), University of Padua
 
-* Stemming methods:
+* Stop lists and language resources [Jacques Savoy](http://members.unine.ch/jacques.savoy/clef/index.html)
+
+* Stemming methods for Indri:
     * [Jacques Savoy](http://members.unine.ch/jacques.savoy/clef/index.html)
     * [Jonsafari](https://www.ling.ohio-state.edu/~jonsafari/persian_nlp.html)
     * [Snowball](http://snowball.tartarus.org/)
 
 ## Acknowledgements
 
-The experiments on CLEF collections were run by [Maria Maistro](http://www.dei.unipd.it/~maistro/) and [Gianmaria Silvello](http://www.dei.unipd.it/~silvello/) (Terrier) and by [Emanuele Di Buccio](http://www.dei.unipd.it/~dibuccio/) (Lucene) of the IMS research group of University of Padua and by James Liu (Indri) of the DIRO research group of the University of Montreal. Thanks to [Jacques Savoy](http://members.unine.ch/jacques.savoy/clef/index.html) who provided the language resources (i.e. stop-lists for different languages) for conducting the experiments on CLEF collections.
+The experiments on CLEF collections were run by [Maria Maistro](http://www.dei.unipd.it/~maistro/) and [Gianmaria Silvello](http://www.dei.unipd.it/~silvello/) (Terrier) and by [Emanuele Di Buccio](http://www.dei.unipd.it/~dibuccio/) (Lucene) of the IMS research group of University of Padua and by Xiaojie (James) Liu (Indri) of the DIRO research group of the University of Montreal.
