@@ -1,0 +1,20 @@
+<parameters> 
+    <memory>1024m</memory> 
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_de/</index> 
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/FRANKFURTER1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/SDA1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/SPIEGEL1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/SPIEGEL1995_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+</parameters> 

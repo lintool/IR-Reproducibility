@@ -1,0 +1,12 @@
+<parameters> 
+    <memory>1024m</memory> 
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_sv/</index> 
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/TT1994_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/TT1995_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+</parameters> 

@@ -1,0 +1,20 @@
+<parameters> 
+    <memory>1024m</memory> 
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_nl/</index> 
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/ALGEMEEN1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/ALGEMEEN1995_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/NRC1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/NRC1995_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+</parameters> 

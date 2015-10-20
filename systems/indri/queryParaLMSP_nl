@@ -1,0 +1,630 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_nl</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>41-AH</number>
+ <text>pesticid babyvoed </text>
+</query>
+<query>
+ <number>42-AH</number>
+ <text>unus invasie haiti </text>
+</query>
+<query>
+ <number>43-AH</number>
+ <text>el niño voorspell wer </text>
+</query>
+<query>
+ <number>44-AH</number>
+ <text>indurain wint tour </text>
+</query>
+<query>
+ <number>45-AH</number>
+ <text>vredesverdrag tuss israel jordanie </text>
+</query>
+<query>
+ <number>46-AH</number>
+ <text>embargo irak </text>
+</query>
+<query>
+ <number>47-AH</number>
+ <text>russisch interventie tsjetsjenie </text>
+</query>
+<query>
+ <number>48-AH</number>
+ <text>vredesmacht bosnie </text>
+</query>
+<query>
+ <number>49-AH</number>
+ <text>afnam japan automobielexport </text>
+</query>
+<query>
+ <number>50-AH</number>
+ <text>opstand chiapas </text>
+</query>
+<query>
+ <number>51-AH</number>
+ <text>wereldkampioenschap voetbal </text>
+</query>
+<query>
+ <number>52-AH</number>
+ <text>devaluatie chines munt </text>
+</query>
+<query>
+ <number>53-AH</number>
+ <text>gen aandoen </text>
+</query>
+<query>
+ <number>54-AH</number>
+ <text>uitslag final four </text>
+</query>
+<query>
+ <number>55-AH</number>
+ <text>alpenverkeersplan zwitserland </text>
+</query>
+<query>
+ <number>56-AH</number>
+ <text>europes campagnes racism </text>
+</query>
+<query>
+ <number>57-AH</number>
+ <text>affair besmet bloed </text>
+</query>
+<query>
+ <number>58-AH</number>
+ <text>euthanasie </text>
+</query>
+<query>
+ <number>59-AH</number>
+ <text>computerviruss </text>
+</query>
+<query>
+ <number>60-AH</number>
+ <text>fran corruptieschandal </text>
+</query>
+<query>
+ <number>61-AH</number>
+ <text>olieramp siberie </text>
+</query>
+<query>
+ <number>62-AH</number>
+ <text>aardbev noordelijk japan </text>
+</query>
+<query>
+ <number>63-AH</number>
+ <text>reservat walviss </text>
+</query>
+<query>
+ <number>64-AH</number>
+ <text>muisarm </text>
+</query>
+<query>
+ <number>65-AH</number>
+ <text>schatgraverij </text>
+</query>
+<query>
+ <number>66-AH</number>
+ <text>terugtrek russ letland </text>
+</query>
+<query>
+ <number>67-AH</number>
+ <text>aanvar </text>
+</query>
+<query>
+ <number>68-AH</number>
+ <text>aanslag europes synagog </text>
+</query>
+<query>
+ <number>69-AH</number>
+ <text>klon ethiek </text>
+</query>
+<query>
+ <number>70-AH</number>
+ <text>dod kim il sung </text>
+</query>
+<query>
+ <number>71-AH</number>
+ <text>groent fruit kanker </text>
+</query>
+<query>
+ <number>72-AH</number>
+ <text>g7top napel </text>
+</query>
+<query>
+ <number>73-AH</number>
+ <text>nor referendum eu </text>
+</query>
+<query>
+ <number>74-AH</number>
+ <text>open kanaaltunnel </text>
+</query>
+<query>
+ <number>75-AH</number>
+ <text>bloedbad rechtbank euskirch </text>
+</query>
+<query>
+ <number>76-AH</number>
+ <text>zonneenergie </text>
+</query>
+<query>
+ <number>77-AH</number>
+ <text>zelfmoord tiener </text>
+</query>
+<query>
+ <number>78-AH</number>
+ <text>filmfestival venetie </text>
+</query>
+<query>
+ <number>79-AH</number>
+ <text>ruimtesond ulysses </text>
+</query>
+<query>
+ <number>80-AH</number>
+ <text>hongerstak </text>
+</query>
+<query>
+ <number>81-AH</number>
+ <text>gijzelnem airbus </text>
+</query>
+<query>
+ <number>82-AH</number>
+ <text>iraaanslag luchthaven </text>
+</query>
+<query>
+ <number>83-AH</number>
+ <text>veiling lennonmemorabilia </text>
+</query>
+<query>
+ <number>84-AH</number>
+ <text>aanvall haai </text>
+</query>
+<query>
+ <number>85-AH</number>
+ <text>operatie turquois rwanda </text>
+</query>
+<query>
+ <number>86-AH</number>
+ <text>duurzam energie </text>
+</query>
+<query>
+ <number>87-AH</number>
+ <text>inflatie verkiez brazilie </text>
+</query>
+<query>
+ <number>88-AH</number>
+ <text>gekkekoeienziekt europa </text>
+</query>
+<query>
+ <number>89-AH</number>
+ <text>schneider faillissement </text>
+</query>
+<query>
+ <number>90-AH</number>
+ <text>groentenexporteur </text>
+</query>
+<query>
+ <number>91-AH</number>
+ <text>ai latijn amerika </text>
+</query>
+<query>
+ <number>92-AH</number>
+ <text>vnsancties irak </text>
+</query>
+<query>
+ <number>93-AH</number>
+ <text>eurofighter </text>
+</query>
+<query>
+ <number>94-AH</number>
+ <text>terugker solzjenitsyn </text>
+</query>
+<query>
+ <number>95-AH</number>
+ <text>palestijn conflict </text>
+</query>
+<query>
+ <number>96-AH</number>
+ <text>gonzalez moet aftred </text>
+</query>
+<query>
+ <number>97-AH</number>
+ <text>referendum onafhank moldavie </text>
+</query>
+<query>
+ <number>98-AH</number>
+ <text>film gebroeder kaurismaki </text>
+</query>
+<query>
+ <number>99-AH</number>
+ <text>ontkenn holocaust </text>
+</query>
+<query>
+ <number>100-AH</number>
+ <text>spionagezak ames </text>
+</query>
+<query>
+ <number>101-AH</number>
+ <text>cyprus eu </text>
+</query>
+<query>
+ <number>102-AH</number>
+ <text>overwinn alberto tomba </text>
+</query>
+<query>
+ <number>103-AH</number>
+ <text>belangenverstrengel italie </text>
+</query>
+<query>
+ <number>104-AH</number>
+ <text>goud medaill superg </text>
+</query>
+<query>
+ <number>105-AH</number>
+ <text>astma </text>
+</query>
+<query>
+ <number>106-AH</number>
+ <text>europes autoindustrie </text>
+</query>
+<query>
+ <number>107-AH</number>
+ <text>genetisch manipulatie </text>
+</query>
+<query>
+ <number>108-AH</number>
+ <text>afscheid zuidjem </text>
+</query>
+<query>
+ <number>109-AH</number>
+ <text>computerbeveil </text>
+</query>
+<query>
+ <number>110-AH</number>
+ <text>iran verdacht uitgeleverd </text>
+</query>
+<query>
+ <number>111-AH</number>
+ <text>computeranimatie </text>
+</query>
+<query>
+ <number>112-AH</number>
+ <text>pulp fiction </text>
+</query>
+<query>
+ <number>113-AH</number>
+ <text>europacup </text>
+</query>
+<query>
+ <number>114-AH</number>
+ <text>burgeroorlog afghanistan </text>
+</query>
+<query>
+ <number>115-AH</number>
+ <text>echtscheidingscijfer </text>
+</query>
+<query>
+ <number>116-AH</number>
+ <text>snowboard </text>
+</query>
+<query>
+ <number>117-AH</number>
+ <text>verkiez europes parlement </text>
+</query>
+<query>
+ <number>118-AH</number>
+ <text>finland eerst eucommissaris </text>
+</query>
+<query>
+ <number>119-AH</number>
+ <text>verniet oekraien atoomwapen </text>
+</query>
+<query>
+ <number>120-AH</number>
+ <text>edouard balladur </text>
+</query>
+<query>
+ <number>121-AH</number>
+ <text>success ayrton senna </text>
+</query>
+<query>
+ <number>122-AH</number>
+ <text>noordamerikan autoindustrie </text>
+</query>
+<query>
+ <number>123-AH</number>
+ <text>huwelijk jacksonpresley </text>
+</query>
+<query>
+ <number>124-AH</number>
+ <text>gemeenschapp buitenland veiligheidsbeleid gbvb </text>
+</query>
+<query>
+ <number>125-AH</number>
+ <text>gemeenschapp europes munt </text>
+</query>
+<query>
+ <number>126-AH</number>
+ <text>aanvall bontsector </text>
+</query>
+<query>
+ <number>127-AH</number>
+ <text>ontsnapp roldan </text>
+</query>
+<query>
+ <number>128-AH</number>
+ <text>sek reclam </text>
+</query>
+<query>
+ <number>129-AH</number>
+ <text>ontdek 100 miljard sterr </text>
+</query>
+<query>
+ <number>130-AH</number>
+ <text>dod zanger nirvana </text>
+</query>
+<query>
+ <number>131-AH</number>
+ <text>intellectuel eigendomsrecht </text>
+</query>
+<query>
+ <number>132-AH</number>
+ <text>gebied kaliningrad </text>
+</query>
+<query>
+ <number>133-AH</number>
+ <text>outofareainzet duit strijdkracht </text>
+</query>
+<query>
+ <number>134-AH</number>
+ <text>ruimtesond clementin </text>
+</query>
+<query>
+ <number>135-AH</number>
+ <text>kandidat voorzitterschap europes commissie </text>
+</query>
+<query>
+ <number>136-AH</number>
+ <text>tor pisa </text>
+</query>
+<query>
+ <number>137-AH</number>
+ <text>international mis misterverkiez </text>
+</query>
+<query>
+ <number>138-AH</number>
+ <text>buitenland woord fran </text>
+</query>
+<query>
+ <number>139-AH</number>
+ <text>visquotas europes unie </text>
+</query>
+<query>
+ <number>140-AH</number>
+ <text>mobiel telefon </text>
+</query>
+<query>
+ <number>141-AH</number>
+ <text>bombrief kiesbauer </text>
+</query>
+<query>
+ <number>142-AH</number>
+ <text>christo pakt duit rijksdag </text>
+</query>
+<query>
+ <number>143-AH</number>
+ <text>vrouwenconferentie peking </text>
+</query>
+<query>
+ <number>144-AH</number>
+ <text>opstand diamant sierra leon </text>
+</query>
+<query>
+ <number>145-AH</number>
+ <text>invoer rijst japan </text>
+</query>
+<query>
+ <number>146-AH</number>
+ <text>fastfod japan </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>olieramp vogel </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>schad ozonlag </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>bezoek paus sri lanka </text>
+</query>
+<query>
+ <number>150-AH</number>
+ <text>ai doodstraf </text>
+</query>
+<query>
+ <number>151-AH</number>
+ <text>klassiek wereldwonder </text>
+</query>
+<query>
+ <number>152-AH</number>
+ <text>kinderrecht </text>
+</query>
+<query>
+ <number>153-AH</number>
+ <text>olympisch spel vred </text>
+</query>
+<query>
+ <number>154-AH</number>
+ <text>vrij meningsuit internet </text>
+</query>
+<query>
+ <number>155-AH</number>
+ <text>risicos mobiel telefon </text>
+</query>
+<query>
+ <number>156-AH</number>
+ <text>vakbond europa </text>
+</query>
+<query>
+ <number>157-AH</number>
+ <text>winnaress wimbledon </text>
+</query>
+<query>
+ <number>158-AH</number>
+ <text>voetbalrell dublin </text>
+</query>
+<query>
+ <number>159-AH</number>
+ <text>noordzeeolie milieu </text>
+</query>
+<query>
+ <number>161-AH</number>
+ <text>diet coeliakie patient </text>
+</query>
+<query>
+ <number>162-AH</number>
+ <text>douan tuss eu turkij </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>beperk rok </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>europes drugsstraff </text>
+</query>
+<query>
+ <number>165-AH</number>
+ <text>gold globes 1994 </text>
+</query>
+<query>
+ <number>167-AH</number>
+ <text>relaties tuss china mongolie </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>moord rabin </text>
+</query>
+<query>
+ <number>169-AH</number>
+ <text>opkomst cdbrander </text>
+</query>
+<query>
+ <number>170-AH</number>
+ <text>officiel eu tal </text>
+</query>
+<query>
+ <number>171-AH</number>
+ <text>ijshockeyfinal lillehammer </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>wereldrecord atletiek 1995 </text>
+</query>
+<query>
+ <number>173-AH</number>
+ <text>bewijs topquark </text>
+</query>
+<query>
+ <number>174-AH</number>
+ <text>beier kruisbeeldstrijd </text>
+</query>
+<query>
+ <number>175-AH</number>
+ <text>milieuschad everglades </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>shoemakerlevy jupiter </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>melkconsumptie europa </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>dienstweiger </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>aftred secretarisgeneral navo </text>
+</query>
+<query>
+ <number>180-AH</number>
+ <text>faillissement baring </text>
+</query>
+<query>
+ <number>181-AH</number>
+ <text>fran kernproev </text>
+</query>
+<query>
+ <number>182-AH</number>
+ <text>50e herdenkingsdag landing normandie </text>
+</query>
+<query>
+ <number>183-AH</number>
+ <text>dinosaurusrest azie </text>
+</query>
+<query>
+ <number>184-AH</number>
+ <text>zwangerschapsverlof europa </text>
+</query>
+<query>
+ <number>185-AH</number>
+ <text>nederland fotos srebrenica </text>
+</query>
+<query>
+ <number>186-AH</number>
+ <text>nederland coalitiereger </text>
+</query>
+<query>
+ <number>187-AH</number>
+ <text>atoomtransport duitsland </text>
+</query>
+<query>
+ <number>188-AH</number>
+ <text>duit spellingshervorm </text>
+</query>
+<query>
+ <number>189-AH</number>
+ <text>hubbl zwart gat </text>
+</query>
+<query>
+ <number>190-AH</number>
+ <text>kinderarbeid azie </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>moord russisch tvdirecteur </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>eu baltisch land </text>
+</query>
+<query>
+ <number>195-AH</number>
+ <text>staking italiaan stewardess </text>
+</query>
+<query>
+ <number>196-AH</number>
+ <text>fusie japan bank </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>daytonvredesverdrag </text>
+</query>
+<query>
+ <number>198-AH</number>
+ <text>honorary oscar italiaan regisseur </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>ebolaepidemie zair </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>watersnod nederland duitsland </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

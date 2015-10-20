@@ -1,0 +1,486 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_fi</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>92-AH</number>
+ <text>ira vastais pakot </text>
+</query>
+<query>
+ <number>94-AH</number>
+ <text>solzhenitsyn palu </text>
+</query>
+<query>
+ <number>95-AH</number>
+ <text>palestiin konflikt </text>
+</query>
+<query>
+ <number>98-AH</number>
+ <text>kaurismäk elokuv </text>
+</query>
+<query>
+ <number>100-AH</number>
+ <text>amesvakoilutapaus </text>
+</query>
+<query>
+ <number>102-AH</number>
+ <text>alberto tomb voito </text>
+</query>
+<query>
+ <number>103-AH</number>
+ <text>eturistiriid italia </text>
+</query>
+<query>
+ <number>105-AH</number>
+ <text>keuhkoputk astm </text>
+</query>
+<query>
+ <number>106-AH</number>
+ <text>euroop autoteollisuus </text>
+</query>
+<query>
+ <number>107-AH</number>
+ <text>geeniteknolog </text>
+</query>
+<query>
+ <number>109-AH</number>
+ <text>tietokonejärjestelm turvallisuus </text>
+</query>
+<query>
+ <number>111-AH</number>
+ <text>tietokoneanimaatio </text>
+</query>
+<query>
+ <number>114-AH</number>
+ <text>afganistan sisälliso </text>
+</query>
+<query>
+ <number>115-AH</number>
+ <text>avioerotilasto </text>
+</query>
+<query>
+ <number>116-AH</number>
+ <text>lumilautailu </text>
+</query>
+<query>
+ <number>118-AH</number>
+ <text>suome eukomissaar </text>
+</query>
+<query>
+ <number>119-AH</number>
+ <text>ukrain ydinas tuhoamin </text>
+</query>
+<query>
+ <number>122-AH</number>
+ <text>pohjoisamerik autoteollisuus </text>
+</query>
+<query>
+ <number>123-AH</number>
+ <text>michael jackson avioitumin </text>
+</query>
+<query>
+ <number>124-AH</number>
+ <text>yhtein ulko turvallisuuspolitiik </text>
+</query>
+<query>
+ <number>125-AH</number>
+ <text>euroop yhtein valuut </text>
+</query>
+<query>
+ <number>126-AH</number>
+ <text>hyökkäyks turkisal </text>
+</query>
+<query>
+ <number>128-AH</number>
+ <text>seks mainoks </text>
+</query>
+<query>
+ <number>130-AH</number>
+ <text>nirvan johtaj kuolem </text>
+</query>
+<query>
+ <number>131-AH</number>
+ <text>tekijänoikeud </text>
+</query>
+<query>
+ <number>132-AH</number>
+ <text>kaliningrad alue </text>
+</query>
+<query>
+ <number>137-AH</number>
+ <text>vierasperäist sano käytö ransk kiele </text>
+</query>
+<query>
+ <number>138-AH</number>
+ <text>eun kalastuskiintiö </text>
+</query>
+<query>
+ <number>139-AH</number>
+ <text>matkapuhelim kännyk </text>
+</query>
+<query>
+ <number>140-AH</number>
+ <text>matkapuhelim kännyk </text>
+</query>
+<query>
+ <number>142-AH</number>
+ <text>christo paketoi saks valtiopäivätalo </text>
+</query>
+<query>
+ <number>143-AH</number>
+ <text>naist konferens peking </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>Öljyonnettomuud linu </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>otsonikerroks tuhoutumin </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>paav vierailu sri lank </text>
+</query>
+<query>
+ <number>150-AH</number>
+ <text>ihmisoikeusjärjestö kuolemanrangaistu </text>
+</query>
+<query>
+ <number>151-AH</number>
+ <text>ant maailm ihm </text>
+</query>
+<query>
+ <number>152-AH</number>
+ <text>last oikeud </text>
+</query>
+<query>
+ <number>153-AH</number>
+ <text>olympialais rauha </text>
+</query>
+<query>
+ <number>154-AH</number>
+ <text>sananvapaus internet </text>
+</query>
+<query>
+ <number>155-AH</number>
+ <text>matkapuhelim risk </text>
+</query>
+<query>
+ <number>156-AH</number>
+ <text>ammattiliito euroop </text>
+</query>
+<query>
+ <number>157-AH</number>
+ <text>wimbledon naisvoittaj </text>
+</query>
+<query>
+ <number>158-AH</number>
+ <text>jalkapallomellak dublin </text>
+</query>
+<query>
+ <number>159-AH</number>
+ <text>pohjanmer öljy ympäristö </text>
+</query>
+<query>
+ <number>161-AH</number>
+ <text>keliaakiko ruokavalio </text>
+</query>
+<query>
+ <number>162-AH</number>
+ <text>eu turk tul </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>tupakoin rajoittamin </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>eurooppalais huumetuomio </text>
+</query>
+<query>
+ <number>165-AH</number>
+ <text>gold globe palkino 1994 </text>
+</query>
+<query>
+ <number>166-AH</number>
+ <text>ranskalain kenraal balkan turvallisuusvyöhyk </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>rabin salamurh </text>
+</query>
+<query>
+ <number>170-AH</number>
+ <text>virallis eukiel </text>
+</query>
+<query>
+ <number>171-AH</number>
+ <text>lillehammer jääkiekkofinaal </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>yleisurheilu maailmanennätyks 1995 </text>
+</query>
+<query>
+ <number>173-AH</number>
+ <text>todist topkvark </text>
+</query>
+<query>
+ <number>174-AH</number>
+ <text>baijer krusifiksik </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>shoemakerlevy jupiter </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>maido kulutus euroop </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>aseistakieltäytymin </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>nato pääsihteer irtisanoutumin </text>
+</query>
+<query>
+ <number>180-AH</number>
+ <text>barings konkurs </text>
+</query>
+<query>
+ <number>181-AH</number>
+ <text>ransk ydinkok </text>
+</query>
+<query>
+ <number>183-AH</number>
+ <text>aasialais dinosauruks jäännöks </text>
+</query>
+<query>
+ <number>184-AH</number>
+ <text>Äitiyslom euroop </text>
+</query>
+<query>
+ <number>185-AH</number>
+ <text>hollantilaist valokuv srebrenic </text>
+</query>
+<query>
+ <number>187-AH</number>
+ <text>saks ydinjätekuljetuks </text>
+</query>
+<query>
+ <number>190-AH</number>
+ <text>lapsityövoim aasia </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>venäläis tvjohtaj murh </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>eu baltia maat </text>
+</query>
+<query>
+ <number>196-AH</number>
+ <text>japanilaist pank fuusio </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>dayton rauhansopimus </text>
+</query>
+<query>
+ <number>198-AH</number>
+ <text>kunniaoscar italialais elokuvaohjaaj </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>ebolaepidem zaire </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>saks hollan tulv </text>
+</query>
+<query>
+ <number>201-AH</number>
+ <text>koto sattun tulipalo </text>
+</query>
+<query>
+ <number>202-AH</number>
+ <text>nick leeson pidätys </text>
+</query>
+<query>
+ <number>203-AH</number>
+ <text>itätimor sis </text>
+</query>
+<query>
+ <number>204-AH</number>
+ <text>lumivyöryj uhr </text>
+</query>
+<query>
+ <number>205-AH</number>
+ <text>tamil itsemurhaisku </text>
+</query>
+<query>
+ <number>207-AH</number>
+ <text>ilotulitev </text>
+</query>
+<query>
+ <number>208-AH</number>
+ <text>sofia maailm </text>
+</query>
+<query>
+ <number>209-AH</number>
+ <text>tour de franc voittaj </text>
+</query>
+<query>
+ <number>210-AH</number>
+ <text>nobel rauhanpalkintoehdok </text>
+</query>
+<query>
+ <number>211-AH</number>
+ <text>peru ecuador rajak </text>
+</query>
+<query>
+ <number>212-AH</number>
+ <text>naisurheilij doping </text>
+</query>
+<query>
+ <number>213-AH</number>
+ <text>paav matk </text>
+</query>
+<query>
+ <number>214-AH</number>
+ <text>monimiljardöör </text>
+</query>
+<query>
+ <number>215-AH</number>
+ <text>peru president uudelleenvalin </text>
+</query>
+<query>
+ <number>216-AH</number>
+ <text>nuort liimanhaistelu </text>
+</query>
+<query>
+ <number>217-AH</number>
+ <text>aids afrik </text>
+</query>
+<query>
+ <number>218-AH</number>
+ <text>andreot maf </text>
+</query>
+<query>
+ <number>219-AH</number>
+ <text>eun komissaariehdok </text>
+</query>
+<query>
+ <number>220-AH</number>
+ <text>eurooppalais auto venäj </text>
+</query>
+<query>
+ <number>221-AH</number>
+ <text>2002 talviolympialais </text>
+</query>
+<query>
+ <number>222-AH</number>
+ <text>ransk presidentinvaal </text>
+</query>
+<query>
+ <number>223-AH</number>
+ <text>tshernobyl tuho neuvostoliito ulkopuol </text>
+</query>
+<query>
+ <number>224-AH</number>
+ <text>naine yks everest </text>
+</query>
+<query>
+ <number>225-AH</number>
+ <text>sosnovyi bor ydinvoimal </text>
+</query>
+<query>
+ <number>226-AH</number>
+ <text>sukupuolenvaihdosleikkauks </text>
+</query>
+<query>
+ <number>228-AH</number>
+ <text>esihistoriallin taide </text>
+</query>
+<query>
+ <number>229-AH</number>
+ <text>padonrakennus </text>
+</query>
+<query>
+ <number>230-AH</number>
+ <text>atlantismir telakoitumin </text>
+</query>
+<query>
+ <number>232-AH</number>
+ <text>euroop eläk </text>
+</query>
+<query>
+ <number>233-AH</number>
+ <text>kasvihuoneilmiö </text>
+</query>
+<query>
+ <number>234-AH</number>
+ <text>kuuro yhteiskun </text>
+</query>
+<query>
+ <number>235-AH</number>
+ <text>hylkeenpyynt </text>
+</query>
+<query>
+ <number>236-AH</number>
+ <text>filippiin hirmumyrsky </text>
+</query>
+<query>
+ <number>237-AH</number>
+ <text>panchen lama </text>
+</query>
+<query>
+ <number>238-AH</number>
+ <text>lady diana </text>
+</query>
+<query>
+ <number>239-AH</number>
+ <text>nuort mielenterveys </text>
+</query>
+<query>
+ <number>241-AH</number>
+ <text>poliittis puolue </text>
+</query>
+<query>
+ <number>242-AH</number>
+ <text>avaruud oleskelu ennätys </text>
+</query>
+<query>
+ <number>243-AH</number>
+ <text>kieslowsk elokuv </text>
+</query>
+<query>
+ <number>244-AH</number>
+ <text>1994 jalkapalloilij </text>
+</query>
+<query>
+ <number>245-AH</number>
+ <text>christopher reeve </text>
+</query>
+<query>
+ <number>246-AH</number>
+ <text>castro vierailu yk </text>
+</query>
+<query>
+ <number>248-AH</number>
+ <text>makedonia nimik </text>
+</query>
+<query>
+ <number>249-AH</number>
+ <text>naist metr voittaj </text>
+</query>
+<query>
+ <number>250-AH</number>
+ <text>vesikauhu ihmis </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

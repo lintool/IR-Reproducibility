@@ -1,0 +1,602 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_bg</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>251-AH</number>
+ <text>Алтернативн медицин </text>
+</query>
+<query>
+ <number>252-AH</number>
+ <text>Пенсионн схем Европ </text>
+</query>
+<query>
+ <number>253-AH</number>
+ <text>Държав разрешн смъртн наказани </text>
+</query>
+<query>
+ <number>254-AH</number>
+ <text>Щети земетресн </text>
+</query>
+<query>
+ <number>255-AH</number>
+ <text>Пристрастяван Интернет </text>
+</query>
+<query>
+ <number>256-AH</number>
+ <text>Болест КройцфелдЯкоб </text>
+</query>
+<query>
+ <number>257-AH</number>
+ <text>Етническ прочистван Балкан </text>
+</query>
+<query>
+ <number>258-AH</number>
+ <text>Влияни изтичан мозък </text>
+</query>
+<query>
+ <number>259-AH</number>
+ <text>Златн мечк </text>
+</query>
+<query>
+ <number>260-AH</number>
+ <text>Закон тютюнопушн </text>
+</query>
+<query>
+ <number>261-AH</number>
+ <text>Предсказан </text>
+</query>
+<query>
+ <number>262-AH</number>
+ <text>Благотворителн концерт </text>
+</query>
+<query>
+ <number>263-AH</number>
+ <text>Футболн спор съди </text>
+</query>
+<query>
+ <number>264-AH</number>
+ <text>Контрабанд радиоактивн материал </text>
+</query>
+<query>
+ <number>265-AH</number>
+ <text>Сделк Дойч банк </text>
+</query>
+<query>
+ <number>266-AH</number>
+ <text>Дискриминаци циган Европ </text>
+</query>
+<query>
+ <number>267-AH</number>
+ <text>Найдобр чуждоезиков филм </text>
+</query>
+<query>
+ <number>268-AH</number>
+ <text>Клониран хор етик </text>
+</query>
+<query>
+ <number>269-AH</number>
+ <text>Ратифициран договор </text>
+</query>
+<query>
+ <number>270-AH</number>
+ <text>Конкурент Майкрософт </text>
+</query>
+<query>
+ <number>271-AH</number>
+ <text>Брак хомосексуалн </text>
+</query>
+<query>
+ <number>272-AH</number>
+ <text>Биографи Вацлав Хавел </text>
+</query>
+<query>
+ <number>273-AH</number>
+ <text>Разширяван НАТО </text>
+</query>
+<query>
+ <number>274-AH</number>
+ <text>Неексплоадирал бомб Втор световн войн </text>
+</query>
+<query>
+ <number>275-AH</number>
+ <text>Болест свързан пушн </text>
+</query>
+<query>
+ <number>276-AH</number>
+ <text>Субсиди ЕС селск стопанств </text>
+</query>
+<query>
+ <number>277-AH</number>
+ <text>Евтаназ медик </text>
+</query>
+<query>
+ <number>278-AH</number>
+ <text>Транспорт инвалид </text>
+</query>
+<query>
+ <number>279-AH</number>
+ <text>Референдум Швейцар </text>
+</query>
+<query>
+ <number>280-AH</number>
+ <text>Престъпност Ню Йорк </text>
+</query>
+<query>
+ <number>281-AH</number>
+ <text>Радован Караджич </text>
+</query>
+<query>
+ <number>282-AH</number>
+ <text>Мъчн затвор </text>
+</query>
+<query>
+ <number>283-AH</number>
+ <text>Филм Джеймз Бонд </text>
+</query>
+<query>
+ <number>284-AH</number>
+ <text>Миси космическ совалк </text>
+</query>
+<query>
+ <number>285-AH</number>
+ <text>Движн против аборт </text>
+</query>
+<query>
+ <number>286-AH</number>
+ <text>Нараняан футболист </text>
+</query>
+<query>
+ <number>287-AH</number>
+ <text>Заложник терорист </text>
+</query>
+<query>
+ <number>288-AH</number>
+ <text>Внос коли Америк </text>
+</query>
+<query>
+ <number>289-AH</number>
+ <text>Фолклендск остров </text>
+</query>
+<query>
+ <number>290-AH</number>
+ <text>Движени цени петрол </text>
+</query>
+<query>
+ <number>291-AH</number>
+ <text>Нелегалн имигрант ЕС </text>
+</query>
+<query>
+ <number>293-AH</number>
+ <text>Отношени Китай Тайван </text>
+</query>
+<query>
+ <number>294-AH</number>
+ <text>Сил ураган </text>
+</query>
+<query>
+ <number>295-AH</number>
+ <text>Пран пари </text>
+</query>
+<query>
+ <number>296-AH</number>
+ <text>Публичн изпълнн творб Лист </text>
+</query>
+<query>
+ <number>297-AH</number>
+ <text>Отстраняван дипломат </text>
+</query>
+<query>
+ <number>298-AH</number>
+ <text>Атомн електроцентрал </text>
+</query>
+<query>
+ <number>299-AH</number>
+ <text>Риск умиротворителн операци Обединян наци </text>
+</query>
+<query>
+ <number>300-AH</number>
+ <text>Печалб лотари </text>
+</query>
+<query>
+ <number>301-AH</number>
+ <text>Продукт Нестл </text>
+</query>
+<query>
+ <number>302-AH</number>
+ <text>Бойкот потребитял </text>
+</query>
+<query>
+ <number>303-AH</number>
+ <text>Италианск картин </text>
+</query>
+<query>
+ <number>304-AH</number>
+ <text>Мест световн наследств </text>
+</query>
+<query>
+ <number>305-AH</number>
+ <text>Цени нефт </text>
+</query>
+<query>
+ <number>306-AH</number>
+ <text>Дейност ЕТА Франц </text>
+</query>
+<query>
+ <number>307-AH</number>
+ <text>Филм чиет действи развив Шотланд </text>
+</query>
+<query>
+ <number>308-AH</number>
+ <text>Слънчяв затъмнн </text>
+</query>
+<query>
+ <number>309-AH</number>
+ <text>quotТвърдиquot наркотик </text>
+</query>
+<query>
+ <number>310-AH</number>
+ <text>Обработк индустриалн отпадк </text>
+</query>
+<query>
+ <number>311-AH</number>
+ <text>Безработиц Европ </text>
+</query>
+<query>
+ <number>312-AH</number>
+ <text>Нападн куч </text>
+</query>
+<query>
+ <number>313-AH</number>
+ <text>Честван 100годишнин </text>
+</query>
+<query>
+ <number>314-AH</number>
+ <text>Застрашян видов </text>
+</query>
+<query>
+ <number>315-AH</number>
+ <text>Допинг спор </text>
+</query>
+<query>
+ <number>316-AH</number>
+ <text>Стачк </text>
+</query>
+<query>
+ <number>317-AH</number>
+ <text>Лекарств рак </text>
+</query>
+<query>
+ <number>318-AH</number>
+ <text>Полов възпитани </text>
+</query>
+<query>
+ <number>319-AH</number>
+ <text>Глобалн производств опиум </text>
+</query>
+<query>
+ <number>320-AH</number>
+ <text>Енергийн криз </text>
+</query>
+<query>
+ <number>321-AH</number>
+ <text>Талибан Афганистан </text>
+</query>
+<query>
+ <number>322-AH</number>
+ <text>Атомн енерг </text>
+</query>
+<query>
+ <number>323-AH</number>
+ <text>Затяган визов режим </text>
+</query>
+<query>
+ <number>324-AH</number>
+ <text>Супермодял </text>
+</query>
+<query>
+ <number>325-AH</number>
+ <text>Студентск такх </text>
+</query>
+<query>
+ <number>351-AH</number>
+ <text>Промян Общ селскостопанск политик </text>
+</query>
+<query>
+ <number>352-AH</number>
+ <text>Запазван мир Афганистан </text>
+</query>
+<query>
+ <number>353-AH</number>
+ <text>Фалшифициран евр </text>
+</query>
+<query>
+ <number>354-AH</number>
+ <text>Нови функционалност мобилн телефон </text>
+</query>
+<query>
+ <number>355-AH</number>
+ <text>Газов причиняват парников ефект </text>
+</query>
+<query>
+ <number>356-AH</number>
+ <text>Нови небесн тел </text>
+</query>
+<query>
+ <number>357-AH</number>
+ <text>Въздействи 11 септемвр </text>
+</query>
+<query>
+ <number>358-AH</number>
+ <text>Грабяж войн </text>
+</query>
+<query>
+ <number>359-AH</number>
+ <text>Английск театр </text>
+</query>
+<query>
+ <number>360-AH</number>
+ <text>Вод Марс </text>
+</query>
+<query>
+ <number>361-AH</number>
+ <text>Християнск поклонн </text>
+</query>
+<query>
+ <number>362-AH</number>
+ <text>Курс обмян долар евр </text>
+</query>
+<query>
+ <number>363-AH</number>
+ <text>Медалист Зимн олимпийск игри </text>
+</query>
+<query>
+ <number>364-AH</number>
+ <text>Кандидат немск канцлер </text>
+</query>
+<query>
+ <number>365-AH</number>
+ <text>Американск икономическ рецес </text>
+</query>
+<query>
+ <number>366-AH</number>
+ <text>Трагеди подводниц quotКурскquot </text>
+</query>
+<query>
+ <number>367-AH</number>
+ <text>Независимост Източн Тимор </text>
+</query>
+<query>
+ <number>368-AH</number>
+ <text>Фармацевтичн експеримент </text>
+</query>
+<query>
+ <number>369-AH</number>
+ <text>Нови лини метр </text>
+</query>
+<query>
+ <number>370-AH</number>
+ <text>Феномн Хари Потър </text>
+</query>
+<query>
+ <number>371-AH</number>
+ <text>Нарушян изборн обещан </text>
+</query>
+<query>
+ <number>372-AH</number>
+ <text>Криз Кашмир </text>
+</query>
+<query>
+ <number>373-AH</number>
+ <text>Българоунгарск връзк </text>
+</query>
+<query>
+ <number>374-AH</number>
+ <text>Съратник Бин Ладн </text>
+</query>
+<query>
+ <number>375-AH</number>
+ <text>Перспектив Калининград </text>
+</query>
+<query>
+ <number>401-AH</number>
+ <text>Инфлаци евр </text>
+</query>
+<query>
+ <number>402-AH</number>
+ <text>Възобновяям източник енерг </text>
+</query>
+<query>
+ <number>403-AH</number>
+ <text>Филмов рол ченг </text>
+</query>
+<query>
+ <number>404-AH</number>
+ <text>Сигурност срещ найвисок равнищ НАТО </text>
+</query>
+<query>
+ <number>405-AH</number>
+ <text>Астм детск възраст </text>
+</query>
+<query>
+ <number>406-AH</number>
+ <text>Анимационн филм </text>
+</query>
+<query>
+ <number>407-AH</number>
+ <text>Австралийск министърпредседател </text>
+</query>
+<query>
+ <number>408-AH</number>
+ <text>Клониран хор </text>
+</query>
+<query>
+ <number>409-AH</number>
+ <text>Атентат колабомб Бали </text>
+</query>
+<query>
+ <number>410-AH</number>
+ <text>Нарушени споразумени ядрян оръж Северн Коре </text>
+</query>
+<query>
+ <number>411-AH</number>
+ <text>Оскар найдобр филм </text>
+</query>
+<query>
+ <number>412-AH</number>
+ <text>Книг политик </text>
+</query>
+<query>
+ <number>413-AH</number>
+ <text>Намаляван риск диабет </text>
+</query>
+<query>
+ <number>414-AH</number>
+ <text>Бирян фестивал </text>
+</query>
+<query>
+ <number>415-AH</number>
+ <text>Злоупотреб наркотик </text>
+</query>
+<query>
+ <number>416-AH</number>
+ <text>Криз заложник московск театр </text>
+</query>
+<query>
+ <number>417-AH</number>
+ <text>Отвличан самолят </text>
+</query>
+<query>
+ <number>418-AH</number>
+ <text>Изказван Бюлент Еджевит </text>
+</query>
+<query>
+ <number>419-AH</number>
+ <text>Хранил ядрян отпадк </text>
+</query>
+<query>
+ <number>420-AH</number>
+ <text>Затлъстяван болест </text>
+</query>
+<query>
+ <number>421-AH</number>
+ <text>Олимпийск медал брат сестр Костелич </text>
+</query>
+<query>
+ <number>422-AH</number>
+ <text>Закриван индустриалн търговскибизнес предприят </text>
+</query>
+<query>
+ <number>423-AH</number>
+ <text>Алтернатив инжектиран грипн ваксин </text>
+</query>
+<query>
+ <number>424-AH</number>
+ <text>Увеличаван интернет банкиран </text>
+</query>
+<query>
+ <number>425-AH</number>
+ <text>Застрашян видов </text>
+</query>
+<query>
+ <number>426-AH</number>
+ <text>Мерк борб тероризм 11 септемвр </text>
+</query>
+<query>
+ <number>427-AH</number>
+ <text>Свидетелск показан Милошевич </text>
+</query>
+<query>
+ <number>428-AH</number>
+ <text>Екологичн туризм </text>
+</query>
+<query>
+ <number>429-AH</number>
+ <text>Риск здрав причинян вод </text>
+</query>
+<query>
+ <number>430-AH</number>
+ <text>Козметичн процедур </text>
+</query>
+<query>
+ <number>431-AH</number>
+ <text>Кандидат президент Франц </text>
+</query>
+<query>
+ <number>432-AH</number>
+ <text>Президентск избор 13 Зимбабв </text>
+</query>
+<query>
+ <number>433-AH</number>
+ <text>Малтретиран дец свещеник </text>
+</query>
+<query>
+ <number>434-AH</number>
+ <text>Политическ нестабилност Венецуел </text>
+</query>
+<query>
+ <number>435-AH</number>
+ <text>Причин замърсяван въздух </text>
+</query>
+<query>
+ <number>436-AH</number>
+ <text>vip развод </text>
+</query>
+<query>
+ <number>437-AH</number>
+ <text>Нередност финансов ревизи Енрон </text>
+</query>
+<query>
+ <number>438-AH</number>
+ <text>Научн изследван рак </text>
+</query>
+<query>
+ <number>439-AH</number>
+ <text>Злополук работн мяст </text>
+</query>
+<query>
+ <number>440-AH</number>
+ <text>Допинг скандал Зимн олимпийск игри </text>
+</query>
+<query>
+ <number>441-AH</number>
+ <text>Космическ турист </text>
+</query>
+<query>
+ <number>442-AH</number>
+ <text>Погребени кралицатамайк </text>
+</query>
+<query>
+ <number>443-AH</number>
+ <text>Световн рекорд плуван </text>
+</query>
+<query>
+ <number>444-AH</number>
+ <text>Бразил – световн шампион футбол </text>
+</query>
+<query>
+ <number>445-AH</number>
+ <text>Принц Хари наркотик </text>
+</query>
+<query>
+ <number>446-AH</number>
+ <text>Щети културн наследств нанесян наводнн </text>
+</query>
+<query>
+ <number>447-AH</number>
+ <text>Политик Пим Фортюн </text>
+</query>
+<query>
+ <number>448-AH</number>
+ <text>Нобелов наград хими </text>
+</query>
+<query>
+ <number>449-AH</number>
+ <text>Гражданск войн Африк </text>
+</query>
+<query>
+ <number>450-AH</number>
+ <text>Неуспешн опит убийств </text>
+</query>
+    <trecFormat>true</trecFormat>
+</parameters>

@@ -1,0 +1,254 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_ru</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>143-AH</number>
+ <text>Конференц положен Женщин Пекин </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>Нефтян авар Птиц </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>Разрушен озонов сло </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>Виз Пап Римск ШриЛанк </text>
+</query>
+<query>
+ <number>151-AH</number>
+ <text>Чудес Древн Мир </text>
+</query>
+<query>
+ <number>153-AH</number>
+ <text>Олимпийск Игры Мир </text>
+</query>
+<query>
+ <number>154-AH</number>
+ <text>Свобод Слов Интернет </text>
+</query>
+<query>
+ <number>155-AH</number>
+ <text>Опасност Мобильн Телефон </text>
+</query>
+<query>
+ <number>157-AH</number>
+ <text>Победительниц Уимблдон </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>Ограничен Куря </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>Приговор Наркотик Европ </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>Убийств Рабин </text>
+</query>
+<query>
+ <number>169-AH</number>
+ <text>Появлен устройств запис компактдиск </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>Миров Рекорд Лёгко Атлетик 1995 </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>ШумейкерЛев Юпитер </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>Потреблен Молок Европ </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>Отказ Несен Воен Служб </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>Отставк Генеральн Секретар НАТО </text>
+</query>
+<query>
+ <number>180-AH</number>
+ <text>Банкротств Баринг Бразерс </text>
+</query>
+<query>
+ <number>181-AH</number>
+ <text>Французск Ядерн Испытан </text>
+</query>
+<query>
+ <number>183-AH</number>
+ <text>Ископа Остатк Динозавр Ази </text>
+</query>
+<query>
+ <number>187-AH</number>
+ <text>Ядерн Перевозк Герман </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>Убийств Директор Российск Телекомпан </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>ЕС Балтийск Государств </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>Мирн Соглашен Дейтон </text>
+</query>
+<query>
+ <number>198-AH</number>
+ <text>Почётн Оскар Итальянск Режиссёр </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>Эпидем Эбол Заир </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>Наводнен Голланд Герман </text>
+</query>
+<query>
+ <number>201-AH</number>
+ <text>Домашн пожар </text>
+</query>
+<query>
+ <number>202-AH</number>
+ <text>Арест Ник Леесон </text>
+</query>
+<query>
+ <number>203-AH</number>
+ <text>Партизанск войн Восточн Тимор </text>
+</query>
+<query>
+ <number>207-AH</number>
+ <text>Травм причин фейерверк </text>
+</query>
+<query>
+ <number>209-AH</number>
+ <text>Победител Тур де Франс </text>
+</query>
+<query>
+ <number>210-AH</number>
+ <text>Кандидат Нобелевск прем </text>
+</query>
+<query>
+ <number>211-AH</number>
+ <text>Пограничн конфликт Пер Эквадор </text>
+</query>
+<query>
+ <number>212-AH</number>
+ <text>Спортсменк допинг </text>
+</query>
+<query>
+ <number>213-AH</number>
+ <text>Путешеств Пап </text>
+</query>
+<query>
+ <number>214-AH</number>
+ <text>Мультимиллиардер </text>
+</query>
+<query>
+ <number>215-AH</number>
+ <text>Повторн избран президент Пер </text>
+</query>
+<query>
+ <number>216-AH</number>
+ <text>Вдыхан кле подростк </text>
+</query>
+<query>
+ <number>218-AH</number>
+ <text>Андреотт маф </text>
+</query>
+<query>
+ <number>220-AH</number>
+ <text>Европейск автомоб Росс </text>
+</query>
+<query>
+ <number>221-AH</number>
+ <text>Олимпийск зимн игр 2002 </text>
+</query>
+<query>
+ <number>224-AH</number>
+ <text>Женщин соверша одиночн восхожден Эверест </text>
+</query>
+<query>
+ <number>225-AH</number>
+ <text>Атомн станц Соснов бор </text>
+</query>
+<query>
+ <number>226-AH</number>
+ <text>Изменен пол </text>
+</query>
+<query>
+ <number>227-AH</number>
+ <text>Алтайск амазонк </text>
+</query>
+<query>
+ <number>228-AH</number>
+ <text>Доисторическ искусств </text>
+</query>
+<query>
+ <number>230-AH</number>
+ <text>Стыковк Атлантис МИР </text>
+</query>
+<query>
+ <number>231-AH</number>
+ <text>Нов португальск премьерминистр </text>
+</query>
+<query>
+ <number>232-AH</number>
+ <text>Программ пенсион обеспечен Европ </text>
+</query>
+<query>
+ <number>233-AH</number>
+ <text>Парников эффект </text>
+</query>
+<query>
+ <number>234-AH</number>
+ <text>Глухот обществ </text>
+</query>
+<query>
+ <number>235-AH</number>
+ <text>Охот тюлен </text>
+</query>
+<query>
+ <number>237-AH</number>
+ <text>Панченлам </text>
+</query>
+<query>
+ <number>238-AH</number>
+ <text>Лед Дая </text>
+</query>
+<query>
+ <number>239-AH</number>
+ <text>Психическ здоров подростк </text>
+</query>
+<query>
+ <number>241-AH</number>
+ <text>Нов политическ парт </text>
+</query>
+<query>
+ <number>242-AH</number>
+ <text>Рекордн срок пребыван космос </text>
+</query>
+<query>
+ <number>244-AH</number>
+ <text>Футболист 1994 </text>
+</query>
+<query>
+ <number>245-AH</number>
+ <text>Кристофер Рив </text>
+</query>
+<query>
+ <number>250-AH</number>
+ <text>Бешенств люд </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

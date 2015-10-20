@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+    <topic>
+        <identifier>91-AH</identifier>
+        <title>Amnesty International i Latinamerika</title>
+        <description>Rapporter från Amnesty International om mänskliga rättigheter i Latinamerika.</description>
+        <narrative>Relevanta dokument bör ge läsarna information om Amnesty Internationals rapporter beträffande mänskliga rättigheter i Latinamerika eller om reaktioner på dessa rapporter.</narrative>
+    </topic>
+    <topic>
+        <identifier>92-AH</identifier>
+        <title>FN-sanktioner mot Irak</title>
+        <description>Vilka åtgärder har Irak vidtagit för att FN ska upphäva det ekonomiska embargo och de politiska sanktioner som landet belagts med efter invasionen av Kuwait 1990?</description>
+        <narrative>Dokumenten måste innehålla olika åtgärder från Iraks sida för att försöka få sanktionerna upphävda. Enbart beskrivningar av sanktionerna eller retorik emot sanktionerna är inte relevanta. Beklaganden från officiellt irakiskt håll av invasionen av Kuwait är relevanta.</narrative>
+    </topic>
+    <topic>
+        <identifier>93-AH</identifier>
+        <title>Eurofighter</title>
+        <description>Sök efter dokument som rapporterar om projektet EFA eller projektet "Eurofighter".</description>
+        <narrative>Relevanta dokument redogör för projektet EFA. Samarbetsländerna Tyskland, Storbritannien, Italien och Spanien har inlett ett "Eurofighter"-konsortium. Information om arbetsfördelning mellan de ingående försvarskoncernerna samt även kostnadsuppskattningar är av intresse.</narrative>
+    </topic>
+</topics>

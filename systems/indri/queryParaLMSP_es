@@ -1,0 +1,394 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_es</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>41-AH</number>
+ <text>pestic aliment beb </text>
+</query>
+<query>
+ <number>42-AH</number>
+ <text>nacion unid unid invad hait </text>
+</query>
+<query>
+ <number>43-AH</number>
+ <text>niñ tiemp </text>
+</query>
+<query>
+ <number>44-AH</number>
+ <text>indurain gan tour </text>
+</query>
+<query>
+ <number>45-AH</number>
+ <text>trat paz israel jordani </text>
+</query>
+<query>
+ <number>46-AH</number>
+ <text>embarg irak </text>
+</query>
+<query>
+ <number>47-AH</number>
+ <text>intervencion rus checheni </text>
+</query>
+<query>
+ <number>48-AH</number>
+ <text>fuerz paz bosni </text>
+</query>
+<query>
+ <number>49-AH</number>
+ <text>caid export coch japon </text>
+</query>
+<query>
+ <number>60-AH</number>
+ <text>corrupcion polit franci </text>
+</query>
+<query>
+ <number>62-AH</number>
+ <text>terremot nort japon </text>
+</query>
+<query>
+ <number>63-AH</number>
+ <text>reserv ballen </text>
+</query>
+<query>
+ <number>64-AH</number>
+ <text>sindrom rsi raton orden </text>
+</query>
+<query>
+ <number>65-AH</number>
+ <text>busqued tesor </text>
+</query>
+<query>
+ <number>66-AH</number>
+ <text>retir trop rus letoni </text>
+</query>
+<query>
+ <number>67-AH</number>
+ <text>colision naval </text>
+</query>
+<query>
+ <number>68-AH</number>
+ <text>ataqu sinagog europ </text>
+</query>
+<query>
+ <number>69-AH</number>
+ <text>clonacion etic </text>
+</query>
+<query>
+ <number>80-AH</number>
+ <text>huelg hambr </text>
+</query>
+<query>
+ <number>81-AH</number>
+ <text>secuestr airbus frances </text>
+</query>
+<query>
+ <number>82-AH</number>
+ <text>ira atac aeropuert </text>
+</query>
+<query>
+ <number>83-AH</number>
+ <text>subast objet lennon </text>
+</query>
+<query>
+ <number>84-AH</number>
+ <text>ataqu tiburon </text>
+</query>
+<query>
+ <number>85-AH</number>
+ <text>program turques ruand </text>
+</query>
+<query>
+ <number>86-AH</number>
+ <text>energ renov </text>
+</query>
+<query>
+ <number>87-AH</number>
+ <text>inflacion eleccion brasil </text>
+</query>
+<query>
+ <number>88-AH</number>
+ <text>vac loc europ </text>
+</query>
+<query>
+ <number>89-AH</number>
+ <text>schneid quiebr </text>
+</query>
+<query>
+ <number>90-AH</number>
+ <text>export verdur </text>
+</query>
+<query>
+ <number>91-AH</number>
+ <text>ai latinoamer </text>
+</query>
+<query>
+ <number>92-AH</number>
+ <text>sancion onu irak </text>
+</query>
+<query>
+ <number>93-AH</number>
+ <text>eurofight </text>
+</query>
+<query>
+ <number>94-AH</number>
+ <text>retorn solzhenitsin </text>
+</query>
+<query>
+ <number>95-AH</number>
+ <text>conflict palestin </text>
+</query>
+<query>
+ <number>96-AH</number>
+ <text>¿deb dimit gonzalez </text>
+</query>
+<query>
+ <number>97-AH</number>
+ <text>referendum independent moldavi </text>
+</query>
+<query>
+ <number>98-AH</number>
+ <text>pelicul kaurismäki </text>
+</query>
+<query>
+ <number>99-AH</number>
+ <text>negacion holocaust </text>
+</query>
+<query>
+ <number>110-AH</number>
+ <text>extradicion sospech iran </text>
+</query>
+<query>
+ <number>111-AH</number>
+ <text>anim orden </text>
+</query>
+<query>
+ <number>112-AH</number>
+ <text>pulp fiction </text>
+</query>
+<query>
+ <number>113-AH</number>
+ <text>eurocop </text>
+</query>
+<query>
+ <number>114-AH</number>
+ <text>guerr civil afganistan </text>
+</query>
+<query>
+ <number>115-AH</number>
+ <text>estadist divorci </text>
+</query>
+<query>
+ <number>116-AH</number>
+ <text>snowboard </text>
+</query>
+<query>
+ <number>117-AH</number>
+ <text>eleccion parlament europe </text>
+</query>
+<query>
+ <number>118-AH</number>
+ <text>prim comisari finlandes ue </text>
+</query>
+<query>
+ <number>119-AH</number>
+ <text>destruccion armas nuclear ucranian </text>
+</query>
+<query>
+ <number>130-AH</number>
+ <text>muert lid nirvan </text>
+</query>
+<query>
+ <number>131-AH</number>
+ <text>derech propied intelectual </text>
+</query>
+<query>
+ <number>132-AH</number>
+ <text>Áre kaliningr </text>
+</query>
+<query>
+ <number>133-AH</number>
+ <text>fuerz armad aleman are </text>
+</query>
+<query>
+ <number>134-AH</number>
+ <text>sond espacial clementin </text>
+</query>
+<query>
+ <number>135-AH</number>
+ <text>candidat president comision europe </text>
+</query>
+<query>
+ <number>136-AH</number>
+ <text>torr inclin pis </text>
+</query>
+<query>
+ <number>137-AH</number>
+ <text>concurs internacional bellez </text>
+</query>
+<query>
+ <number>138-AH</number>
+ <text>extranjer frances </text>
+</query>
+<query>
+ <number>139-AH</number>
+ <text>cuot pesc ue </text>
+</query>
+<query>
+ <number>140-AH</number>
+ <text>telefon movil </text>
+</query>
+<query>
+ <number>141-AH</number>
+ <text>cartabomb kiesbau </text>
+</query>
+<query>
+ <number>142-AH</number>
+ <text>christ envuelv edifici reichstag aleman </text>
+</query>
+<query>
+ <number>143-AH</number>
+ <text>conferent muj pekin </text>
+</query>
+<query>
+ <number>144-AH</number>
+ <text>diamant rebelion sierr leon </text>
+</query>
+<query>
+ <number>145-AH</number>
+ <text>import arroz japon </text>
+</query>
+<query>
+ <number>146-AH</number>
+ <text>com rap japon </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>accident petrolifer aves </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>destruccion cap ozon </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>visit pap sri lank </text>
+</query>
+<query>
+ <number>160-AH</number>
+ <text>consum whisky escoces </text>
+</query>
+<query>
+ <number>161-AH</number>
+ <text>diet celiac </text>
+</query>
+<query>
+ <number>162-AH</number>
+ <text>aduan ue turqu </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>restriccion fumador </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>sentenci drog europ </text>
+</query>
+<query>
+ <number>165-AH</number>
+ <text>glob oro 1994 </text>
+</query>
+<query>
+ <number>166-AH</number>
+ <text>frances zon segur balcan </text>
+</query>
+<query>
+ <number>167-AH</number>
+ <text>relacion chinamongoli </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>asesinat rabin </text>
+</query>
+<query>
+ <number>170-AH</number>
+ <text>lengu oficial ue </text>
+</query>
+<query>
+ <number>171-AH</number>
+ <text>hockey hiel lillehamm </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>records mundial atlet 1995 </text>
+</query>
+<query>
+ <number>173-AH</number>
+ <text>prueb quark top </text>
+</query>
+<query>
+ <number>174-AH</number>
+ <text>polem crucifij bavari </text>
+</query>
+<query>
+ <number>175-AH</number>
+ <text>impact medioambiental everglad </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>shoemakerlevy jupit </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>consum lech europ </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>insumision </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>dimision secretari otan </text>
+</query>
+<query>
+ <number>190-AH</number>
+ <text>trabaj infantil asi </text>
+</query>
+<query>
+ <number>191-AH</number>
+ <text>cultiv delt ebro </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>asesinat director caden tv rusi </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>ue pais baltic </text>
+</query>
+<query>
+ <number>194-AH</number>
+ <text>famili real italian </text>
+</query>
+<query>
+ <number>196-AH</number>
+ <text>fusion banc japones </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>trat paz dayton </text>
+</query>
+<query>
+ <number>198-AH</number>
+ <text>oscar honorif director italian </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>epidemi ebol zair </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>inund holand alemani </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>
