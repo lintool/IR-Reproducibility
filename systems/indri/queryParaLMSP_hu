@@ -1,0 +1,598 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_hu</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>251-AH</number>
+ <text>alternatív gyógyász </text>
+</query>
+<query>
+ <number>252-AH</number>
+ <text>európ nyugdíjrendszer </text>
+</query>
+<query>
+ <number>253-AH</number>
+ <text>halálbüntetés elterjedtség </text>
+</query>
+<query>
+ <number>254-AH</number>
+ <text>földrengés okozt kár </text>
+</query>
+<query>
+ <number>255-AH</number>
+ <text>internetfüggő </text>
+</query>
+<query>
+ <number>256-AH</number>
+ <text>creutzfeldtjakob kór </text>
+</query>
+<query>
+ <number>257-AH</number>
+ <text>balkán etni tisztogatás </text>
+</query>
+<query>
+ <number>258-AH</number>
+ <text>agyelszívás hatás </text>
+</query>
+<query>
+ <number>259-AH</number>
+ <text>aranymedv </text>
+</query>
+<query>
+ <number>260-AH</number>
+ <text>dohányzásellenes törvénykezés </text>
+</query>
+<query>
+ <number>261-AH</number>
+ <text>jövendőmondás </text>
+</query>
+<query>
+ <number>262-AH</number>
+ <text>jótékonyság koncert hangverseny </text>
+</query>
+<query>
+ <number>263-AH</number>
+ <text>játékvezető vitatot ítélet </text>
+</query>
+<query>
+ <number>264-AH</number>
+ <text>radioaktív anyag csempészet </text>
+</query>
+<query>
+ <number>265-AH</number>
+ <text>deutsch ba szerzemény </text>
+</query>
+<query>
+ <number>266-AH</number>
+ <text>európ cigány diszkrimináció </text>
+</query>
+<query>
+ <number>267-AH</number>
+ <text>legjobb külföld fil </text>
+</query>
+<query>
+ <number>268-AH</number>
+ <text>ember klónozás etiká </text>
+</query>
+<query>
+ <number>269-AH</number>
+ <text>szerződésratifikáció </text>
+</query>
+<query>
+ <number>270-AH</number>
+ <text>microsof vetélytárs </text>
+</query>
+<query>
+ <number>271-AH</number>
+ <text>melegházasság </text>
+</query>
+<query>
+ <number>272-AH</number>
+ <text>cseh eln előélet </text>
+</query>
+<query>
+ <number>273-AH</number>
+ <text>natobővítés </text>
+</query>
+<query>
+ <number>274-AH</number>
+ <text>robban világháborús bomba </text>
+</query>
+<query>
+ <number>275-AH</number>
+ <text>dohányzás kapcsolatos betegség </text>
+</query>
+<query>
+ <number>276-AH</number>
+ <text>eus mezőgazdaság támogatás </text>
+</query>
+<query>
+ <number>277-AH</number>
+ <text>egészségügyi végrehajtot euthanáz </text>
+</query>
+<query>
+ <number>278-AH</number>
+ <text>mozgáskorlátozott tömegközlekedés </text>
+</query>
+<query>
+ <number>279-AH</number>
+ <text>svájc népszavazás </text>
+</query>
+<query>
+ <number>280-AH</number>
+ <text>bűnözés new yor </text>
+</query>
+<query>
+ <number>281-AH</number>
+ <text>radov karadzic </text>
+</query>
+<query>
+ <number>282-AH</number>
+ <text>elítélt szemben durv bánásmó </text>
+</query>
+<query>
+ <number>283-AH</number>
+ <text>james bondfilm </text>
+</query>
+<query>
+ <number>284-AH</number>
+ <text>Űrrepülőgépmisszió </text>
+</query>
+<query>
+ <number>285-AH</number>
+ <text>abortuszellenes mozgalm </text>
+</query>
+<query>
+ <number>286-AH</number>
+ <text>futballsérülés </text>
+</query>
+<query>
+ <number>287-AH</number>
+ <text>túszszedő terrorista </text>
+</query>
+<query>
+ <number>288-AH</number>
+ <text>autóimpor us </text>
+</query>
+<query>
+ <number>289-AH</number>
+ <text>falklandsziget </text>
+</query>
+<query>
+ <number>290-AH</number>
+ <text>olajáringadozás </text>
+</query>
+<query>
+ <number>291-AH</number>
+ <text>eu illegális bevándorlás </text>
+</query>
+<query>
+ <number>292-AH</number>
+ <text>ném város újjáépítés </text>
+</query>
+<query>
+ <number>293-AH</number>
+ <text>kín tajv viszony </text>
+</query>
+<query>
+ <number>294-AH</number>
+ <text>hurrikán ere </text>
+</query>
+<query>
+ <number>295-AH</number>
+ <text>pénzmosás </text>
+</query>
+<query>
+ <number>296-AH</number>
+ <text>lisz műv nyilvános előadás </text>
+</query>
+<query>
+ <number>297-AH</number>
+ <text>kiutasítot diplomata </text>
+</query>
+<query>
+ <number>298-AH</number>
+ <text>atomerőműv </text>
+</query>
+<query>
+ <number>299-AH</number>
+ <text>ensz békefenntartó fenyegető veszély </text>
+</query>
+<query>
+ <number>300-AH</number>
+ <text>lottónyeremény </text>
+</query>
+<query>
+ <number>301-AH</number>
+ <text>nestl márka </text>
+</query>
+<query>
+ <number>302-AH</number>
+ <text>fogyasztó bojkot </text>
+</query>
+<query>
+ <number>303-AH</number>
+ <text>olasz itáli festmény </text>
+</query>
+<query>
+ <number>304-AH</number>
+ <text>világörökség rész </text>
+</query>
+<query>
+ <number>305-AH</number>
+ <text>olajár </text>
+</query>
+<query>
+ <number>306-AH</number>
+ <text>etatevékenység franciaország </text>
+</query>
+<query>
+ <number>308-AH</number>
+ <text>napfogyatkozás </text>
+</query>
+<query>
+ <number>309-AH</number>
+ <text>keménydrog </text>
+</query>
+<query>
+ <number>310-AH</number>
+ <text>ipar hullade kezelés </text>
+</query>
+<query>
+ <number>311-AH</number>
+ <text>munkanélküliség európ </text>
+</query>
+<query>
+ <number>312-AH</number>
+ <text>kutyatámadás </text>
+</query>
+<query>
+ <number>313-AH</number>
+ <text>centenárium ünnepség </text>
+</query>
+<query>
+ <number>314-AH</number>
+ <text>veszélyeztetet faj </text>
+</query>
+<query>
+ <number>315-AH</number>
+ <text>doppingolás sport </text>
+</query>
+<query>
+ <number>316-AH</number>
+ <text>sztrájk </text>
+</query>
+<query>
+ <number>317-AH</number>
+ <text>rák orvos beavatkozás </text>
+</query>
+<query>
+ <number>318-AH</number>
+ <text>szexuális nevelés </text>
+</query>
+<query>
+ <number>319-AH</number>
+ <text>Ópiumtermelés </text>
+</query>
+<query>
+ <number>320-AH</number>
+ <text>energiaválság </text>
+</query>
+<query>
+ <number>321-AH</number>
+ <text>tálib afganiszt </text>
+</query>
+<query>
+ <number>322-AH</number>
+ <text>atomenerg </text>
+</query>
+<query>
+ <number>323-AH</number>
+ <text>szigorodó vízumkötelezettség </text>
+</query>
+<query>
+ <number>324-AH</number>
+ <text>topmodell </text>
+</query>
+<query>
+ <number>325-AH</number>
+ <text>egyetem tandíj </text>
+</query>
+<query>
+ <number>351-AH</number>
+ <text>változás közös agrárpolit </text>
+</query>
+<query>
+ <number>352-AH</number>
+ <text>afganisztán békefenntartás </text>
+</query>
+<query>
+ <number>353-AH</number>
+ <text>hamis euró </text>
+</query>
+<query>
+ <number>354-AH</number>
+ <text>Új mobiltelefonos funkció </text>
+</query>
+<query>
+ <number>355-AH</number>
+ <text>Üvegházhatás okozó gáz </text>
+</query>
+<query>
+ <number>356-AH</number>
+ <text>Újonn felfedezet égitest </text>
+</query>
+<query>
+ <number>357-AH</number>
+ <text>szeptember 11 hatás </text>
+</query>
+<query>
+ <number>358-AH</number>
+ <text>Értéktárgy háború alatt eltulajdonítás </text>
+</query>
+<query>
+ <number>359-AH</number>
+ <text>angol színdarab </text>
+</query>
+<query>
+ <number>360-AH</number>
+ <text>víz mars </text>
+</query>
+<query>
+ <number>361-AH</number>
+ <text>keresztény zarándoklat </text>
+</query>
+<query>
+ <number>362-AH</number>
+ <text>dolláreuró árfoly </text>
+</query>
+<query>
+ <number>363-AH</number>
+ <text>tél olimp érmes </text>
+</query>
+<query>
+ <number>364-AH</number>
+ <text>ném kancellárjelölt </text>
+</query>
+<query>
+ <number>365-AH</number>
+ <text>gazdaság recesszió us </text>
+</query>
+<query>
+ <number>366-AH</number>
+ <text>kursz tengeralattjáró tragédiá </text>
+</query>
+<query>
+ <number>367-AH</number>
+ <text>kelettimor függetlenség </text>
+</query>
+<query>
+ <number>368-AH</number>
+ <text>gyógyszerkísérlet </text>
+</query>
+<query>
+ <number>369-AH</number>
+ <text>Új metróvonal </text>
+</query>
+<query>
+ <number>371-AH</number>
+ <text>megszeget választás ígéret </text>
+</query>
+<query>
+ <number>372-AH</number>
+ <text>kasmír válság </text>
+</query>
+<query>
+ <number>373-AH</number>
+ <text>magyarbolgár kapcsolat </text>
+</query>
+<query>
+ <number>374-AH</number>
+ <text>bi lad társ </text>
+</query>
+<query>
+ <number>375-AH</number>
+ <text>kalinyingrád kilátás </text>
+</query>
+<query>
+ <number>401-AH</number>
+ <text>euróáremelés </text>
+</query>
+<query>
+ <number>402-AH</number>
+ <text>megújuló energiaforrás </text>
+</query>
+<query>
+ <number>403-AH</number>
+ <text>színész rendőr szerep </text>
+</query>
+<query>
+ <number>404-AH</number>
+ <text>natocsúcstalálkozó biztonság </text>
+</query>
+<query>
+ <number>405-AH</number>
+ <text>gyermekkor asztm </text>
+</query>
+<query>
+ <number>406-AH</number>
+ <text>rajzfilm </text>
+</query>
+<query>
+ <number>407-AH</number>
+ <text>ausztrál minisztereln </text>
+</query>
+<query>
+ <number>408-AH</number>
+ <text>emberklónozás </text>
+</query>
+<query>
+ <number>409-AH</number>
+ <text>bal autób </text>
+</query>
+<query>
+ <number>410-AH</number>
+ <text>Északkore megsért atomsorompószerződés </text>
+</query>
+<query>
+ <number>411-AH</number>
+ <text>legjobb fil járó oscar </text>
+</query>
+<query>
+ <number>412-AH</number>
+ <text>politikus szóló könyv </text>
+</query>
+<query>
+ <number>413-AH</number>
+ <text>cukorbetegség kockázat csökkentés </text>
+</query>
+<query>
+ <number>414-AH</number>
+ <text>sörfesztivál </text>
+</query>
+<query>
+ <number>415-AH</number>
+ <text>drogozás </text>
+</query>
+<query>
+ <number>416-AH</number>
+ <text>túszválság moszkv színház </text>
+</query>
+<query>
+ <number>417-AH</number>
+ <text>repülőgépeltérítés </text>
+</query>
+<query>
+ <number>418-AH</number>
+ <text>bülen ecev kijelentés </text>
+</query>
+<query>
+ <number>419-AH</number>
+ <text>atomhulladéktemető </text>
+</query>
+<query>
+ <number>420-AH</number>
+ <text>túlsúly egészségügy probléma </text>
+</query>
+<query>
+ <number>421-AH</number>
+ <text>kostelicmedál olimp </text>
+</query>
+<query>
+ <number>422-AH</number>
+ <text>gyár cég megszűnés </text>
+</query>
+<query>
+ <number>423-AH</number>
+ <text>influenz védőoltás alternatíva </text>
+</query>
+<query>
+ <number>424-AH</number>
+ <text>terjedő internetbankolás </text>
+</query>
+<query>
+ <number>425-AH</number>
+ <text>veszélyeztetet faj </text>
+</query>
+<query>
+ <number>426-AH</number>
+ <text>szeptember 11 következmény </text>
+</query>
+<query>
+ <number>427-AH</number>
+ <text>milosevics tanúvallomás </text>
+</query>
+<query>
+ <number>428-AH</number>
+ <text>Ökoturizmus </text>
+</query>
+<query>
+ <number>429-AH</number>
+ <text>szennyezet víz rejlő kockázat </text>
+</query>
+<query>
+ <number>430-AH</number>
+ <text>kozmeti eljárás </text>
+</query>
+<query>
+ <number>431-AH</number>
+ <text>franc elnökjelölt </text>
+</query>
+<query>
+ <number>432-AH</number>
+ <text>zimbabw elnökválasztás </text>
+</query>
+<query>
+ <number>433-AH</number>
+ <text>pap szexuális molesztál gyerek </text>
+</query>
+<query>
+ <number>434-AH</number>
+ <text>politi bizonytalanság venezuel </text>
+</query>
+<query>
+ <number>435-AH</number>
+ <text>légszennyezés ok </text>
+</query>
+<query>
+ <number>436-AH</number>
+ <text>vip válás </text>
+</query>
+<query>
+ <number>437-AH</number>
+ <text>könyvelés szabálytalanság enron </text>
+</query>
+<query>
+ <number>438-AH</number>
+ <text>rákkutatás </text>
+</query>
+<query>
+ <number>439-AH</number>
+ <text>munkahely baleset </text>
+</query>
+<query>
+ <number>440-AH</number>
+ <text>doppingbotrány tél olimp </text>
+</query>
+<query>
+ <number>441-AH</number>
+ <text>Űrturista </text>
+</query>
+<query>
+ <number>442-AH</number>
+ <text>anyakirálynő temetés </text>
+</query>
+<query>
+ <number>443-AH</number>
+ <text>Úszó világrekord </text>
+</query>
+<query>
+ <number>444-AH</number>
+ <text>brazíl labdarúgó világbajn cím </text>
+</query>
+<query>
+ <number>445-AH</number>
+ <text>harry herceg drog </text>
+</query>
+<query>
+ <number>446-AH</number>
+ <text>Árvízkár kulturális örökség </text>
+</query>
+<query>
+ <number>447-AH</number>
+ <text>pi fortuy politiká </text>
+</query>
+<query>
+ <number>448-AH</number>
+ <text>kémi nobeldíj </text>
+</query>
+<query>
+ <number>449-AH</number>
+ <text>afri polgárháború </text>
+</query>
+<query>
+ <number>450-AH</number>
+ <text>sikertel merénylet </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

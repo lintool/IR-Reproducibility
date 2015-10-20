@@ -1,0 +1,626 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_de</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>41-AH</number>
+ <text>pestizid babykost </text>
+</query>
+<query>
+ <number>42-AH</number>
+ <text>unusinvasion haitis </text>
+</query>
+<query>
+ <number>43-AH</number>
+ <text>el niño wett </text>
+</query>
+<query>
+ <number>45-AH</number>
+ <text>israelischjordan friedensvertrag </text>
+</query>
+<query>
+ <number>46-AH</number>
+ <text>embargo irak </text>
+</query>
+<query>
+ <number>47-AH</number>
+ <text>russisch intervention tschetscheni </text>
+</query>
+<query>
+ <number>48-AH</number>
+ <text>friedenstrupp bosni </text>
+</query>
+<query>
+ <number>49-AH</number>
+ <text>ruckgang japan autoexport </text>
+</query>
+<query>
+ <number>50-AH</number>
+ <text>aufstand chiapas </text>
+</query>
+<query>
+ <number>51-AH</number>
+ <text>fussballweltmeisterschaft </text>
+</query>
+<query>
+ <number>52-AH</number>
+ <text>abwert chines wahrung </text>
+</query>
+<query>
+ <number>53-AH</number>
+ <text>gen krankheit </text>
+</query>
+<query>
+ <number>54-AH</number>
+ <text>ergebnis halbfinal </text>
+</query>
+<query>
+ <number>55-AH</number>
+ <text>alpeninitiativ schweiz </text>
+</query>
+<query>
+ <number>56-AH</number>
+ <text>europa kampagn rassismus </text>
+</query>
+<query>
+ <number>57-AH</number>
+ <text>strafprozess verseucht blutkonserv </text>
+</query>
+<query>
+ <number>58-AH</number>
+ <text>sterbehilf </text>
+</query>
+<query>
+ <number>59-AH</number>
+ <text>computervir </text>
+</query>
+<query>
+ <number>60-AH</number>
+ <text>korruption franzos polit </text>
+</query>
+<query>
+ <number>61-AH</number>
+ <text>Ölkatastroph sibiri </text>
+</query>
+<query>
+ <number>62-AH</number>
+ <text>erdbeb nordjapan </text>
+</query>
+<query>
+ <number>63-AH</number>
+ <text>reservat wal </text>
+</query>
+<query>
+ <number>64-AH</number>
+ <text>computermaus rsi </text>
+</query>
+<query>
+ <number>65-AH</number>
+ <text>schatzsuch </text>
+</query>
+<query>
+ <number>66-AH</number>
+ <text>russisch abzug lettland </text>
+</query>
+<query>
+ <number>67-AH</number>
+ <text>schiffskollision </text>
+</query>
+<query>
+ <number>68-AH</number>
+ <text>anschlag europa synagog </text>
+</query>
+<query>
+ <number>69-AH</number>
+ <text>klon ethik </text>
+</query>
+<query>
+ <number>70-AH</number>
+ <text>tod kim il sung </text>
+</query>
+<query>
+ <number>71-AH</number>
+ <text>gemus frucht kreb </text>
+</query>
+<query>
+ <number>72-AH</number>
+ <text>g7gipfel neapel </text>
+</query>
+<query>
+ <number>73-AH</number>
+ <text>norweg volksabstimm eu </text>
+</query>
+<query>
+ <number>74-AH</number>
+ <text>einweih kanaltunnel </text>
+</query>
+<query>
+ <number>75-AH</number>
+ <text>massak amtsgericht euskirch </text>
+</query>
+<query>
+ <number>76-AH</number>
+ <text>sonnenenergi </text>
+</query>
+<query>
+ <number>77-AH</number>
+ <text>selbstmord teenag </text>
+</query>
+<query>
+ <number>78-AH</number>
+ <text>filmfestspiel vened </text>
+</query>
+<query>
+ <number>79-AH</number>
+ <text>raumsond odysseus </text>
+</query>
+<query>
+ <number>80-AH</number>
+ <text>hungerstreik </text>
+</query>
+<query>
+ <number>81-AH</number>
+ <text>entfuhr franzos airbus </text>
+</query>
+<query>
+ <number>82-AH</number>
+ <text>iraangriff flughaf </text>
+</query>
+<query>
+ <number>83-AH</number>
+ <text>auktion lennonerinnerungsstuck </text>
+</query>
+<query>
+ <number>84-AH</number>
+ <text>haifischangriff </text>
+</query>
+<query>
+ <number>85-AH</number>
+ <text>hilfsprogramm schildkrot ruanda </text>
+</query>
+<query>
+ <number>86-AH</number>
+ <text>erneuerbar energi </text>
+</query>
+<query>
+ <number>87-AH</number>
+ <text>inflation brasilian wahl </text>
+</query>
+<query>
+ <number>88-AH</number>
+ <text>rinderwahnsinn europa </text>
+</query>
+<query>
+ <number>89-AH</number>
+ <text>schneiderkonkur </text>
+</query>
+<query>
+ <number>90-AH</number>
+ <text>gemuseexporteur </text>
+</query>
+<query>
+ <number>91-AH</number>
+ <text>ai lateinamerika </text>
+</query>
+<query>
+ <number>92-AH</number>
+ <text>unsanktion irak </text>
+</query>
+<query>
+ <number>93-AH</number>
+ <text>eurofight </text>
+</query>
+<query>
+ <number>94-AH</number>
+ <text>ruckkehr solschenizyn </text>
+</query>
+<query>
+ <number>95-AH</number>
+ <text>konflikt palastina </text>
+</query>
+<query>
+ <number>96-AH</number>
+ <text>gonzález zurucktret </text>
+</query>
+<query>
+ <number>97-AH</number>
+ <text>volksbefrag unabhang moldawi </text>
+</query>
+<query>
+ <number>98-AH</number>
+ <text>film brud kaurismaki </text>
+</query>
+<query>
+ <number>99-AH</number>
+ <text>verleugn holocaust </text>
+</query>
+<query>
+ <number>100-AH</number>
+ <text>spionagefall ames </text>
+</query>
+<query>
+ <number>101-AH</number>
+ <text>zyp eu </text>
+</query>
+<query>
+ <number>102-AH</number>
+ <text>sieg alberto tomba </text>
+</query>
+<query>
+ <number>103-AH</number>
+ <text>interessenkonflikt itali </text>
+</query>
+<query>
+ <number>104-AH</number>
+ <text>goldmedaill superg </text>
+</query>
+<query>
+ <number>105-AH</number>
+ <text>bronchialasthma </text>
+</query>
+<query>
+ <number>106-AH</number>
+ <text>europa autoindustri </text>
+</query>
+<query>
+ <number>107-AH</number>
+ <text>gentechn </text>
+</query>
+<query>
+ <number>108-AH</number>
+ <text>abspalt sudjem </text>
+</query>
+<query>
+ <number>109-AH</number>
+ <text>computersich </text>
+</query>
+<query>
+ <number>110-AH</number>
+ <text>ausweis iran verdacht </text>
+</query>
+<query>
+ <number>111-AH</number>
+ <text>computeranimation </text>
+</query>
+<query>
+ <number>112-AH</number>
+ <text>pulp fiction </text>
+</query>
+<query>
+ <number>113-AH</number>
+ <text>fussballeuropameisterschaft </text>
+</query>
+<query>
+ <number>114-AH</number>
+ <text>burgerkrieg afghanistan </text>
+</query>
+<query>
+ <number>115-AH</number>
+ <text>scheidungsstatist </text>
+</query>
+<query>
+ <number>116-AH</number>
+ <text>snowboard </text>
+</query>
+<query>
+ <number>117-AH</number>
+ <text>wahl europa parlament </text>
+</query>
+<query>
+ <number>118-AH</number>
+ <text>eukommissar finnland </text>
+</query>
+<query>
+ <number>119-AH</number>
+ <text>vernicht ukrain atomwaff </text>
+</query>
+<query>
+ <number>120-AH</number>
+ <text>edouard balladur </text>
+</query>
+<query>
+ <number>121-AH</number>
+ <text>erfolg ayrton senna </text>
+</query>
+<query>
+ <number>122-AH</number>
+ <text>nordamerikan autoindustri </text>
+</query>
+<query>
+ <number>123-AH</number>
+ <text>heirat jacksonpresley </text>
+</query>
+<query>
+ <number>124-AH</number>
+ <text>gemeinsam auss sicherheitspolit gasp </text>
+</query>
+<query>
+ <number>125-AH</number>
+ <text>europa einheitswahr </text>
+</query>
+<query>
+ <number>126-AH</number>
+ <text>aktion pelzindustri </text>
+</query>
+<query>
+ <number>127-AH</number>
+ <text>flucht roldán </text>
+</query>
+<query>
+ <number>128-AH</number>
+ <text>sex werbung </text>
+</query>
+<query>
+ <number>129-AH</number>
+ <text>100 milliard stern entdeckt </text>
+</query>
+<query>
+ <number>130-AH</number>
+ <text>tod bandlead nirvana </text>
+</query>
+<query>
+ <number>131-AH</number>
+ <text>intellektuell eigentumsrecht </text>
+</query>
+<query>
+ <number>132-AH</number>
+ <text>gebiet kaliningrad </text>
+</query>
+<query>
+ <number>133-AH</number>
+ <text>outofareaeinsatz deutsch bundeswehr </text>
+</query>
+<query>
+ <number>134-AH</number>
+ <text>raumsond clementin </text>
+</query>
+<query>
+ <number>135-AH</number>
+ <text>prasidentschaftskandidat eukommission </text>
+</query>
+<query>
+ <number>136-AH</number>
+ <text>schief turm pisa </text>
+</query>
+<query>
+ <number>137-AH</number>
+ <text>international schonheitswettbewerb </text>
+</query>
+<query>
+ <number>138-AH</number>
+ <text>fremdwort franzos </text>
+</query>
+<query>
+ <number>139-AH</number>
+ <text>eufischfangquot </text>
+</query>
+<query>
+ <number>140-AH</number>
+ <text>mobiltelefon </text>
+</query>
+<query>
+ <number>141-AH</number>
+ <text>briefbomb kiesbau </text>
+</query>
+<query>
+ <number>142-AH</number>
+ <text>christo verhullt deutsch reichstag </text>
+</query>
+<query>
+ <number>143-AH</number>
+ <text>frauenkonferenz peking </text>
+</query>
+<query>
+ <number>145-AH</number>
+ <text>japan reisimport </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>Ölunfall vogel </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>schad ozonschicht </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>papstbesuch sri lanka </text>
+</query>
+<query>
+ <number>150-AH</number>
+ <text>ai todesstraf </text>
+</query>
+<query>
+ <number>151-AH</number>
+ <text>wund antik </text>
+</query>
+<query>
+ <number>152-AH</number>
+ <text>kind </text>
+</query>
+<query>
+ <number>153-AH</number>
+ <text>olymp spiel fried </text>
+</query>
+<query>
+ <number>154-AH</number>
+ <text>meinungsfrei internet </text>
+</query>
+<query>
+ <number>155-AH</number>
+ <text>risik mobiltelefon </text>
+</query>
+<query>
+ <number>156-AH</number>
+ <text>gewerkschaft europa </text>
+</query>
+<query>
+ <number>157-AH</number>
+ <text>siegerinn wimbledon </text>
+</query>
+<query>
+ <number>158-AH</number>
+ <text>fussballrowdys dublin </text>
+</query>
+<query>
+ <number>159-AH</number>
+ <text>nordseeÖl umwelt </text>
+</query>
+<query>
+ <number>160-AH</number>
+ <text>scotchproduktion konsum </text>
+</query>
+<query>
+ <number>161-AH</number>
+ <text>diat sprueerkrankt </text>
+</query>
+<query>
+ <number>162-AH</number>
+ <text>eu turkisch zoll </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>einschrank rauch </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>europa strafurteil drog </text>
+</query>
+<query>
+ <number>165-AH</number>
+ <text>gold glob 1994 </text>
+</query>
+<query>
+ <number>166-AH</number>
+ <text>franzos general balkanschutzzon </text>
+</query>
+<query>
+ <number>167-AH</number>
+ <text>verhaltnis chinamongolei </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>ermord rabin </text>
+</query>
+<query>
+ <number>169-AH</number>
+ <text>aufkomm cdbrenn </text>
+</query>
+<query>
+ <number>171-AH</number>
+ <text>eishockeyfinal lillehamm </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>leichtathletikweltrekord 1995 </text>
+</query>
+<query>
+ <number>173-AH</number>
+ <text>nachweis topquark </text>
+</query>
+<query>
+ <number>174-AH</number>
+ <text>bayer kruzifixstreit </text>
+</query>
+<query>
+ <number>175-AH</number>
+ <text>umweltschad everglad </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>shoemakerlevy jupit </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>milchkonsum europa </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>totalverweiger </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>rucktritt natogeneralsekretar </text>
+</query>
+<query>
+ <number>180-AH</number>
+ <text>konkur baringbank </text>
+</query>
+<query>
+ <number>181-AH</number>
+ <text>franzos atomt </text>
+</query>
+<query>
+ <number>182-AH</number>
+ <text>50 jahrestag landung normandi </text>
+</query>
+<query>
+ <number>183-AH</number>
+ <text>saurieruberr asi </text>
+</query>
+<query>
+ <number>184-AH</number>
+ <text>mutterschaftsurlaub europa </text>
+</query>
+<query>
+ <number>185-AH</number>
+ <text>holland fotos srebrenica </text>
+</query>
+<query>
+ <number>186-AH</number>
+ <text>holland regierungskoalition </text>
+</query>
+<query>
+ <number>187-AH</number>
+ <text>atomtransport deutschland </text>
+</query>
+<query>
+ <number>188-AH</number>
+ <text>deutsch rechtschreibreform </text>
+</query>
+<query>
+ <number>189-AH</number>
+ <text>hubbl schwarz loch </text>
+</query>
+<query>
+ <number>190-AH</number>
+ <text>kinderarbeit asi </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>mord russisch fernsehdirektor </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>eu baltisch land </text>
+</query>
+<query>
+ <number>194-AH</number>
+ <text>italien konigsfamili </text>
+</query>
+<query>
+ <number>195-AH</number>
+ <text>streik italien flugbegleit </text>
+</query>
+<query>
+ <number>196-AH</number>
+ <text>fusion japan bank </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>daytonfriedensabkomm </text>
+</query>
+<query>
+ <number>198-AH</number>
+ <text>ehrenoscar italien regisseur </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>ebolaepidemi zair </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>hochwass holland deutschland </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

@@ -1,0 +1,8 @@
+<parameters> 
+    <memory>1024m</memory> 
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_fa/</index> 
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/HAMSHAHRI_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+</parameters> 

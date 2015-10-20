@@ -1,0 +1,406 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_fa</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>551-AH</number>
+ <text>تنیس جام ویمبلدون </text>
+</query>
+<query>
+ <number>552-AH</number>
+ <text>بازار بورس تهران </text>
+</query>
+<query>
+ <number>553-AH</number>
+ <text>جام جهانی 2002 </text>
+</query>
+<query>
+ <number>554-AH</number>
+ <text>استرس سلامتی </text>
+</query>
+<query>
+ <number>555-AH</number>
+ <text>تلفات جاده آمار </text>
+</query>
+<query>
+ <number>556-AH</number>
+ <text>انرژی بودن قانون </text>
+</query>
+<query>
+ <number>557-AH</number>
+ <text>مربی فوتبال ایران </text>
+</query>
+<query>
+ <number>558-AH</number>
+ <text>خطر روغن جامد </text>
+</query>
+<query>
+ <number>559-AH</number>
+ <text>فیلم فجر </text>
+</query>
+<query>
+ <number>560-AH</number>
+ <text>تحریم اقتصادی ایران </text>
+</query>
+<query>
+ <number>561-AH</number>
+ <text>باغبانی گل آموزش </text>
+</query>
+<query>
+ <number>562-AH</number>
+ <text>بازسازی تونل کندو </text>
+</query>
+<query>
+ <number>563-AH</number>
+ <text>شیوع جنون گاو </text>
+</query>
+<query>
+ <number>564-AH</number>
+ <text>فشار خون ورزش </text>
+</query>
+<query>
+ <number>565-AH</number>
+ <text>خسارات خشک سالی </text>
+</query>
+<query>
+ <number>566-AH</number>
+ <text>پیشگیری تشخیص یماردن کلیه </text>
+</query>
+<query>
+ <number>567-AH</number>
+ <text>کنترل رشد جمعیت </text>
+</query>
+<query>
+ <number>568-AH</number>
+ <text>توسعه تلفن همراه </text>
+</query>
+<query>
+ <number>569-AH</number>
+ <text>پرونده فساد اقتصادی </text>
+</query>
+<query>
+ <number>570-AH</number>
+ <text>سد ایران </text>
+</query>
+<query>
+ <number>571-AH</number>
+ <text>اقتصاد جهانی نفت </text>
+</query>
+<query>
+ <number>572-AH</number>
+ <text>شجری کنسرت </text>
+</query>
+<query>
+ <number>573-AH</number>
+ <text>فروش فیلم سینما </text>
+</query>
+<query>
+ <number>574-AH</number>
+ <text>قهرم اولین لیگ بر </text>
+</query>
+<query>
+ <number>575-AH</number>
+ <text>سال تاسیس باشگاه پرسپولیس </text>
+</query>
+<query>
+ <number>576-AH</number>
+ <text>شرکت ایران خودرو </text>
+</query>
+<query>
+ <number>577-AH</number>
+ <text>دارو ضد سرطان </text>
+</query>
+<query>
+ <number>578-AH</number>
+ <text>تراکم ترافیک شهری تهران </text>
+</query>
+<query>
+ <number>579-AH</number>
+ <text>نمایشگاه المللی کتاب تهران </text>
+</query>
+<query>
+ <number>580-AH</number>
+ <text>انتخابات ریاست جمهوری ایران </text>
+</query>
+<query>
+ <number>581-AH</number>
+ <text>سقوط هواپیما </text>
+</query>
+<query>
+ <number>582-AH</number>
+ <text>کم آبی تهران </text>
+</query>
+<query>
+ <number>583-AH</number>
+ <text>تلفات زلزله </text>
+</query>
+<query>
+ <number>584-AH</number>
+ <text>تحوله قیمت نفت </text>
+</query>
+<query>
+ <number>585-AH</number>
+ <text>کنترل آلوده هوا </text>
+</query>
+<query>
+ <number>586-AH</number>
+ <text>فینال جام باشگاه اروپا </text>
+</query>
+<query>
+ <number>587-AH</number>
+ <text>توسعه صنعت نرم افزار ایران </text>
+</query>
+<query>
+ <number>588-AH</number>
+ <text>حمله شیمیا </text>
+</query>
+<query>
+ <number>589-AH</number>
+ <text>صادره فرش ایران </text>
+</query>
+<query>
+ <number>590-AH</number>
+ <text>قاچاق کالا </text>
+</query>
+<query>
+ <number>591-AH</number>
+ <text>گرم زمین </text>
+</query>
+<query>
+ <number>592-AH</number>
+ <text>پر مصرف ماده مخدر ایران </text>
+</query>
+<query>
+ <number>593-AH</number>
+ <text>استان ماسوله </text>
+</query>
+<query>
+ <number>594-AH</number>
+ <text>قیمت بلیط هواپیما </text>
+</query>
+<query>
+ <number>595-AH</number>
+ <text>جام جهانی ژاپن کره جنوبی </text>
+</query>
+<query>
+ <number>596-AH</number>
+ <text>سلاح کشتار جمعی عراق </text>
+</query>
+<query>
+ <number>597-AH</number>
+ <text>قتل تهران </text>
+</query>
+<query>
+ <number>598-AH</number>
+ <text>قتل زنجیره </text>
+</query>
+<query>
+ <number>599-AH</number>
+ <text>انتخابات خرداد </text>
+</query>
+<query>
+ <number>600-AH</number>
+ <text>تورم ایران </text>
+</query>
+<query>
+ <number>601-AH</number>
+ <text>حمله آمریکا ایران </text>
+</query>
+<query>
+ <number>602-AH</number>
+ <text>سیگار یماردن قلبی </text>
+</query>
+<query>
+ <number>603-AH</number>
+ <text>سهمیه بنزین ایران </text>
+</query>
+<query>
+ <number>604-AH</number>
+ <text>سرطان ریه </text>
+</query>
+<query>
+ <number>605-AH</number>
+ <text>فیلم ابراهیم حاتمی کیا </text>
+</query>
+<query>
+ <number>606-AH</number>
+ <text>اوقه فراغت جوان تابستان </text>
+</query>
+<query>
+ <number>607-AH</number>
+ <text>بزرگداشت سعدی شیرازی </text>
+</query>
+<query>
+ <number>608-AH</number>
+ <text>قیمت مسکن </text>
+</query>
+<query>
+ <number>609-AH</number>
+ <text>بستن میوه صادراتی </text>
+</query>
+<query>
+ <number>610-AH</number>
+ <text>فواید قانون کپی رایت </text>
+</query>
+<query>
+ <number>611-AH</number>
+ <text>فناوری اطلاعه اشتغال </text>
+</query>
+<query>
+ <number>612-AH</number>
+ <text>کاربر اینترنت </text>
+</query>
+<query>
+ <number>613-AH</number>
+ <text>حق کودک </text>
+</query>
+<query>
+ <number>614-AH</number>
+ <text>هما تجارت الکترونیک </text>
+</query>
+<query>
+ <number>615-AH</number>
+ <text>بزرگداشت دکتر علی شریعتی </text>
+</query>
+<query>
+ <number>616-AH</number>
+ <text>صادره فرش دستباف </text>
+</query>
+<query>
+ <number>617-AH</number>
+ <text>جاذبه گردشگری </text>
+</query>
+<query>
+ <number>618-AH</number>
+ <text>حادثه 18 تیر </text>
+</query>
+<query>
+ <number>619-AH</number>
+ <text>کالا صادراتی فتن </text>
+</query>
+<query>
+ <number>620-AH</number>
+ <text>سهم آهن حمل </text>
+</query>
+<query>
+ <number>621-AH</number>
+ <text>تلویزیون بهداشت روانی </text>
+</query>
+<query>
+ <number>622-AH</number>
+ <text>حوادث راننده تهران </text>
+</query>
+<query>
+ <number>623-AH</number>
+ <text>حفاظت جنگل شمال ایران </text>
+</query>
+<query>
+ <number>624-AH</number>
+ <text>فیلم منتخب جشنواره فجر </text>
+</query>
+<query>
+ <number>625-AH</number>
+ <text>منطقه دیدنی استان گلستان </text>
+</query>
+<query>
+ <number>626-AH</number>
+ <text>مشارکت سیاسی زنان </text>
+</query>
+<query>
+ <number>627-AH</number>
+ <text>انرژی اتمی </text>
+</query>
+<query>
+ <number>628-AH</number>
+ <text>جنگ ناتو یوگوسلاو 1998 </text>
+</query>
+<query>
+ <number>629-AH</number>
+ <text>بحران خشکسالی جهان </text>
+</query>
+<query>
+ <number>630-AH</number>
+ <text>جشن سنتی ایرانی </text>
+</query>
+<query>
+ <number>631-AH</number>
+ <text>رابطه خارجی ایران آمریکا </text>
+</query>
+<query>
+ <number>632-AH</number>
+ <text>خاصیت روغن زیتون </text>
+</query>
+<query>
+ <number>633-AH</number>
+ <text>گل علی دا مقدماتی جام جهانی </text>
+</query>
+<query>
+ <number>634-AH</number>
+ <text>ظرفیت پذیرش دانشگاه </text>
+</query>
+<query>
+ <number>635-AH</number>
+ <text>راهیابی ایران جام جهانی 98 </text>
+</query>
+<query>
+ <number>636-AH</number>
+ <text>آلوده هوا </text>
+</query>
+<query>
+ <number>637-AH</number>
+ <text>منبع آلایدن هوا تهران </text>
+</query>
+<query>
+ <number>638-AH</number>
+ <text>موانع سرمایه ایران </text>
+</query>
+<query>
+ <number>639-AH</number>
+ <text>یماردن جنون گاو </text>
+</query>
+<query>
+ <number>640-AH</number>
+ <text>بافت قالیچه گلیم </text>
+</query>
+<query>
+ <number>641-AH</number>
+ <text>وضعیت آلوده دریا خلیج فارس </text>
+</query>
+<query>
+ <number>642-AH</number>
+ <text>برنامه تئا شهر </text>
+</query>
+<query>
+ <number>643-AH</number>
+ <text>خسارات زلزله </text>
+</query>
+<query>
+ <number>644-AH</number>
+ <text>تجارت الکترونیکی </text>
+</query>
+<query>
+ <number>645-AH</number>
+ <text>یازدهم سپتامبر حمل نقل </text>
+</query>
+<query>
+ <number>646-AH</number>
+ <text>اعزام خارج ایران </text>
+</query>
+<query>
+ <number>647-AH</number>
+ <text>خرید خدمت سربازی </text>
+</query>
+<query>
+ <number>648-AH</number>
+ <text>حمله برج دوقلو </text>
+</query>
+<query>
+ <number>649-AH</number>
+ <text>بحران نفت دولت خاتمی </text>
+</query>
+<query>
+ <number>650-AH</number>
+ <text>نوسانات بنزین وارداتی </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

@@ -1,0 +1,418 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_sv</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>91-AH</number>
+ <text>amnesty international latinamerik </text>
+</query>
+<query>
+ <number>92-AH</number>
+ <text>fnsanktion irak </text>
+</query>
+<query>
+ <number>93-AH</number>
+ <text>eurofight </text>
+</query>
+<query>
+ <number>94-AH</number>
+ <text>solzjenitsyn återvänd </text>
+</query>
+<query>
+ <number>95-AH</number>
+ <text>konflik palestin </text>
+</query>
+<query>
+ <number>96-AH</number>
+ <text>bör gonzález avgå </text>
+</query>
+<query>
+ <number>97-AH</number>
+ <text>folkomröstning moldavi självständ </text>
+</query>
+<query>
+ <number>98-AH</number>
+ <text>film bröd kaurismäki </text>
+</query>
+<query>
+ <number>99-AH</number>
+ <text>förnek förint </text>
+</query>
+<query>
+ <number>100-AH</number>
+ <text>spionfallet ames </text>
+</query>
+<query>
+ <number>101-AH</number>
+ <text>cyp eu </text>
+</query>
+<query>
+ <number>102-AH</number>
+ <text>alberto tomb segr </text>
+</query>
+<query>
+ <number>103-AH</number>
+ <text>intressekonflik itali </text>
+</query>
+<query>
+ <number>104-AH</number>
+ <text>guldmedalj superg </text>
+</query>
+<query>
+ <number>105-AH</number>
+ <text>bronkialastm </text>
+</query>
+<query>
+ <number>106-AH</number>
+ <text>europeisk bilindustrin </text>
+</query>
+<query>
+ <number>107-AH</number>
+ <text>genteknik </text>
+</query>
+<query>
+ <number>108-AH</number>
+ <text>sydjem självständ </text>
+</query>
+<query>
+ <number>109-AH</number>
+ <text>datasäker </text>
+</query>
+<query>
+ <number>111-AH</number>
+ <text>datoranimation </text>
+</query>
+<query>
+ <number>112-AH</number>
+ <text>pulp fiction </text>
+</query>
+<query>
+ <number>113-AH</number>
+ <text>europacup </text>
+</query>
+<query>
+ <number>114-AH</number>
+ <text>inbördeskr afghanistan </text>
+</query>
+<query>
+ <number>115-AH</number>
+ <text>skilsmässostatistik </text>
+</query>
+<query>
+ <number>116-AH</number>
+ <text>snowboard </text>
+</query>
+<query>
+ <number>117-AH</number>
+ <text>val europaparlamentet </text>
+</query>
+<query>
+ <number>118-AH</number>
+ <text>finland eukommissionär </text>
+</query>
+<query>
+ <number>119-AH</number>
+ <text>förstör ukrainsk kärnvap </text>
+</query>
+<query>
+ <number>120-AH</number>
+ <text>edouard balladur </text>
+</query>
+<query>
+ <number>121-AH</number>
+ <text>ayrton senn framgång </text>
+</query>
+<query>
+ <number>122-AH</number>
+ <text>nordamerikansk bilindustri </text>
+</query>
+<query>
+ <number>123-AH</number>
+ <text>giftermålet jackson presley </text>
+</query>
+<query>
+ <number>124-AH</number>
+ <text>gemensam utrik säkerhetspolitik gusp </text>
+</query>
+<query>
+ <number>125-AH</number>
+ <text>enhet europeisk valut </text>
+</query>
+<query>
+ <number>126-AH</number>
+ <text>aktion pälsbransch </text>
+</query>
+<query>
+ <number>127-AH</number>
+ <text>roldán flykt </text>
+</query>
+<query>
+ <number>128-AH</number>
+ <text>reklam </text>
+</query>
+<query>
+ <number>129-AH</number>
+ <text>100 miljard stjärn upptäck </text>
+</query>
+<query>
+ <number>130-AH</number>
+ <text>nirvan förgrundsfigur död </text>
+</query>
+<query>
+ <number>131-AH</number>
+ <text>rätt immateriell egendom </text>
+</query>
+<query>
+ <number>132-AH</number>
+ <text>kaliningradområdet </text>
+</query>
+<query>
+ <number>133-AH</number>
+ <text>tysk väpn styrk utlandsuppdrag </text>
+</query>
+<query>
+ <number>134-AH</number>
+ <text>rymdsond clementin </text>
+</query>
+<query>
+ <number>135-AH</number>
+ <text>ordförandekandidat europeisk kommission </text>
+</query>
+<query>
+ <number>136-AH</number>
+ <text>lut tornet pis </text>
+</query>
+<query>
+ <number>137-AH</number>
+ <text>internationell skönhetstävling </text>
+</query>
+<query>
+ <number>138-AH</number>
+ <text>främm ord franskan </text>
+</query>
+<query>
+ <number>139-AH</number>
+ <text>eus fiskekvot </text>
+</query>
+<query>
+ <number>140-AH</number>
+ <text>mobiltelefon </text>
+</query>
+<query>
+ <number>141-AH</number>
+ <text>brevbomb kiesbau </text>
+</query>
+<query>
+ <number>142-AH</number>
+ <text>christo paketer tysk riksdagshuset </text>
+</query>
+<query>
+ <number>143-AH</number>
+ <text>kvinnokonfer beijing </text>
+</query>
+<query>
+ <number>144-AH</number>
+ <text>uppr sierr leon diamant </text>
+</query>
+<query>
+ <number>145-AH</number>
+ <text>japansk risimport </text>
+</query>
+<query>
+ <number>147-AH</number>
+ <text>oljeolyck fågl </text>
+</query>
+<query>
+ <number>148-AH</number>
+ <text>skad ozonskiktet </text>
+</query>
+<query>
+ <number>149-AH</number>
+ <text>påv besök sri lank </text>
+</query>
+<query>
+ <number>150-AH</number>
+ <text>amnesty dödsstraff </text>
+</query>
+<query>
+ <number>151-AH</number>
+ <text>antik underverk </text>
+</query>
+<query>
+ <number>152-AH</number>
+ <text>barn rätt </text>
+</query>
+<query>
+ <number>153-AH</number>
+ <text>olympisk spel fred </text>
+</query>
+<query>
+ <number>154-AH</number>
+ <text>yttrandefri internet </text>
+</query>
+<query>
+ <number>155-AH</number>
+ <text>risk mobiltelefon </text>
+</query>
+<query>
+ <number>156-AH</number>
+ <text>fackförening europ </text>
+</query>
+<query>
+ <number>157-AH</number>
+ <text>damsegr wimbledon </text>
+</query>
+<query>
+ <number>158-AH</number>
+ <text>fotbollskravall dublin </text>
+</query>
+<query>
+ <number>159-AH</number>
+ <text>nordsjön olj miljö </text>
+</query>
+<query>
+ <number>161-AH</number>
+ <text>kost glutenallergik </text>
+</query>
+<query>
+ <number>162-AH</number>
+ <text>eu turkisk tull </text>
+</query>
+<query>
+ <number>163-AH</number>
+ <text>begänsning rökning </text>
+</query>
+<query>
+ <number>164-AH</number>
+ <text>europeisk narkotikadom </text>
+</query>
+<query>
+ <number>165-AH</number>
+ <text>gold glob 1994 </text>
+</query>
+<query>
+ <number>166-AH</number>
+ <text>fransk general säkerhetszon balkan </text>
+</query>
+<query>
+ <number>168-AH</number>
+ <text>mordet rabin </text>
+</query>
+<query>
+ <number>169-AH</number>
+ <text>cdbränn genombrot </text>
+</query>
+<query>
+ <number>170-AH</number>
+ <text>officiell euspråk </text>
+</query>
+<query>
+ <number>171-AH</number>
+ <text>hockeyfinal lillehamm </text>
+</query>
+<query>
+ <number>172-AH</number>
+ <text>världsrekord friidrottsvm 1995 </text>
+</query>
+<query>
+ <number>173-AH</number>
+ <text>bevis toppkvark </text>
+</query>
+<query>
+ <number>174-AH</number>
+ <text>bayersk krucifixstrid </text>
+</query>
+<query>
+ <number>175-AH</number>
+ <text>evergl miljöskad </text>
+</query>
+<query>
+ <number>176-AH</number>
+ <text>shoemakerlevy jupit </text>
+</query>
+<query>
+ <number>177-AH</number>
+ <text>mjölkkonsumtion europ </text>
+</query>
+<query>
+ <number>178-AH</number>
+ <text>värnpliktsvägran </text>
+</query>
+<query>
+ <number>179-AH</number>
+ <text>nato generalsekreterar avsked </text>
+</query>
+<query>
+ <number>180-AH</number>
+ <text>baring konkur </text>
+</query>
+<query>
+ <number>181-AH</number>
+ <text>fransk kärnvapenprov </text>
+</query>
+<query>
+ <number>182-AH</number>
+ <text>50årsdag landsättning normandi </text>
+</query>
+<query>
+ <number>183-AH</number>
+ <text>lämning asiatisk dinosaur </text>
+</query>
+<query>
+ <number>184-AH</number>
+ <text>föräldraled europ </text>
+</query>
+<query>
+ <number>185-AH</number>
+ <text>nederländsk fotografi srebrenic </text>
+</query>
+<query>
+ <number>186-AH</number>
+ <text>nederländsk koalitionsregering </text>
+</query>
+<query>
+ <number>187-AH</number>
+ <text>kärnavfallstransport tyskland </text>
+</query>
+<query>
+ <number>188-AH</number>
+ <text>tysk stavningsreform </text>
+</query>
+<query>
+ <number>189-AH</number>
+ <text>hubbl svart hål </text>
+</query>
+<query>
+ <number>190-AH</number>
+ <text>barnarbet asi </text>
+</query>
+<query>
+ <number>192-AH</number>
+ <text>mord rysk tvdirektör </text>
+</query>
+<query>
+ <number>193-AH</number>
+ <text>eu baltisk länd </text>
+</query>
+<query>
+ <number>195-AH</number>
+ <text>strejk italiensk flygkabinpersonal </text>
+</query>
+<query>
+ <number>196-AH</number>
+ <text>fusion japansk bank </text>
+</query>
+<query>
+ <number>197-AH</number>
+ <text>fredsavtal dayton </text>
+</query>
+<query>
+ <number>199-AH</number>
+ <text>ebolaepidemi zair </text>
+</query>
+<query>
+ <number>200-AH</number>
+ <text>Översvämning holland tyskland </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

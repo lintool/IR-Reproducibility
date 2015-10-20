@@ -1,0 +1,402 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_fr</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>251-AH</number>
+ <text>médecin douc </text>
+</query>
+<query>
+ <number>252-AH</number>
+ <text>régim retrait europ </text>
+</query>
+<query>
+ <number>253-AH</number>
+ <text>pay appliqu pein mort </text>
+</query>
+<query>
+ <number>254-AH</number>
+ <text>dégât caus trembl terr </text>
+</query>
+<query>
+ <number>255-AH</number>
+ <text>dépend internet </text>
+</query>
+<query>
+ <number>256-AH</number>
+ <text>malad creutzfeldtjakob </text>
+</query>
+<query>
+ <number>257-AH</number>
+ <text>epur ethniqu balkan </text>
+</query>
+<query>
+ <number>258-AH</number>
+ <text>impact fuit cerveau </text>
+</query>
+<query>
+ <number>259-AH</number>
+ <text>lion dor </text>
+</query>
+<query>
+ <number>260-AH</number>
+ <text>loi tabag </text>
+</query>
+<query>
+ <number>261-AH</number>
+ <text>diseur bon aventur </text>
+</query>
+<query>
+ <number>262-AH</number>
+ <text>concert charit </text>
+</query>
+<query>
+ <number>263-AH</number>
+ <text>remis caus décis darbitrag mati football </text>
+</query>
+<query>
+ <number>264-AH</number>
+ <text>trafic substanc radioact </text>
+</query>
+<query>
+ <number>265-AH</number>
+ <text>pris pouvoir deutsch bank </text>
+</query>
+<query>
+ <number>266-AH</number>
+ <text>discrimin tsiganes européen </text>
+</query>
+<query>
+ <number>267-AH</number>
+ <text>film nomin « meilleur film étranger »  </text>
+</query>
+<query>
+ <number>268-AH</number>
+ <text>clonag humain bioéthiqu </text>
+</query>
+<query>
+ <number>269-AH</number>
+ <text>trait ratif </text>
+</query>
+<query>
+ <number>270-AH</number>
+ <text>concurrent microsoft </text>
+</query>
+<query>
+ <number>271-AH</number>
+ <text>mariag homosexuel </text>
+</query>
+<query>
+ <number>272-AH</number>
+ <text>format président tchequ </text>
+</query>
+<query>
+ <number>273-AH</number>
+ <text>expans lotan </text>
+</query>
+<query>
+ <number>274-AH</number>
+ <text>bomb activ second guerr mondial </text>
+</query>
+<query>
+ <number>275-AH</number>
+ <text>malad li tabag </text>
+</query>
+<query>
+ <number>276-AH</number>
+ <text>subvent agricol lu </text>
+</query>
+<query>
+ <number>277-AH</number>
+ <text>leuthanas </text>
+</query>
+<query>
+ <number>278-AH</number>
+ <text>moyen transport handicap </text>
+</query>
+<query>
+ <number>279-AH</number>
+ <text>référendum suiss </text>
+</query>
+<query>
+ <number>280-AH</number>
+ <text>crim newyork </text>
+</query>
+<query>
+ <number>281-AH</number>
+ <text>radovan karadzic </text>
+</query>
+<query>
+ <number>282-AH</number>
+ <text>abus prison </text>
+</query>
+<query>
+ <number>283-AH</number>
+ <text>film jam bond </text>
+</query>
+<query>
+ <number>284-AH</number>
+ <text>mission navet spatial </text>
+</query>
+<query>
+ <number>285-AH</number>
+ <text>mouv antiavort </text>
+</query>
+<query>
+ <number>286-AH</number>
+ <text>blessur football </text>
+</query>
+<query>
+ <number>287-AH</number>
+ <text>pris dotag cas terror </text>
+</query>
+<query>
+ <number>288-AH</number>
+ <text>import voitur américain </text>
+</query>
+<query>
+ <number>289-AH</number>
+ <text>Île malouin </text>
+</query>
+<query>
+ <number>290-AH</number>
+ <text>variat prix pétrol </text>
+</query>
+<query>
+ <number>291-AH</number>
+ <text>immigr clandestin europ </text>
+</query>
+<query>
+ <number>292-AH</number>
+ <text>reconstruct vill allemagn </text>
+</query>
+<query>
+ <number>293-AH</number>
+ <text>relat chin taiwan </text>
+</query>
+<query>
+ <number>294-AH</number>
+ <text>puissanc ouragan </text>
+</query>
+<query>
+ <number>295-AH</number>
+ <text>blanch dargent </text>
+</query>
+<query>
+ <number>296-AH</number>
+ <text>représent publiqu liszt </text>
+</query>
+<query>
+ <number>297-AH</number>
+ <text>expuls diplomat </text>
+</query>
+<query>
+ <number>298-AH</number>
+ <text>central nucléair </text>
+</query>
+<query>
+ <number>299-AH</number>
+ <text>risqu encourus gardien paix lonu </text>
+</query>
+<query>
+ <number>300-AH</number>
+ <text>gain loter </text>
+</query>
+<query>
+ <number>301-AH</number>
+ <text>produit nestl </text>
+</query>
+<query>
+ <number>302-AH</number>
+ <text>boycott consomm </text>
+</query>
+<query>
+ <number>303-AH</number>
+ <text>peintur italien </text>
+</query>
+<query>
+ <number>304-AH</number>
+ <text>patrimoin mondial </text>
+</query>
+<query>
+ <number>305-AH</number>
+ <text>prix pétrol </text>
+</query>
+<query>
+ <number>306-AH</number>
+ <text>activ let franc </text>
+</query>
+<query>
+ <number>307-AH</number>
+ <text>film déroulent ecoss </text>
+</query>
+<query>
+ <number>308-AH</number>
+ <text>eclips solair </text>
+</query>
+<query>
+ <number>309-AH</number>
+ <text>drogu dur </text>
+</query>
+<query>
+ <number>310-AH</number>
+ <text>trait déchet industriel </text>
+</query>
+<query>
+ <number>311-AH</number>
+ <text>chômag europ </text>
+</query>
+<query>
+ <number>312-AH</number>
+ <text>attaqu chien </text>
+</query>
+<query>
+ <number>313-AH</number>
+ <text>célebr centenair </text>
+</query>
+<query>
+ <number>314-AH</number>
+ <text>espec dang </text>
+</query>
+<query>
+ <number>315-AH</number>
+ <text>dopag sport </text>
+</query>
+<query>
+ <number>316-AH</number>
+ <text>grev </text>
+</query>
+<query>
+ <number>317-AH</number>
+ <text>drogu anticanc </text>
+</query>
+<query>
+ <number>318-AH</number>
+ <text>leduc sexuel </text>
+</query>
+<query>
+ <number>319-AH</number>
+ <text>product mondial dopium </text>
+</query>
+<query>
+ <number>320-AH</number>
+ <text>cris lenerg </text>
+</query>
+<query>
+ <number>321-AH</number>
+ <text>taliban afghanistan </text>
+</query>
+<query>
+ <number>322-AH</number>
+ <text>lenerg atom </text>
+</query>
+<query>
+ <number>323-AH</number>
+ <text>renforc condit dobtent vis </text>
+</query>
+<query>
+ <number>324-AH</number>
+ <text>grand mannequin </text>
+</query>
+<query>
+ <number>325-AH</number>
+ <text>bours detud </text>
+</query>
+<query>
+ <number>326-AH</number>
+ <text>international emmy award </text>
+</query>
+<query>
+ <number>327-AH</number>
+ <text>trembl terr mexico </text>
+</query>
+<query>
+ <number>328-AH</number>
+ <text>kurd irakien turqu </text>
+</query>
+<query>
+ <number>329-AH</number>
+ <text>conséquent dun divorc charl dian </text>
+</query>
+<query>
+ <number>330-AH</number>
+ <text>film keanu reev </text>
+</query>
+<query>
+ <number>331-AH</number>
+ <text>polit econom zedillo </text>
+</query>
+<query>
+ <number>333-AH</number>
+ <text>proces paul touvi </text>
+</query>
+<query>
+ <number>334-AH</number>
+ <text>lelect georg bush </text>
+</query>
+<query>
+ <number>335-AH</number>
+ <text>travaill john smith </text>
+</query>
+<query>
+ <number>336-AH</number>
+ <text>conflit travail nba </text>
+</query>
+<query>
+ <number>337-AH</number>
+ <text>guerr civil yémen </text>
+</query>
+<query>
+ <number>338-AH</number>
+ <text>lextradit proces carlos </text>
+</query>
+<query>
+ <number>339-AH</number>
+ <text>sinn fein déclar angloirlandais </text>
+</query>
+<query>
+ <number>340-AH</number>
+ <text>nouveau ministr québec </text>
+</query>
+<query>
+ <number>341-AH</number>
+ <text>vol cri </text>
+</query>
+<query>
+ <number>342-AH</number>
+ <text>mariag enterr </text>
+</query>
+<query>
+ <number>343-AH</number>
+ <text>part national dafriqu sud </text>
+</query>
+<query>
+ <number>344-AH</number>
+ <text>brésil sued demifinal coup mond </text>
+</query>
+<query>
+ <number>345-AH</number>
+ <text>ski fond jeux olymp </text>
+</query>
+<query>
+ <number>346-AH</number>
+ <text>vainqueur grand chelem </text>
+</query>
+<query>
+ <number>347-AH</number>
+ <text>loscar meilleur film 1994 </text>
+</query>
+<query>
+ <number>348-AH</number>
+ <text>lassassinat yann piat </text>
+</query>
+<query>
+ <number>349-AH</number>
+ <text>déces nixon </text>
+</query>
+<query>
+ <number>350-AH</number>
+ <text>déces dayrton sen </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

@@ -1,0 +1,406 @@
+<parameters>
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_pt</index>
+    <rule>method:dirichlet,mu:2000</rule>
+    <count>1000</count>
+<query>
+ <number>251-AH</number>
+ <text>medicin altern </text>
+</query>
+<query>
+ <number>252-AH</number>
+ <text>sistem reform pensõ europ </text>
+</query>
+<query>
+ <number>253-AH</number>
+ <text>país pen mort </text>
+</query>
+<query>
+ <number>254-AH</number>
+ <text>dan provoc terramot </text>
+</query>
+<query>
+ <number>255-AH</number>
+ <text>vic internet </text>
+</query>
+<query>
+ <number>256-AH</number>
+ <text>doenc creutzfeldtjakob </text>
+</query>
+<query>
+ <number>257-AH</number>
+ <text>limpez étnic balcãs </text>
+</query>
+<query>
+ <number>258-AH</number>
+ <text>impact fug cérebr </text>
+</query>
+<query>
+ <number>259-AH</number>
+ <text>urso our </text>
+</query>
+<query>
+ <number>260-AH</number>
+ <text>legisl antitabag </text>
+</query>
+<query>
+ <number>261-AH</number>
+ <text>adivinh </text>
+</query>
+<query>
+ <number>262-AH</number>
+ <text>espectácul beneficient </text>
+</query>
+<query>
+ <number>263-AH</number>
+ <text>disput arbitrag futebol </text>
+</query>
+<query>
+ <number>264-AH</number>
+ <text>contrab material radioat </text>
+</query>
+<query>
+ <number>265-AH</number>
+ <text>aquisiçõ deutsch bank </text>
+</query>
+<query>
+ <number>266-AH</number>
+ <text>discrimin cigan europ </text>
+</query>
+<query>
+ <number>267-AH</number>
+ <text>melhor film estrangeir </text>
+</query>
+<query>
+ <number>268-AH</number>
+ <text>Étic clonag human </text>
+</query>
+<query>
+ <number>269-AH</number>
+ <text>ratific trat </text>
+</query>
+<query>
+ <number>270-AH</number>
+ <text>concorrent microsoft </text>
+</query>
+<query>
+ <number>271-AH</number>
+ <text>casament gays </text>
+</query>
+<query>
+ <number>272-AH</number>
+ <text>biograf president chec </text>
+</query>
+<query>
+ <number>273-AH</number>
+ <text>expansã otan </text>
+</query>
+<query>
+ <number>274-AH</number>
+ <text>bomb deton guerr mundial </text>
+</query>
+<query>
+ <number>275-AH</number>
+ <text>doenc relacion fum </text>
+</query>
+<query>
+ <number>276-AH</number>
+ <text>subsídi agrícol ue </text>
+</query>
+<query>
+ <number>277-AH</number>
+ <text>eutanás profission saúd </text>
+</query>
+<query>
+ <number>278-AH</number>
+ <text>transport deficient </text>
+</query>
+<query>
+ <number>279-AH</number>
+ <text>referend suíc </text>
+</query>
+<query>
+ <number>280-AH</number>
+ <text>crim york </text>
+</query>
+<query>
+ <number>281-AH</number>
+ <text>radovan karadzic </text>
+</query>
+<query>
+ <number>282-AH</number>
+ <text>maustrat prisõ </text>
+</query>
+<query>
+ <number>283-AH</number>
+ <text>film séri jam bond </text>
+</query>
+<query>
+ <number>284-AH</number>
+ <text>missõ vaivém espacial </text>
+</query>
+<query>
+ <number>285-AH</number>
+ <text>moviment antiabort </text>
+</query>
+<query>
+ <number>286-AH</number>
+ <text>lesõ futebol </text>
+</query>
+<query>
+ <number>287-AH</number>
+ <text>açõ terror reféns </text>
+</query>
+<query>
+ <number>288-AH</number>
+ <text>import carr eua </text>
+</query>
+<query>
+ <number>289-AH</number>
+ <text>ilhas malvin </text>
+</query>
+<query>
+ <number>290-AH</number>
+ <text>flutuaçã prec petról </text>
+</query>
+<query>
+ <number>291-AH</number>
+ <text>imigr ileg ue </text>
+</query>
+<query>
+ <number>292-AH</number>
+ <text>reconstruçã cidad alemãs </text>
+</query>
+<query>
+ <number>293-AH</number>
+ <text>relaçõ chin formos </text>
+</query>
+<query>
+ <number>294-AH</number>
+ <text>forc furaçõ </text>
+</query>
+<query>
+ <number>295-AH</number>
+ <text>lavag dinheir </text>
+</query>
+<query>
+ <number>296-AH</number>
+ <text>liszt toc públic </text>
+</query>
+<query>
+ <number>297-AH</number>
+ <text>expulsõ pessoal diplomát </text>
+</query>
+<query>
+ <number>298-AH</number>
+ <text>centr nucl </text>
+</query>
+<query>
+ <number>299-AH</number>
+ <text>risc missõ manutençã paz onu </text>
+</query>
+<query>
+ <number>300-AH</number>
+ <text>prémi lot </text>
+</query>
+<query>
+ <number>301-AH</number>
+ <text>marc nestl </text>
+</query>
+<query>
+ <number>302-AH</number>
+ <text>boicot consumidor </text>
+</query>
+<query>
+ <number>303-AH</number>
+ <text>pintur italian </text>
+</query>
+<query>
+ <number>304-AH</number>
+ <text>patrimóni mundial </text>
+</query>
+<query>
+ <number>305-AH</number>
+ <text>prec petról </text>
+</query>
+<query>
+ <number>306-AH</number>
+ <text>activ eta franc </text>
+</query>
+<query>
+ <number>307-AH</number>
+ <text>film pass escóc </text>
+</query>
+<query>
+ <number>308-AH</number>
+ <text>eclips sol </text>
+</query>
+<query>
+ <number>309-AH</number>
+ <text>drog dur </text>
+</query>
+<query>
+ <number>310-AH</number>
+ <text>tratament resídu industri </text>
+</query>
+<query>
+ <number>311-AH</number>
+ <text>desempreg europ </text>
+</query>
+<query>
+ <number>312-AH</number>
+ <text>ataqu cã ser human </text>
+</query>
+<query>
+ <number>313-AH</number>
+ <text>celebr centenári </text>
+</query>
+<query>
+ <number>314-AH</number>
+ <text>espéc vias extinçã </text>
+</query>
+<query>
+ <number>315-AH</number>
+ <text>doping esport </text>
+</query>
+<query>
+ <number>316-AH</number>
+ <text>grev </text>
+</query>
+<query>
+ <number>317-AH</number>
+ <text>medic cancr </text>
+</query>
+<query>
+ <number>318-AH</number>
+ <text>educ sexual </text>
+</query>
+<query>
+ <number>319-AH</number>
+ <text>produçã global ópi </text>
+</query>
+<query>
+ <number>320-AH</number>
+ <text>cris energét </text>
+</query>
+<query>
+ <number>321-AH</number>
+ <text>taliban afganistã </text>
+</query>
+<query>
+ <number>322-AH</number>
+ <text>energ atóm </text>
+</query>
+<query>
+ <number>323-AH</number>
+ <text>reforc control vist </text>
+</query>
+<query>
+ <number>324-AH</number>
+ <text>top models </text>
+</query>
+<query>
+ <number>325-AH</number>
+ <text>mensal universitár </text>
+</query>
+<query>
+ <number>326-AH</number>
+ <text>prémi emmy internacional </text>
+</query>
+<query>
+ <number>327-AH</number>
+ <text>terramot cidad méxic </text>
+</query>
+<query>
+ <number>328-AH</number>
+ <text>curd iraquian turqu </text>
+</query>
+<query>
+ <number>329-AH</number>
+ <text>consequent divórci carl dian </text>
+</query>
+<query>
+ <number>330-AH</number>
+ <text>film keanu reev </text>
+</query>
+<query>
+ <number>331-AH</number>
+ <text>polít económ zedill </text>
+</query>
+<query>
+ <number>332-AH</number>
+ <text>atent tupac shakur </text>
+</query>
+<query>
+ <number>333-AH</number>
+ <text>julgament paul touvi </text>
+</query>
+<query>
+ <number>334-AH</number>
+ <text>eleiçã georg w bush </text>
+</query>
+<query>
+ <number>335-AH</number>
+ <text>part trabalh john smith </text>
+</query>
+<query>
+ <number>336-AH</number>
+ <text>conflit labor nba </text>
+</query>
+<query>
+ <number>337-AH</number>
+ <text>guerr civil iémen </text>
+</query>
+<query>
+ <number>338-AH</number>
+ <text>extradiçã julgament carl </text>
+</query>
+<query>
+ <number>339-AH</number>
+ <text>sinn fein declar angloirlandes </text>
+</query>
+<query>
+ <number>340-AH</number>
+ <text>primi québequ </text>
+</query>
+<query>
+ <number>341-AH</number>
+ <text>roub d«o grito» </text>
+</query>
+<query>
+ <number>342-AH</number>
+ <text>«quatr casament funeral» </text>
+</query>
+<query>
+ <number>343-AH</number>
+ <text>part nacional sulafrican </text>
+</query>
+<query>
+ <number>344-AH</number>
+ <text>brasilsuéc semifin campeonat mund </text>
+</query>
+<query>
+ <number>345-AH</number>
+ <text>esqu cross country jog olímp </text>
+</query>
+<query>
+ <number>346-AH</number>
+ <text>vencedor prov grand slam </text>
+</query>
+<query>
+ <number>347-AH</number>
+ <text>Óscar melhor film 1994 </text>
+</query>
+<query>
+ <number>348-AH</number>
+ <text>assassinat yann piat </text>
+</query>
+<query>
+ <number>349-AH</number>
+ <text>mort nixon </text>
+</query>
+<query>
+ <number>350-AH</number>
+ <text>mort ayrton senn </text>
+</query>    
+    <trecFormat>true</trecFormat>
+</parameters>

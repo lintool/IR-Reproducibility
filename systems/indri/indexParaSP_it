@@ -1,0 +1,16 @@
+<parameters> 
+    <memory>1024m</memory> 
+    <index>/u/xiaojiex/ir/excute/clefmono/indexSP_it/</index> 
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/AGZ1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/AGZ1995_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+    <corpus>  
+        <path>/u/xiaojiex/ir/corpus/clef_collections/corpora_stop_stem/LASTAMPA1994_UTF8_consdoc/</path>
+        <class>trectext</class> 
+    </corpus>
+</parameters> 
