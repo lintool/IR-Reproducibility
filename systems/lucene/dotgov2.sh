@@ -4,7 +4,7 @@ cd ingester
 mvn clean compile assembly:single
 cd ..
 
-maxmemory="-Xmx10G"
+maxmemory="-Xmx15G"
 
 echo "Starting indexing..."
 #rm -rf gov2.lucene
@@ -23,7 +23,7 @@ echo "Force merging..."
 java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.pos/index
 
 
-for index in "cnt" #"pos"
+for index in "cnt" "pos"
 do
 	echo "Evaluation index ${index}"
 	for queries in "701-750" "751-800" "801-850"
