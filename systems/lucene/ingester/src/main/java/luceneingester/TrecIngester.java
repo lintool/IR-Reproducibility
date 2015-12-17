@@ -92,7 +92,9 @@ public final class TrecIngester {
       iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
     }
     if (forceMerge) {
-    	iwc.setMergePolicy(NoMergePolicy.INSTANCE); 
+    	// TODO: Explore a merge policy that results in just one segment. NoMergePolicy seems
+	// to result in large number of files, but possibly one 1 segment.
+  	//iwc.setMergePolicy(NoMergePolicy.INSTANCE); 
     }
     System.out.println("IW config=" + iwc);
 
