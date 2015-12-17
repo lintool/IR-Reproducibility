@@ -8,10 +8,10 @@ echo "Starting indexing..."
 #rm -rf gov2.lucene
 
 # Counts index
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1 
+java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1 -forceMerge 
 
 # Positional index
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1 
+java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1 -forceMerge
 
 for index in "cnt" "pos"
 do

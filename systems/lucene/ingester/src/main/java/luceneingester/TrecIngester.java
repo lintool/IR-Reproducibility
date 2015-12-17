@@ -62,6 +62,7 @@ public final class TrecIngester {
     final boolean printDPS = args.getFlag("-printDPS");
     final boolean doUpdate = args.getFlag("-update");
     final boolean positions = args.getFlag("-positions");
+    final boolean forceMerge = args.getFlag("-forceMerge");
 
     args.check();
 
@@ -74,6 +75,7 @@ public final class TrecIngester {
     System.out.println("Threads: " + numThreads);
     System.out.println("Verbose: " + (verbose ? "yes" : "no"));
     System.out.println("Positions: " + (positions ? "yes" : "no"));
+    System.out.println("Force merge: " + (forceMerge ? "yes" : "no"));
 
     if (verbose) {
       InfoStream.setDefault(new PrintStreamInfoStream(System.out));
@@ -122,6 +124,12 @@ public final class TrecIngester {
     final long t3 = System.currentTimeMillis();
     System.out.println("\nIndexer: commit multi (took " + (t3-t2)/1000.0 + " sec)");
 
+
+    if (forceMerge) {
+    	long mergeStart = System.currentTimeMillis();
+    	w.forceMerge(1);
+        System.out.println("\nIndexer: merging took " + (System.currentTimeMillis() - mergeStart)/1000.0 + " sec");
+    }
     System.out.println("\nIndexer: at close: " + w.segString());
     final long tCloseStart = System.currentTimeMillis();
     w.close();
