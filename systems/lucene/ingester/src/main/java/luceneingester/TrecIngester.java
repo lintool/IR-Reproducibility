@@ -28,7 +28,10 @@ import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
 import org.apache.lucene.benchmark.byTask.utils.Config;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.*;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.MergePolicy;
+import org.apache.lucene.index.NoMergePolicy;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.*;
 import org.apache.lucene.util.*;
@@ -88,7 +91,9 @@ public final class TrecIngester {
     } else {
       iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
     }
-
+    if (forceMerge) {
+    	iwc.setMergePolicy(NoMergePolicy.INSTANCE); 
+    }
     System.out.println("IW config=" + iwc);
 
     final IndexWriter w = new IndexWriter(dir, iwc);
@@ -126,6 +131,7 @@ public final class TrecIngester {
 
 
     if (forceMerge) {
+    	System.out.println("\nStarting the merge...");
     	long mergeStart = System.currentTimeMillis();
     	w.forceMerge(1);
     	w.commit();
