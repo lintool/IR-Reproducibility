@@ -4,14 +4,24 @@ cd ingester
 mvn clean compile assembly:single
 cd ..
 
+maxmemory="-Xmx15G"
+
 echo "Starting indexing..."
 #rm -rf gov2.lucene
 
 # Counts index
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1 
+java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1
+
+#Force merge
+echo "Force merging..."
+java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.cnt/index
 
 # Positional index
-java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1 
+java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1
+
+echo "Force merging..."
+java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.pos/index
+
 
 for index in "cnt" "pos"
 do
@@ -24,7 +34,7 @@ do
 		stat_file=submission_${queries}_${index}.log
 		eval_file=submission_${queries}_${index}.eval
 
-		java -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ${query_file} ${qrel_file} ${run_file} gov2.lucene.${index}/index T > ${stat_file}
+		java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecDriver ${query_file} ${qrel_file} ${run_file} gov2.lucene.${index}/index T > ${stat_file}
 
 		${TREC_EVAL} ${qrel_file} ${run_file} > ${eval_file}
 	done

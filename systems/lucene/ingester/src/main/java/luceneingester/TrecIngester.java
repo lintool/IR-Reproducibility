@@ -28,7 +28,10 @@ import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.benchmark.byTask.feeds.TrecContentSource;
 import org.apache.lucene.benchmark.byTask.utils.Config;
 import org.apache.lucene.document.TextField;
-import org.apache.lucene.index.*;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.MergePolicy;
+import org.apache.lucene.index.NoMergePolicy;
 import org.apache.lucene.search.similarities.BM25Similarity;
 import org.apache.lucene.store.*;
 import org.apache.lucene.util.*;
@@ -62,6 +65,7 @@ public final class TrecIngester {
     final boolean printDPS = args.getFlag("-printDPS");
     final boolean doUpdate = args.getFlag("-update");
     final boolean positions = args.getFlag("-positions");
+    final boolean forceMerge = args.getFlag("-forceMerge");
 
     args.check();
 
@@ -74,6 +78,7 @@ public final class TrecIngester {
     System.out.println("Threads: " + numThreads);
     System.out.println("Verbose: " + (verbose ? "yes" : "no"));
     System.out.println("Positions: " + (positions ? "yes" : "no"));
+    System.out.println("Force merge: " + (forceMerge ? "yes" : "no"));
 
     if (verbose) {
       InfoStream.setDefault(new PrintStreamInfoStream(System.out));
@@ -86,7 +91,11 @@ public final class TrecIngester {
     } else {
       iwc.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
     }
-
+    if (forceMerge) {
+    	// TODO: Explore a merge policy that results in just one segment. NoMergePolicy seems
+	// to result in large number of files, but possibly one 1 segment.
+  	//iwc.setMergePolicy(NoMergePolicy.INSTANCE); 
+    }
     System.out.println("IW config=" + iwc);
 
     final IndexWriter w = new IndexWriter(dir, iwc);
@@ -122,6 +131,14 @@ public final class TrecIngester {
     final long t3 = System.currentTimeMillis();
     System.out.println("\nIndexer: commit multi (took " + (t3-t2)/1000.0 + " sec)");
 
+
+    if (forceMerge) {
+    	System.out.println("\nStarting the merge...");
+    	long mergeStart = System.currentTimeMillis();
+    	w.forceMerge(1);
+    	w.commit();
+        System.out.println("\nIndexer: merging took " + (System.currentTimeMillis() - mergeStart)/1000.0 + " sec");
+    }
     System.out.println("\nIndexer: at close: " + w.segString());
     final long tCloseStart = System.currentTimeMillis();
     w.close();
