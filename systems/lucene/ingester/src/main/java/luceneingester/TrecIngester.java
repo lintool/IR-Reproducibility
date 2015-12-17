@@ -128,6 +128,7 @@ public final class TrecIngester {
     if (forceMerge) {
     	long mergeStart = System.currentTimeMillis();
     	w.forceMerge(1);
+    	w.commit();
         System.out.println("\nIndexer: merging took " + (System.currentTimeMillis() - mergeStart)/1000.0 + " sec");
     }
     System.out.println("\nIndexer: at close: " + w.segString());
