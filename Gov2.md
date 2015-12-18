@@ -66,7 +66,7 @@ Both retrieval efficiency (by query latency) and effectiveness (MAP@1000) were m
 + Both of these models require parameter tuning for best performance. No stopping was done for these models.
 
 ###### Indri
-+ version 5.3
++ version 5.9
 + QL is our baseline query-likelihood (bag-of-words) model with dirichlet smoothing and default mu parameters.
 + SDM is our implementation of the [Markov-Random-Field model for Term Dependencies (Metzler and Croft, 2005)](http://dl.acm.org/citation.cfm?id=1076115).
     + The features used are: unigrams, bigrams, and unordered windows of size 8.
@@ -133,8 +133,8 @@ ATIRE   | BM25                 | Count             |        0.2616 |         0.3
 ATIRE   | Quantized BM25       | Count + Quantized |        0.2603 |         0.3108 |         0.2974
 Galago  | QL                   | Count             |        0.2776 |         0.2937 |         0.2845
 Galago  | SDM                  | Positions         |        0.2726 |         0.2911 |         0.3161
-Indri   | QL                   | Positions         |        0.2597 |         0.3179 |         0.2830
-Indri   | SDM                  | Positions         |        0.2621 |         0.3086 |         0.3165
+Indri   | QL                   | Positions         |        0.2746 |         0.3182 |         0.2893
+Indri   | SDM                  | Positions         |        0.2624 |         0.3079 |         0.3244
 JASS    | 1B Postings          | Count             |        0.2603 |         0.3109 |         0.2972
 JASS    | 2.5M Postings        | Count             |        0.2579 |         0.3053 |         0.2959
 Lucene  | BM25                 | Count             |        0.2684 |         0.3347 |         0.3050
