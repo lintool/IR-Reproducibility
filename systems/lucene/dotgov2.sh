@@ -9,22 +9,17 @@ maxmemory="-Xmx15G"
 echo "Starting indexing..."
 #rm -rf gov2.lucene
 
-# Counts index
-java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.cnt -threadCount 32 -docCountLimit -1
-
-#Force merge
-echo "Force merging..."
-java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.cnt/index
-
-# Positional index
-java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.pos -positions -threadCount 32 -docCountLimit -1
-
-echo "Force merging..."
-java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.pos/index
-
-
 for index in "cnt" "pos"
 do
+	if [ "$index" = "pos" ] ; then positionsFlag="-positions"; fi
+
+	echo "Building index: ${index}"
+	java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.TrecIngester -dataDir $GOV2_LOCATION -indexPath gov2.lucene.${index} ${positionsFlag} -threadCount 32 -docCountLimit -1
+
+	#Force merge
+	echo "Force merging: ${index}"
+	java $maxmemory -cp lib/lucene-core-5.2.1.jar:lib/lucene-backward-codecs-5.2.1.jar:lib/lucene-analyzers-common-5.2.1.jar:lib/lucene-benchmark-5.2.1.jar:lib/lucene-queryparser-5.2.1.jar:.:ingester/target/ingester-0.0.1-SNAPSHOT-jar-with-dependencies.jar luceneingester.ForceMerge gov2.lucene.${index}/index
+
 	echo "Evaluation index ${index}"
 	for queries in "701-750" "751-800" "801-850"
 	do
