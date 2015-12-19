@@ -3,20 +3,20 @@ set -efu
 
 source ../common.sh
 
-GALAGO_DIR='galago-3.8alpha'
-URL="http://ciir.cs.umass.edu/~jfoley/${GALAGO_DIR}.tar.gz"
+URL="https://sourceforge.net/projects/lemur/files/lemur/galago-3.8/galago-3.8-bin.tar.gz/download?use_mirror=autoselect"
+GALAGO_ARCHIVE="galago.tar.gz"
+GALAGO_DIR='galago-3.8-bin'
 TMPDIR="tmp/"
-
-if [[ ! -f ${GALAGO_DIR}.tar.gz ]]; then
-  wget ${URL} -O ${GALAGO_DIR}.tar.gz
-fi
-
-if [[ ! -f ${GALAGO_DIR}/bin/galago ]]; then
-  rm -rf ${GALAGO_DIR}
-  tar -xf ${GALAGO_DIR}.tar.gz
-fi
-
 GALAGO="${GALAGO_DIR}/bin/galago"
+
+if [[ ! -f ${GALAGO_ARCHIVE} ]]; then
+  wget ${URL} -O ${GALAGO_ARCHIVE}
+fi
+
+if [[ ! -f ${GALAGO} ]]; then
+  rm -rf ${GALAGO_DIR}
+  tar -xf ${GALAGO_ARCHIVE}
+fi
 
 
 mkdir -p ${TMPDIR}
