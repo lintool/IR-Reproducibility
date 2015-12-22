@@ -10,7 +10,7 @@ ATIRE   | Count             | 12 GB |     46m |       |          |        |
 ATIRE   | Count + Quantized | 15 GB |     56m |       |          |        |
 Galago  | Count             | 15 GB |  6h 32m |       |          |        |
 Galago  | Positions         | 48 GB | 26h 33m |       |          |        |
-Indri   | Positions         | 92 GB |  6h 40m |       |          |        |
+Indri   | Positions         | 92 GB |  6h 40m | 39.2M |    23.5G |        |
 JASS    | ATIRE Quantized   | 21 GB |     58m |       |          |        |
 Lucene  | Count             | 12 GB |  1h 25m |       |          |        |
 Lucene  | Positions         | 40 GB |  1h 35m |       |          |        |
@@ -103,8 +103,8 @@ ATIRE   | BM25           | Count               |          131ms |          176ms
 ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           93ms |           85ms
 Galago  | QL             | Count               |          769ms |          820ms |          661ms
 Galago  | SDM            | Positions           |         4134ms |         6091ms |         3943ms
-Indri   | QL             | Positions           |         1338ms |         1715ms |         1205ms
-Indri   | SDM            | Positions           |         8146ms |        14277ms |         7093ms
+Indri   | QL             | Positions           |         1252ms |         1516ms |         1163ms
+Indri   | SDM            | Positions           |         7631ms |        13077ms |         6712ms
 JASS    | 1B Postings    | Count               |           47ms |           50ms |           45ms
 JASS    | 2.5M Postings  | Count               |           26ms |           25ms |           25ms
 Lucene  | BM25           | Count               |          148ms |          109ms |          141ms
