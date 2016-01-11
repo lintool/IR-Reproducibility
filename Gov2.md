@@ -4,21 +4,21 @@ What follows is an initial comparison of selected information retrieval systems 
 ## Indexing
 Two metrics for indexing are reported below: the size of the generated index, and the time taken to generate that index. Index sizes are calculated by `du -abc` on the relevant folders/files (1GB = 1000000000B).
 
-System  | Type              |  Size |    Time | Terms | Postings | Tokens |
-:-------|:------------------|------:|--------:|------:|---------:|--------:
-ATIRE   | Count             | 12 GB |     46m |       |          |        |
-ATIRE   | Count + Quantized | 15 GB |     56m |       |          |        |
-Galago  | Count             | 15 GB |  6h 32m |       |          |        |
-Galago  | Positions         | 48 GB | 26h 33m |       |          |        |
-Indri   | Positions         | 92 GB |  6h 40m | 39.2M |    23.5G |        |
-JASS    | ATIRE Quantized   | 21 GB |     58m |       |          |        |
-Lucene  | Count             | 12 GB |  1h 25m |       |          |        |
-Lucene  | Positions         | 40 GB |  1h 35m |       |          |        |
-MG4J    | Count             |  8 GB |  1h 25m | 34.9M |     5.5G |        |
-MG4J    | Positions         | 37 GB |  2h 06m | 34.9M |     5.5G |  23.1G |
-Terrier | Count             | 10 GB |  8h 04m | 15.3M |     4.6G |  16.2G |
-Terrier | Count (inc direct)| 19 GB | 18h 16m | 15.3M |     4.6G |  16.2G |
-Terrier | Positions         | 36 GB |  9h 37m | 15.3M |     4.6G |  16.2G |
+System  | Type               |  Size |    Time | Terms | Postings |  Tokens
+:-------|:-------------------|------:|--------:|------:|---------:|--------:
+ATIRE   | Count              | 12 GB |     41m | 39.9M |     7.0B |   26.5B
+ATIRE   | Count + Quantized  | 15 GB |     59m | 39.9M |     7.0B |   26.5B
+Galago  | Count              | 15 GB |  6h 32m | 36.0M |     5.7B |       -
+Galago  | Positions          | 48 GB | 26h 23m | 36.0M |     5.7B |   22.3B
+Indri   | Positions          | 92 GB |  6h 42m | 39.2M |        - |   23.5B
+JASS    | ATIRE Quantized    | 21 GB |  1h 03m | 39.9M |     7.0B |   26.5B
+Lucene  | Count              | 11 GB |  1h 36m | 72.9M |     5.5B |       -
+Lucene  | Positions          | 40 GB |  2h 00m | 72.9M |     5.5B |   17.8B
+MG4J    | Count              |  8 GB |  1h 46m | 34.9M |     5.5B |       -
+MG4J    | Positions          | 37 GB |  2h 11m | 34.9M |     5.5B |   23.1B
+Terrier | Count              | 10 GB |  8h 06m | 15.3M |     4.6B |       -
+Terrier | Count (inc direct) | 18 GB | 18h 13m | 15.3M |     4.6B |       -
+Terrier | Positions          | 36 GB |  9h 44m | 15.3M |     4.6B |   16.2B
 
 ###### ATIRE
 + The quantized index pre-calculates the BM25 scores at indexing time and stores these instead of term frequencies, more about the quantization in ATIRE can be found in [Crane et al. (2013)](http://dl.acm.org/citation.cfm?id=2507860).
@@ -97,25 +97,25 @@ each conjunctive subquery within a window equal to two times the number of terms
 ### Retrieval Latency
 The table below shows the average search time across queries by query set. The average is taken from three runs of the queries. The search times were taken from the internal reporting of each systems.
 
-System  | Model          | Index               | Topics 701-750 | Topics 751-800 | Topics 801-850
-:-------|:---------------|---------------------|---------------:|---------------:|--------------:
-ATIRE   | BM25           | Count               |          131ms |          176ms |          131ms
-ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           93ms |           85ms
-Galago  | QL             | Count               |          769ms |          820ms |          661ms
-Galago  | SDM            | Positions           |         4134ms |         6091ms |         3943ms
-Indri   | QL             | Positions           |         1252ms |         1516ms |         1163ms
-Indri   | SDM            | Positions           |         7631ms |        13077ms |         6712ms
-JASS    | 1B Postings    | Count               |           47ms |           50ms |           45ms
-JASS    | 2.5M Postings  | Count               |           26ms |           25ms |           25ms
-Lucene  | BM25           | Count               |          148ms |          109ms |          141ms
-Lucene  | BM25           | Positions           |          119ms |          111ms |          118ms
-MG4J    | BM25           | Count               |          362ms |          257ms |          267ms
-MG4J    | Model B        | Count               |           37ms |           48ms |           36ms
-MG4J    | Model B+       | Positions           |           91ms |           90ms |           73ms
-Terrier | BM25           | Count               |          357ms |          277ms |          296ms
-Terrier | DPH            | Count               |          441ms |          338ms |          369ms
-Terrier | DPH + Bo1 QE   | Count (inc. direct) |         1633ms |         1323ms |         1402ms
-Terrier | DPH + Prox SD  | Positions           |         1250ms |          950ms |          986ms
+System  | Model          | Index               | Topics 701-750 | Topics 751-800 | Topics 801-850 | Combined
+:-------|:---------------|---------------------|---------------:|---------------:|---------------:|---------:
+ATIRE   | BM25           | Count               |          132ms |          175ms |          131ms |    146ms
+ATIRE   | Quantized BM25 | Count + Quantized   |           91ms |           93ms |           85ms |     89ms
+Galago  | QL             | Count               |          773ms |          807ms |          651ms |    743ms
+Galago  | SDM            | Positions           |         4134ms |         5989ms |         4094ms |   4736ms
+Indri   | QL             | Positions           |         1252ms |         1516ms |         1163ms |   1310ms
+Indri   | SDM            | Positions           |         7631ms |        13077ms |         6712ms |   9140ms
+JASS    | 1B Postings    | Count               |           53ms |           54ms |           48ms |     51ms
+JASS    | 2.5M Postings  | Count               |           30ms |           28ms |           28ms |     28ms
+Lucene  | BM25           | Count               |          120ms |          107ms |          125ms |    118ms
+Lucene  | BM25           | Positions           |          121ms |          109ms |          127ms |    119ms
+MG4J    | BM25           | Count               |          348ms |          245ms |          266ms |    287ms
+MG4J    | Model B        | Count               |           39ms |           48ms |           36ms |     41ms
+MG4J    | Model B+       | Positions           |           91ms |           92ms |           75ms |     86ms
+Terrier | BM25           | Count               |          363ms |          287ms |          306ms |    319ms
+Terrier | DPH            | Count               |          627ms |          421ms |          416ms |    488ms
+Terrier | DPH + Bo1 QE   | Count (inc. direct) |         1845ms |         1422ms |         1474ms |   1580ms
+Terrier | DPH + Prox SD  | Positions           |         1434ms |         1034ms |         1039ms |   1169ms
 
 ##### Extra Notes
 ###### Terrier
@@ -127,25 +127,25 @@ Galago's SDM calculates expensive ordered and unordered window features, which e
 ### Retrieval Effectiveness
 The systems generated run files to be consumed by the `trec_eval` tool. Each system was evaluated on the top 1000 results for each query, and the table below shows the MAP scores for the systems.
 
-System  | Model                | Index             |Topics 701-750 | Topics 751-800 | Topics 801-850
-:-------|:---------------------|-------------------|--------------:|---------------:|--------------:
-ATIRE   | BM25                 | Count             |        0.2616 |         0.3106 |         0.2978
-ATIRE   | Quantized BM25       | Count + Quantized |        0.2603 |         0.3108 |         0.2974
-Galago  | QL                   | Count             |        0.2776 |         0.2937 |         0.2845
-Galago  | SDM                  | Positions         |        0.2726 |         0.2911 |         0.3161
-Indri   | QL                   | Positions         |        0.2746 |         0.3182 |         0.2893
-Indri   | SDM                  | Positions         |        0.2624 |         0.3079 |         0.3244
-JASS    | 1B Postings          | Count             |        0.2603 |         0.3109 |         0.2972
-JASS    | 2.5M Postings        | Count             |        0.2579 |         0.3053 |         0.2959
-Lucene  | BM25                 | Count             |        0.2684 |         0.3347 |         0.3050
-Lucene  | BM25                 | Positions         |        0.2684 |         0.3347 |         0.3050
-MG4J    | BM25                 | Count             |        0.2640 |         0.3336 |         0.2999
-MG4J    | Model B              | Count             |        0.2469 |         0.3207 |         0.3003
-MG4J    | Model B+             | Positions         |        0.2322 |         0.3179 |         0.3257
-Terrier | BM25                 | Count             |        0.2432 |         0.3039 |         0.2614
-Terrier | DPH                  | Count             |        0.2768 |         0.3311 |         0.2899
-Terrier | DPH + Bo1 QE         | Count (inc direct)|        0.3037 |         0.3742 |         0.3480
-Terrier | DPH + Proximity (SD) | Positions         |        0.2750 |         0.3297 |         0.2897
+System  | Model          | Index              | Topics 701-750 | Topics 751-800 | Topics 801-850 | Combined
+:-------|:---------------|--------------------|---------------:|---------------:|---------------:|---------:
+ATIRE   | BM25           | Count              |         0.2616 |         0.3106 |         0.2978 |   0.2902
+ATIRE   | Quantized BM25 | Count + Quantized  |         0.2603 |         0.3108 |         0.2974 |   0.2897
+Galago  | QL             | Count              |         0.2776 |         0.2937 |         0.2845 |   0.2853
+Galago  | SDM            | Positions          |         0.2726 |         0.2911 |         0.3161 |   0.2934
+Indri   | QL             | Positions          |         0.2597 |         0.3179 |         0.2830 |   0.2870
+Indri   | SDM            | Positions          |         0.2621 |         0.3086 |         0.3165 |   0.2960
+JASS    | 1B Postings    | Count              |         0.2603 |         0.3109 |         0.2972 |   0.2897
+JASS    | 2.5M Postings  | Count              |         0.2579 |         0.3053 |         0.2959 |   0.2866
+Lucene  | BM25           | Count              |         0.2684 |         0.3347 |         0.3050 |   0.3029
+Lucene  | BM25           | Positions          |         0.2684 |         0.3347 |         0.3050 |   0.3029
+MG4J    | BM25           | Count              |         0.2640 |         0.3336 |         0.2999 |   0.2994
+MG4J    | Model B        | Count              |         0.2469 |         0.3207 |         0.3003 |   0.2896
+MG4J    | Model B+       | Positions          |         0.2322 |         0.3179 |         0.3257 |   0.2923
+Terrier | BM25           | Count              |         0.2432 |         0.3039 |         0.2614 |   0.2697
+Terrier | DPH            | Count              |         0.2768 |         0.3311 |         0.2899 |   0.2994
+Terrier | DPH + Bo1 QE   | Count (inc direct) |         0.3037 |         0.3742 |         0.3480 |   0.3422
+Terrier | DPH + Prox SD  | Positions          |         0.2750 |         0.3297 |         0.2897 |   0.2983
 
 ##### Statistical Analysis
 
